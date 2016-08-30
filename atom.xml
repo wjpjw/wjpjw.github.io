@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-08-30T19:43:57.000Z</updated>
+  <updated>2016-08-30T19:53:50.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -14,24 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="wjpjw.github.io/2016/08/30/README/"/>
-    <id>wjpjw.github.io/2016/08/30/README/</id>
-    <published>2016-08-30T19:43:57.000Z</published>
-    <updated>2016-08-30T19:43:57.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ioposts"><a href="#ioposts" class="headerlink" title="ioposts"></a>ioposts</h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;ioposts&quot;&gt;&lt;a href=&quot;#ioposts&quot; class=&quot;headerlink&quot; title=&quot;ioposts&quot;&gt;&lt;/a&gt;ioposts&lt;/h1&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
