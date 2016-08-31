@@ -84,7 +84,7 @@
     <link href="wjpjw.github.io/2016/08/31/independent-game-development/"/>
     <id>wjpjw.github.io/2016/08/31/independent-game-development/</id>
     <published>2016-08-31T04:00:07.000Z</published>
-    <updated>2016-08-31T06:02:53.000Z</updated>
+    <updated>2016-08-31T06:13:36.000Z</updated>
     
     <content type="html"><![CDATA[<p>无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？</p>
 <a id="more"></a>
@@ -208,7 +208,7 @@
     <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
     <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
     <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-08-31T05:20:49.000Z</updated>
+    <updated>2016-08-31T15:37:03.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
@@ -219,6 +219,14 @@
 <p>目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。</p>
 <p>最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。</p>
 <a id="more"></a>
+<h3 id="2016-8-31"><a href="#2016-8-31" class="headerlink" title="2016/8/31"></a>2016/8/31</h3><p>经过研究，发现研究adv. microarchitecture的project选题中，我选择了PIM Cache Replacement Optimization。这门课的选题非常前沿，除了这个话题以外，其他的课题很难找到两篇以上的论文。Cache replacement optimization则是经典话题。</p>
+<p>之前名字差不多的课用C++写过模拟，这门课要用更真实的模拟框架，即SST。这门课老师带队做的MacSim是sst里面的一个component。MacSim是trace-driven cycle-level的异构模拟器，能够为异构提供timing model。这种为论文而产生的工具大多不靠谱，好在老师就是作者，出问题可以很方便地问。</p>
+<p>今天得主要目标是：</p>
+<ol>
+<li>继续写游戏，能写多少是多少。</li>
+<li>开始做医疗项目，不需要花太多时间，有进度即可。</li>
+<li>刷算法题，能写多少是多少。</li>
+</ol>
 ]]></content>
     
     <summary type="html">
