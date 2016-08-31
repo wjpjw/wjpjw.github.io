@@ -128,7 +128,7 @@
         <!-- Post Main Content -->
         <div class="entry-content">
           <p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
-<p>&lt;!–more—&gt;</p>
+<a id="more"></a>
 <h3 id="脚本引擎架构设计"><a href="#脚本引擎架构设计" class="headerlink" title="脚本引擎架构设计"></a>脚本引擎架构设计</h3><ul>
 <li>游戏加载时的init，每帧的update以及用户触摸点击事件touched。这三处可以执行对应的三个python文件，将控制权转交脚本。</li>
 <li>c++应该专注实现图形相关的内容，提供的抽象全部基于图形，与游戏逻辑无关。python实现游戏逻辑，比如Unit是python中的纯逻辑对象，只不过创建它时存储了c++中包含骨骼动画的SkeletonUnit指针地址，和图形对象绑定了。</li>

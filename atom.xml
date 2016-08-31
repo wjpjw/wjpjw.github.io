@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-08-31T05:17:17.000Z</updated>
+  <updated>2016-08-31T05:19:14.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="wjpjw.github.io/2016/08/31/lexical-domain-extension/"/>
     <id>wjpjw.github.io/2016/08/31/lexical-domain-extension/</id>
     <published>2016-08-31T04:30:17.000Z</published>
-    <updated>2016-08-31T05:17:17.000Z</updated>
+    <updated>2016-08-31T05:19:14.000Z</updated>
     
     <content type="html"><![CDATA[<p>词汇积累平时用quizlet，这里主要记一些日常生活里的词汇。</p>
-<p>&lt;!–more—&gt;</p>
+<a id="more"></a>
 <h3 id="汽车相关"><a href="#汽车相关" class="headerlink" title="汽车相关"></a>汽车相关</h3><table>
 <thead>
 <tr>
@@ -73,8 +73,6 @@
     <summary type="html">
     
       &lt;p&gt;词汇积累平时用quizlet，这里主要记一些日常生活里的词汇。&lt;/p&gt;
-&lt;p&gt;&amp;lt;!–more—&amp;gt;&lt;/p&gt;
-&lt;h3 id=&quot;汽车相关&quot;&gt;&lt;a href=&quot;#汽车相关&quot; class=&quot;headerlink&quot; title=&quot;汽车相关&quot;&gt;&lt;/a&gt;汽车相关&lt;/h3&gt;&lt;ta
     
     </summary>
     
@@ -86,10 +84,10 @@
     <link href="wjpjw.github.io/2016/08/31/independent-game-development/"/>
     <id>wjpjw.github.io/2016/08/31/independent-game-development/</id>
     <published>2016-08-31T04:00:07.000Z</published>
-    <updated>2016-08-31T05:17:32.000Z</updated>
+    <updated>2016-08-31T05:20:00.000Z</updated>
     
     <content type="html"><![CDATA[<p>无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？</p>
-<p>&lt;!–more—&gt;</p>
+<a id="more"></a>
 <h2 id="绘画"><a href="#绘画" class="headerlink" title="绘画"></a>绘画</h2><p>之前一直觉得数控板很贵，的确贵，不过那是在屏幕上直接画的，只是板的话一点都不贵。我买了ugee ex07 graphic tablet，迅速上手。以我的天赋，学什么都很快，所以一定要努力，不可太懒散。</p>
 <p>我发现shading还是太难了，看了不少youtube上的视频，真是需要磨练的，而且还费时间，所以我觉得可以不用考虑shading，直接描线+纯色上色，简单干净就好。</p>
 <h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>购买了60美元的spine用来制作骨骼动画，免费的骨骼动画软件没有良好的编程API支持，尝试无效，还是spine好用。骨骼动画其实对美术要求不高，既方便又灵活，我觉得比完全碾压序列帧动画（Frame by frame）。</p>
@@ -102,8 +100,6 @@
     <summary type="html">
     
       &lt;p&gt;无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？&lt;/p&gt;
-&lt;p&gt;&amp;lt;!–more—&amp;gt;&lt;/p&gt;
-&lt;h2 id=&quot;绘画&quot;&gt;&lt;a href=&quot;#绘画&quot; class=&quot;headerlink&quot; title=&quot;绘画&quot;&gt;&lt;/a&gt;绘画&lt;/h2&gt;&lt;p&gt;之前一
     
     </summary>
     
@@ -115,10 +111,10 @@
     <link href="wjpjw.github.io/2016/08/30/python-syntax/"/>
     <id>wjpjw.github.io/2016/08/30/python-syntax/</id>
     <published>2016-08-31T03:52:42.000Z</published>
-    <updated>2016-08-31T05:17:10.000Z</updated>
+    <updated>2016-08-31T05:19:09.000Z</updated>
     
     <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
-<p>&lt;!–more—&gt;</p>
+<a id="more"></a>
 <h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
 <li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
 <li>启动或关闭服务：systemctl start/stop example.service</li>
@@ -132,8 +128,6 @@
     <summary type="html">
     
       &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
-&lt;p&gt;&amp;lt;!–more—&amp;gt;&lt;/p&gt;
-&lt;h3 id=&quot;配置工具&quot;&gt;&lt;a href=&quot;
     
     </summary>
     
@@ -145,11 +139,10 @@
     <link href="wjpjw.github.io/2016/08/30/cpp-core-guideline/"/>
     <id>wjpjw.github.io/2016/08/30/cpp-core-guideline/</id>
     <published>2016-08-31T03:06:54.000Z</published>
-    <updated>2016-08-31T05:17:36.000Z</updated>
+    <updated>2016-08-31T05:20:12.000Z</updated>
     
     <content type="html"><![CDATA[<p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
-<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。</p>
-<p>&lt;!–more—&gt;</p>
+<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
 <h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><ol>
 <li>RAII+值语义是最方便的。所有权明确、生命周期明确、异常安全。依靠现代c++提供的各种值语义工具，自己的类大部分都可以实现值语义。</li>
 <li>应该只允许存在const全局变量。单例也不要用。对全局变量的依赖会干扰判断，影响正确性分析。</li>
@@ -172,7 +165,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异
+      &lt;p&gt;C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。&lt;/p&gt;
+&lt;p&gt;不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。&lt;br&gt;
     
     </summary>
     
@@ -184,27 +178,21 @@
     <link href="wjpjw.github.io/2016/08/30/lang-impl-china/"/>
     <id>wjpjw.github.io/2016/08/30/lang-impl-china/</id>
     <published>2016-08-31T02:51:30.000Z</published>
-    <updated>2016-08-31T05:17:28.000Z</updated>
+    <updated>2016-08-31T05:19:44.000Z</updated>
     
-    <content type="html"><![CDATA[<ol>
+    <content type="html"><![CDATA[<p>偶尔能在知乎上学到知识。</p>
+<a id="more"></a>
+<ol>
 <li>ATS-PL-SYS: Hongwei Xi</li>
 <li>F#: Tao Liu</li>
 <li>sql: 刘英武</li>
 <li>php: 惠新宸</li>
 </ol>
-<p>&lt;!–more—&gt;</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;ol&gt;
-&lt;li&gt;ATS-PL-SYS: Hongwei Xi&lt;/li&gt;
-&lt;li&gt;F#: Tao Liu&lt;/li&gt;
-&lt;li&gt;sql: 刘英武&lt;/li&gt;
-&lt;li&gt;php: 惠新宸&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;lt;!–more—&amp;gt;&lt;/p&gt;
-
+      &lt;p&gt;偶尔能在知乎上学到知识。&lt;/p&gt;
     
     </summary>
     
@@ -216,7 +204,7 @@
     <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
     <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
     <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-08-31T05:17:56.000Z</updated>
+    <updated>2016-08-31T05:20:49.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
@@ -226,14 +214,19 @@
 </ol>
 <p>目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。</p>
 <p>最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。</p>
-<p>&lt;!–more—&gt;</p>
+<a id="more"></a>
 ]]></content>
     
     <summary type="html">
     
       &lt;h3 id=&quot;2016-8-30&quot;&gt;&lt;a href=&quot;#2016-8-30&quot; class=&quot;headerlink&quot; title=&quot;2016/8/30&quot;&gt;&lt;/a&gt;2016/8/30&lt;/h3&gt;&lt;p&gt;今天得主要目标是：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;搭建blog，hexo+atom，用m
+&lt;li&gt;搭建blog，hexo+atom，用md写日志。&lt;em&gt;——写了很多很多很多！&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;抽象cqscripts的游戏逻辑。&lt;em&gt;——写了一些，通过了stub测试！&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;研究adv. microarchitecture的project选题。&lt;em&gt;——哪有空，明天再说！&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。&lt;/p&gt;
+&lt;p&gt;最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。&lt;/p&gt;
     
     </summary>
     
@@ -245,10 +238,10 @@
     <link href="wjpjw.github.io/2016/08/30/boost-python/"/>
     <id>wjpjw.github.io/2016/08/30/boost-python/</id>
     <published>2016-08-30T23:20:00.000Z</published>
-    <updated>2016-08-31T05:17:39.000Z</updated>
+    <updated>2016-08-31T05:20:32.000Z</updated>
     
     <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
-<p>&lt;!–more—&gt;</p>
+<a id="more"></a>
 <h3 id="脚本引擎架构设计"><a href="#脚本引擎架构设计" class="headerlink" title="脚本引擎架构设计"></a>脚本引擎架构设计</h3><ul>
 <li>游戏加载时的init，每帧的update以及用户触摸点击事件touched。这三处可以执行对应的三个python文件，将控制权转交脚本。</li>
 <li>c++应该专注实现图形相关的内容，提供的抽象全部基于图形，与游戏逻辑无关。python实现游戏逻辑，比如Unit是python中的纯逻辑对象，只不过创建它时存储了c++中包含骨骼动画的SkeletonUnit指针地址，和图形对象绑定了。</li>
@@ -286,7 +279,6 @@
     <summary type="html">
     
       &lt;p&gt;Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。&lt;/p&gt;
-&lt;p&gt;&amp;lt;!–more—&amp;gt
     
     </summary>
     
