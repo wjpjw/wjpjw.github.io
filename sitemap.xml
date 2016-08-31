@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>wjpjw.github.io/2016/08/31/independent-game-development/</loc>
+    
+    <lastmod>2016-08-31T06:02:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>wjpjw.github.io/tags/index.html</loc>
     
-    <lastmod>2016-08-31T06:00:06.000Z</lastmod>
+    <lastmod>2016-08-31T06:02:29.000Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>wjpjw.github.io/2016/08/30/cpp-core-guideline/</loc>
     
     <lastmod>2016-08-31T05:20:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/08/31/independent-game-development/</loc>
-    
-    <lastmod>2016-08-31T05:20:00.000Z</lastmod>
     
   </url>
   
