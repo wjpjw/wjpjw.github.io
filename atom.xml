@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-08-30T19:53:50.000Z</updated>
+  <updated>2016-08-31T02:58:14.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -16,29 +16,118 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="wjpjw.github.io/2016/08/29/hello-world/"/>
-    <id>wjpjw.github.io/2016/08/29/hello-world/</id>
-    <published>2016-08-29T19:27:52.000Z</published>
-    <updated>2016-08-30T19:53:50.000Z</updated>
+    <title>华人实现的语言</title>
+    <link href="wjpjw.github.io/2016/08/30/lang-impl-china/"/>
+    <id>wjpjw.github.io/2016/08/30/lang-impl-china/</id>
+    <published>2016-08-31T02:51:30.000Z</published>
+    <updated>2016-08-31T02:58:14.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<ol>
+<li>ATS-PL-SYS: Hongwei Xi</li>
+<li>F#: Tao Liu</li>
+<li>sql: 刘英武</li>
+<li>php: 惠新宸</li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;ol&gt;
+&lt;li&gt;ATS-PL-SYS: Hongwei Xi&lt;/li&gt;
+&lt;li&gt;F#: Tao Liu&lt;/li&gt;
+&lt;li&gt;sql: 刘英武&lt;/li&gt;
+&lt;li&gt;php: 惠新宸&lt;/li&gt;
+&lt;/ol&gt;
+
     
     </summary>
     
+    
+      <category term="奇怪的知识 技术" scheme="wjpjw.github.io/tags/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86-%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>9月日志</title>
+    <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
+    <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
+    <published>2016-08-31T01:41:04.000Z</published>
+    <updated>2016-08-31T02:57:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
+<ol>
+<li>搭建blog，hexo+atom，用md写日志。</li>
+<li>抽象cqscripts的游戏逻辑。</li>
+<li>研究adv. microarchitecture的project选题。</li>
+<li>写一篇关于用python写游戏脚本的博文。</li>
+</ol>
+<p>目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。</p>
+<p>最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;2016-8-30&quot;&gt;&lt;a href=&quot;#2016-8-30&quot; class=&quot;headerlink&quot; title=&quot;2016/8/30&quot;&gt;&lt;/a&gt;2016/8/30&lt;/h3&gt;&lt;p&gt;今天得主要目标是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;搭建blog，hexo+atom，用m
+    
+    </summary>
+    
+    
+      <category term="生活 技术" scheme="wjpjw.github.io/tags/%E7%94%9F%E6%B4%BB-%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Python作C++游戏的脚本</title>
+    <link href="wjpjw.github.io/2016/08/30/boost-python/"/>
+    <id>wjpjw.github.io/2016/08/30/boost-python/</id>
+    <published>2016-08-30T23:20:00.000Z</published>
+    <updated>2016-08-31T01:33:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
+<h3 id="脚本引擎架构设计"><a href="#脚本引擎架构设计" class="headerlink" title="脚本引擎架构设计"></a>脚本引擎架构设计</h3><ul>
+<li>游戏加载时的init，每帧的update以及用户触摸点击事件touched。这三处可以执行对应的三个python文件，将控制权转交脚本。</li>
+<li>c++应该专注实现图形相关的内容，提供的抽象全部基于图形，与游戏逻辑无关。python实现游戏逻辑，比如Unit是python中的纯逻辑对象，只不过创建它时存储了c++中包含骨骼动画的SkeletonUnit指针地址，和图形对象绑定了。</li>
+<li>c++应该把图形相关的类、类函数、计算密集的函数导出，提供给python。python再浅包装一下c++暴露的原始接口，提供文档和默认参数，方便python开发、测试。</li>
+</ul>
+<h3 id="boost-python的细节"><a href="#boost-python的细节" class="headerlink" title="boost/python的细节"></a>boost/python的细节</h3><ul>
+<li>并不是所有类都可以作为python对象的，很多类都delete掉了拷贝构造函数，这种类不能导出到python模块里，需要另写一个简单的代理类。</li>
+<li>导出时随便def多少函数、变量，不影响类结构的完整导出。一个类如果所有成员变量类型都对python解释器已知，即使不导出任何方法也是可以作为python对象存储所有数据的。</li>
+<li>def的所有函数在python看来都是不正常的，无参数默认值，无形参，所以最好在python里包装一下顺便写个文档。</li>
+<li>所有c++对象转python对象都是根据指针进行一层deep copy，把指针所指的数据复制，但不会把对象里的指针层层复制。</li>
+<li>想要把指针类型转化为python object，最好不用ptr()函数，而是用reinterpret_cast<int>。</int></li>
+</ul>
+<h3 id="为何要使用脚本"><a href="#为何要使用脚本" class="headerlink" title="为何要使用脚本"></a>为何要使用脚本</h3><p>现代c++非常强大，连lambda支持都完爆python，黑科技无穷无尽，写起来其实相当方便，但仍有一些缺点：</p>
+<ul>
+<li>c++需要VS或XCode支持。其他环境，例如武装到牙齿的emacs对复杂的c++项目依旧无力，IDE的整合是必需的。VS现在做的非常好用，但是特别笨重，又慢又占内存。不像编辑器打开了就写，随时随地的碎片时间可以利用起来。</li>
+<li>c++随便改几句，编译一下就要几分钟甚至半小时。这导致无论开发还是debug都极其痛苦。脚本语言支持的热更新不仅方便了玩家，也节约了开发者的时间。</li>
+<li>c++的方便高效建立在合理使用基础之上，门槛很高。即使合理使用了，还是有”声明”的额外书写代价，所以总归比脚本语言慢一些。</li>
+</ul>
+<h3 id="Python语言作脚本的优缺点"><a href="#Python语言作脚本的优缺点" class="headerlink" title="Python语言作脚本的优缺点"></a>Python语言作脚本的优缺点</h3><p>优点：</p>
+<ul>
+<li>JS，Lua都没有完备的类，与c++的逻辑绑定需要额外抽象成本。</li>
+<li>JS其实很好，然而V8不支持ios设备。Boost/python支持各平台。</li>
+<li>Python可以很方便地序列化。</li>
+<li>Python作为抽象工具比较方便，语法甜，轮子也多。</li>
+<li>layout控制语法，看起来清爽。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>计算性能低：V8&gt;Lua&gt;Python。</li>
+<li>layout控制语法的设计会导致歧义、无法压缩脚本、修改代码时的麻烦。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。&lt;/p&gt;
+&lt;h3 id=&quot;脚本引擎架构设计&quot;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   

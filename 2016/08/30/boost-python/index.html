@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 使用Python作C++游戏的脚本 · Jipeng's Blog</title><meta name="description" content="使用Python作C++游戏的脚本 - Jipeng Wu"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="wjpjw.github.io/atom.xml" title="Jipeng's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/wjpjw" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">使用Python作C++游戏的脚本</h1><div class="post-info">Aug 30, 2016</div><div class="post-content"><p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
+<h3 id="脚本引擎架构设计"><a href="#脚本引擎架构设计" class="headerlink" title="脚本引擎架构设计"></a>脚本引擎架构设计</h3><ul>
+<li>游戏加载时的init，每帧的update以及用户触摸点击事件touched。这三处可以执行对应的三个python文件，将控制权转交脚本。</li>
+<li>c++应该专注实现图形相关的内容，提供的抽象全部基于图形，与游戏逻辑无关。python实现游戏逻辑，比如Unit是python中的纯逻辑对象，只不过创建它时存储了c++中包含骨骼动画的SkeletonUnit指针地址，和图形对象绑定了。</li>
+<li>c++应该把图形相关的类、类函数、计算密集的函数导出，提供给python。python再浅包装一下c++暴露的原始接口，提供文档和默认参数，方便python开发、测试。</li>
+</ul>
+<h3 id="boost-python的细节"><a href="#boost-python的细节" class="headerlink" title="boost/python的细节"></a>boost/python的细节</h3><ul>
+<li>并不是所有类都可以作为python对象的，很多类都delete掉了拷贝构造函数，这种类不能导出到python模块里，需要另写一个简单的代理类。</li>
+<li>导出时随便def多少函数、变量，不影响类结构的完整导出。一个类如果所有成员变量类型都对python解释器已知，即使不导出任何方法也是可以作为python对象存储所有数据的。</li>
+<li>def的所有函数在python看来都是不正常的，无参数默认值，无形参，所以最好在python里包装一下顺便写个文档。</li>
+<li>所有c++对象转python对象都是根据指针进行一层deep copy，把指针所指的数据复制，但不会把对象里的指针层层复制。</li>
+<li>想要把指针类型转化为python object，最好不用ptr()函数，而是用reinterpret_cast<int>。</int></li>
+</ul>
+<h3 id="为何要使用脚本"><a href="#为何要使用脚本" class="headerlink" title="为何要使用脚本"></a>为何要使用脚本</h3><p>现代c++非常强大，连lambda支持都完爆python，黑科技无穷无尽，写起来其实相当方便，但仍有一些缺点：</p>
+<ul>
+<li>c++需要VS或XCode支持。其他环境，例如武装到牙齿的emacs对复杂的c++项目依旧无力，IDE的整合是必需的。VS现在做的非常好用，但是特别笨重，又慢又占内存。不像编辑器打开了就写，随时随地的碎片时间可以利用起来。</li>
+<li>c++随便改几句，编译一下就要几分钟甚至半小时。这导致无论开发还是debug都极其痛苦。脚本语言支持的热更新不仅方便了玩家，也节约了开发者的时间。</li>
+<li>c++的方便高效建立在合理使用基础之上，门槛很高。即使合理使用了，还是有”声明”的额外书写代价，所以总归比脚本语言慢一些。</li>
+</ul>
+<h3 id="Python语言作脚本的优缺点"><a href="#Python语言作脚本的优缺点" class="headerlink" title="Python语言作脚本的优缺点"></a>Python语言作脚本的优缺点</h3><p>优点：</p>
+<ul>
+<li>JS，Lua都没有完备的类，与c++的逻辑绑定需要额外抽象成本。</li>
+<li>JS其实很好，然而V8不支持ios设备。Boost/python支持各平台。</li>
+<li>Python可以很方便地序列化。</li>
+<li>Python作为抽象工具比较方便，语法甜，轮子也多。</li>
+<li>layout控制语法，看起来清爽。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>计算性能低：V8&gt;Lua&gt;Python。</li>
+<li>layout控制语法的设计会导致歧义、无法压缩脚本、修改代码时的麻烦。</li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/08/30/2016-9-log/" class="prev">上一篇</a></div><div class="copyright"><p>© 2016 <a href="wjpjw.github.io">Jipeng Wu</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
