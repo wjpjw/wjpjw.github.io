@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-08-31T04:19:22.000Z</updated>
+  <updated>2016-08-31T04:46:40.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -14,6 +14,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>生活中的英语</title>
+    <link href="wjpjw.github.io/2016/08/31/lexical-domain-extension/"/>
+    <id>wjpjw.github.io/2016/08/31/lexical-domain-extension/</id>
+    <published>2016-08-31T04:30:17.000Z</published>
+    <updated>2016-08-31T04:46:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>词汇积累平时用quizlet，这里主要记一些日常生活里的词汇。</p>
+<h3 id="汽车相关"><a href="#汽车相关" class="headerlink" title="汽车相关"></a>汽车相关</h3><table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>备胎</td>
+<td>spare tire</td>
+</tr>
+<tr>
+<td>千斤顶</td>
+<td>jack    </td>
+</tr>
+<tr>
+<td>漏气轮胎</td>
+<td>flat tire</td>
+</tr>
+<tr>
+<td>拧螺丝的工具</td>
+<td>tire iron或breaker bar</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cs相关"><a href="#cs相关" class="headerlink" title="cs相关"></a>cs相关</h3><table>
+<thead>
+<tr>
+<th>英文</th>
+<th>读音</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x[1]</td>
+<td>x sub one</td>
+</tr>
+<tr>
+<td>multi-xxx</td>
+<td>maotai-xxx</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;词汇积累平时用quizlet，这里主要记一些日常生活里的词汇。&lt;/p&gt;
+&lt;h3 id=&quot;汽车相关&quot;&gt;&lt;a href=&quot;#汽车相关&quot; class=&quot;headerlink&quot; title=&quot;汽车相关&quot;&gt;&lt;/a&gt;汽车相关&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;中
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>开始独立游戏开发</title>
@@ -143,14 +210,13 @@
     <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
     <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
     <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-08-31T03:00:03.000Z</updated>
+    <updated>2016-08-31T04:34:22.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
-<li>搭建blog，hexo+atom，用md写日志。</li>
-<li>抽象cqscripts的游戏逻辑。</li>
-<li>研究adv. microarchitecture的project选题。</li>
-<li>写一篇关于用python写游戏脚本的博文。</li>
+<li>搭建blog，hexo+atom，用md写日志。<em>——写了很多很多很多！</em></li>
+<li>抽象cqscripts的游戏逻辑。<em>——写了一些，通过了stub测试！</em></li>
+<li>研究adv. microarchitecture的project选题。<em>——哪有空，明天再说！</em></li>
 </ol>
 <p>目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。</p>
 <p>最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。</p>
