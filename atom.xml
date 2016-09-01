@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-08-31T05:19:14.000Z</updated>
+  <updated>2016-09-01T04:35:42.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -16,11 +16,65 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>高级微处理器架构</title>
+    <link href="wjpjw.github.io/2016/09/01/adv-microarchitecture/"/>
+    <id>wjpjw.github.io/2016/09/01/adv-microarchitecture/</id>
+    <published>2016-09-01T04:35:09.000Z</published>
+    <updated>2016-09-01T04:35:42.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="学术" scheme="wjpjw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大数据</title>
+    <link href="wjpjw.github.io/2016/09/01/big-data/"/>
+    <id>wjpjw.github.io/2016/09/01/big-data/</id>
+    <published>2016-09-01T04:34:28.000Z</published>
+    <updated>2016-09-01T04:34:46.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="学术" scheme="wjpjw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Secure Computing System</title>
+    <link href="wjpjw.github.io/2016/09/01/secure-computing-system/"/>
+    <id>wjpjw.github.io/2016/09/01/secure-computing-system/</id>
+    <published>2016-09-01T04:22:16.000Z</published>
+    <updated>2016-09-01T04:25:34.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="学术" scheme="wjpjw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>生活中的英语</title>
     <link href="wjpjw.github.io/2016/08/31/lexical-domain-extension/"/>
     <id>wjpjw.github.io/2016/08/31/lexical-domain-extension/</id>
     <published>2016-08-31T04:30:17.000Z</published>
-    <updated>2016-08-31T05:19:14.000Z</updated>
+    <updated>2016-09-01T04:27:13.000Z</updated>
     
     <content type="html"><![CDATA[<p>词汇积累平时用quizlet，这里主要记一些日常生活里的词汇。</p>
 <a id="more"></a>
@@ -77,6 +131,8 @@
     </summary>
     
     
+      <category term="常识" scheme="wjpjw.github.io/tags/%E5%B8%B8%E8%AF%86/"/>
+    
   </entry>
   
   <entry>
@@ -84,7 +140,7 @@
     <link href="wjpjw.github.io/2016/08/31/independent-game-development/"/>
     <id>wjpjw.github.io/2016/08/31/independent-game-development/</id>
     <published>2016-08-31T04:00:07.000Z</published>
-    <updated>2016-08-31T06:13:36.000Z</updated>
+    <updated>2016-09-01T04:26:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？</p>
 <a id="more"></a>
@@ -104,9 +160,9 @@
     </summary>
     
     
-      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="日志" scheme="wjpjw.github.io/tags/%E6%97%A5%E5%BF%97/"/>
     
-      <category term="生活" scheme="wjpjw.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -115,7 +171,7 @@
     <link href="wjpjw.github.io/2016/08/30/python-syntax/"/>
     <id>wjpjw.github.io/2016/08/30/python-syntax/</id>
     <published>2016-08-31T03:52:42.000Z</published>
-    <updated>2016-08-31T05:19:09.000Z</updated>
+    <updated>2016-09-01T04:27:24.000Z</updated>
     
     <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
 <a id="more"></a>
@@ -136,6 +192,10 @@
     </summary>
     
     
+      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="常识" scheme="wjpjw.github.io/tags/%E5%B8%B8%E8%AF%86/"/>
+    
   </entry>
   
   <entry>
@@ -143,7 +203,7 @@
     <link href="wjpjw.github.io/2016/08/30/cpp-core-guideline/"/>
     <id>wjpjw.github.io/2016/08/30/cpp-core-guideline/</id>
     <published>2016-08-31T03:06:54.000Z</published>
-    <updated>2016-08-31T05:20:12.000Z</updated>
+    <updated>2016-09-01T04:27:39.000Z</updated>
     
     <content type="html"><![CDATA[<p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
 <p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
@@ -175,18 +235,21 @@
     </summary>
     
     
+      <category term="日志" scheme="wjpjw.github.io/tags/%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="胡扯" scheme="wjpjw.github.io/tags/%E8%83%A1%E6%89%AF/"/>
+    
   </entry>
   
   <entry>
-    <title>华人实现的语言</title>
+    <title>奇奇怪怪的知识</title>
     <link href="wjpjw.github.io/2016/08/30/lang-impl-china/"/>
     <id>wjpjw.github.io/2016/08/30/lang-impl-china/</id>
     <published>2016-08-31T02:51:30.000Z</published>
-    <updated>2016-08-31T05:19:44.000Z</updated>
+    <updated>2016-09-01T04:26:08.000Z</updated>
     
-    <content type="html"><![CDATA[<p>偶尔能在知乎上学到知识。</p>
-<a id="more"></a>
-<ol>
+    <content type="html"><![CDATA[<a id="more"></a>
+<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
 <li>ATS-PL-SYS: Hongwei Xi</li>
 <li>F#: Tao Liu</li>
 <li>sql: 刘英武</li>
@@ -196,10 +259,14 @@
     
     <summary type="html">
     
-      &lt;p&gt;偶尔能在知乎上学到知识。&lt;/p&gt;
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;华人实现的语言&quot;&gt;&lt;a href=&quot;#华人实现的语言&quot; class=&quot;headerlink&quot; title=&quot;华人实现的语言&quot;&gt;&lt;/a&gt;华人实现的语言&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;ATS-PL-SYS: Hongwei Xi&lt;/li
     
     </summary>
     
+    
+      <category term="常识" scheme="wjpjw.github.io/tags/%E5%B8%B8%E8%AF%86/"/>
     
   </entry>
   
@@ -208,11 +275,11 @@
     <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
     <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
     <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-08-31T15:37:03.000Z</updated>
+    <updated>2016-09-01T04:33:39.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
-<li>搭建blog，hexo+atom，用md写日志。<em>——写了很多很多很多！</em></li>
+<li>搭建blog，hexo+atom，用md写日志。<em>——写了很多！</em></li>
 <li>抽象cqscripts的游戏逻辑。<em>——写了一些，通过了stub测试！</em></li>
 <li>研究adv. microarchitecture的project选题。<em>——哪有空，明天再说！</em></li>
 </ol>
@@ -221,11 +288,19 @@
 <a id="more"></a>
 <h3 id="2016-8-31"><a href="#2016-8-31" class="headerlink" title="2016/8/31"></a>2016/8/31</h3><p>经过研究，发现研究adv. microarchitecture的project选题中，我选择了PIM Cache Replacement Optimization。这门课的选题非常前沿，除了这个话题以外，其他的课题很难找到两篇以上的论文。Cache replacement optimization则是经典话题。</p>
 <p>之前名字差不多的课用C++写过模拟，这门课要用更真实的模拟框架，即SST。这门课老师带队做的MacSim是sst里面的一个component。MacSim是trace-driven cycle-level的异构模拟器，能够为异构提供timing model。这种为论文而产生的工具大多不靠谱，好在老师就是作者，出问题可以很方便地问。</p>
+<p>此外，我发现secure computing system不需要课堂参与，但需要海量阅读，我需要在这周花大量时间阅读、整理，不懂的发邮件询问。加油！</p>
 <p>今天得主要目标是：</p>
 <ol>
 <li>继续写游戏，能写多少是多少。</li>
 <li>开始做医疗项目，不需要花太多时间，有进度即可。</li>
 <li>刷算法题，能写多少是多少。</li>
+</ol>
+<p><em>很遗憾今天所有目标都没达成，看了一部纪录片the Chinese Mayor和一部cg电影，然后就12点了！</em></p>
+<h3 id="2016-9-1"><a href="#2016-9-1" class="headerlink" title="2016/9/1"></a>2016/9/1</h3><p>目标：</p>
+<ol>
+<li>做医疗项目。不hangout，在slack上报告进度。</li>
+<li>怒写游戏逻辑，能写多少是多少。</li>
+<li>整理secure computing system的week1~3之全部。</li>
 </ol>
 ]]></content>
     
@@ -233,7 +308,7 @@
     
       &lt;h3 id=&quot;2016-8-30&quot;&gt;&lt;a href=&quot;#2016-8-30&quot; class=&quot;headerlink&quot; title=&quot;2016/8/30&quot;&gt;&lt;/a&gt;2016/8/30&lt;/h3&gt;&lt;p&gt;今天得主要目标是：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;搭建blog，hexo+atom，用md写日志。&lt;em&gt;——写了很多很多很多！&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;搭建blog，hexo+atom，用md写日志。&lt;em&gt;——写了很多！&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;抽象cqscripts的游戏逻辑。&lt;em&gt;——写了一些，通过了stub测试！&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;研究adv. microarchitecture的project选题。&lt;em&gt;——哪有空，明天再说！&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -243,6 +318,8 @@
     </summary>
     
     
+      <category term="日志" scheme="wjpjw.github.io/tags/%E6%97%A5%E5%BF%97/"/>
+    
   </entry>
   
   <entry>
@@ -250,7 +327,7 @@
     <link href="wjpjw.github.io/2016/08/30/boost-python/"/>
     <id>wjpjw.github.io/2016/08/30/boost-python/</id>
     <published>2016-08-30T23:20:00.000Z</published>
-    <updated>2016-08-31T05:20:32.000Z</updated>
+    <updated>2016-09-01T04:26:36.000Z</updated>
     
     <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
 <a id="more"></a>
@@ -294,6 +371,8 @@
     
     </summary>
     
+    
+      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
