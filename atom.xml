@@ -56,10 +56,9 @@
     <link href="wjpjw.github.io/2016/09/01/secure-computing-system/"/>
     <id>wjpjw.github.io/2016/09/01/secure-computing-system/</id>
     <published>2016-09-01T04:22:16.000Z</published>
-    <updated>2016-09-02T00:30:23.000Z</updated>
+    <updated>2016-09-02T00:31:26.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><p>####SECRECY, INTEGRITY, AND DENIAL OF SERVICE</p>
-<ol>
+    <content type="html"><![CDATA[<h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
 <li>Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.</li>
 <li>Integrity: protecting information from being modified by unauthorized parties.</li>
 <li>Denial of service: 可能是机器故障导致信息损失。</li>
@@ -104,8 +103,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;安全计算系统的基本概念&quot;&gt;&lt;a href=&quot;#安全计算系统的基本概念&quot; class=&quot;headerlink&quot; title=&quot;安全计算系统的基本概念&quot;&gt;&lt;/a&gt;安全计算系统的基本概念&lt;/h1&gt;&lt;h3 id=&quot;What-is-Computer-Security-gassbook-c1&quot;&gt;&lt;a href=&quot;#What-is-Computer-Security-gassbook-c1&quot; class=&quot;headerlink&quot; title=&quot;What is Computer Security(gassbook-c1)&quot;&gt;&lt;/a&gt;What is Computer Security(gassbook-c1)&lt;/h3&gt;&lt;p&gt;####SECRECY, INTEGRITY, AND DENIAL OF SERVICE&lt;/p&gt;
-&lt;ol&gt;
+      &lt;h1 id=&quot;安全计算系统的基本概念&quot;&gt;&lt;a href=&quot;#安全计算系统的基本概念&quot; class=&quot;headerlink&quot; title=&quot;安全计算系统的基本概念&quot;&gt;&lt;/a&gt;安全计算系统的基本概念&lt;/h1&gt;&lt;h3 id=&quot;What-is-Computer-Security-gassbook-c1&quot;&gt;&lt;a href=&quot;#What-is-Computer-Security-gassbook-c1&quot; class=&quot;headerlink&quot; title=&quot;What is Computer Security(gassbook-c1)&quot;&gt;&lt;/a&gt;What is Computer Security(gassbook-c1)&lt;/h3&gt;&lt;h4 id=&quot;SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot;&gt;&lt;a href=&quot;#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot; class=&quot;headerlink&quot; title=&quot;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&quot;&gt;&lt;/a&gt;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.&lt;/li&gt;
 &lt;li&gt;Integrity: protecting information from being modified by unauthorized parties.&lt;/li&gt;
 &lt;li&gt;Denial of service: 可能是机器故障导致信息损失。&lt;/li&gt;
