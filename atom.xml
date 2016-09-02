@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-09-01T04:35:42.000Z</updated>
+  <updated>2016-09-02T00:30:29.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="wjpjw.github.io/2016/09/01/adv-microarchitecture/"/>
     <id>wjpjw.github.io/2016/09/01/adv-microarchitecture/</id>
     <published>2016-09-01T04:35:09.000Z</published>
-    <updated>2016-09-01T04:35:42.000Z</updated>
+    <updated>2016-09-02T00:30:29.000Z</updated>
     
     <summary type="html">
     
@@ -56,7 +56,7 @@
     <link href="wjpjw.github.io/2016/09/01/secure-computing-system/"/>
     <id>wjpjw.github.io/2016/09/01/secure-computing-system/</id>
     <published>2016-09-01T04:22:16.000Z</published>
-    <updated>2016-09-01T22:13:11.000Z</updated>
+    <updated>2016-09-02T00:30:23.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><p>####SECRECY, INTEGRITY, AND DENIAL OF SERVICE</p>
 <ol>
@@ -65,6 +65,7 @@
 <li>Denial of service: 可能是机器故障导致信息损失。</li>
 </ol>
 <p>计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。</p>
+<a id="more"></a>
 <h4 id="可信系统评价标准"><a href="#可信系统评价标准" class="headerlink" title="可信系统评价标准"></a>可信系统评价标准</h4><p>美国国防部发布橙皮书：Trusted Computer System Evaluation Criteria，定义了安全概念。商用可以很容易通过加装一些addon达到C1或C2。只有军用才会追求A1或B3。<br><img src="/images/secure-level.png" alt="软件安全等级"></p>
 <h3 id="Trusted-Computing"><a href="#Trusted-Computing" class="headerlink" title="Trusted Computing"></a>Trusted Computing</h3><h4 id="1-什么是TC"><a href="#1-什么是TC" class="headerlink" title="1. 什么是TC?"></a>1. 什么是TC?</h4><p>The Trusted Computing Group (TCG)是Microsoft, Intel, IBM, HP and AMD联合提出的更加安全的PC标准。这里安全的定义颇有争议。按TCG标准做的PC从微软、intel角度来看更可信，但对PC拥有者来说反而更不可信。TCG将你的控制权更多地转移给硬件、软件提供商。TC在这些公司叫法都不一样，故意让公众对此感到混淆。</p>
 <h4 id="2-TC做的是什么？"><a href="#2-TC做的是什么？" class="headerlink" title="2. TC做的是什么？"></a>2. TC做的是什么？</h4><p>TC提供一个让你无权控制、更改软件的计算平台。动机源于digital rights management (DRM)。</p>
@@ -99,8 +100,7 @@
 </ol>
 <p>各种安全软件提供商会血崩。</p>
 <p>有权利掌控TC基础设施的一方会拥有强大的独裁权力，可能被滥用。</p>
-<h1 id="Design-principles-and-hardware-low-level-mechanisms"><a href="#Design-principles-and-hardware-low-level-mechanisms" class="headerlink" title="Design principles and hardware/low level mechanisms"></a>Design principles and hardware/low level mechanisms</h1><a id="more"></a>
-]]></content>
+<h1 id="Design-principles-and-hardware-low-level-mechanisms"><a href="#Design-principles-and-hardware-low-level-mechanisms" class="headerlink" title="Design principles and hardware/low level mechanisms"></a>Design principles and hardware/low level mechanisms</h1>]]></content>
     
     <summary type="html">
     
@@ -111,41 +111,6 @@
 &lt;li&gt;Denial of service: 可能是机器故障导致信息损失。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。&lt;/p&gt;
-&lt;h4 id=&quot;可信系统评价标准&quot;&gt;&lt;a href=&quot;#可信系统评价标准&quot; class=&quot;headerlink&quot; title=&quot;可信系统评价标准&quot;&gt;&lt;/a&gt;可信系统评价标准&lt;/h4&gt;&lt;p&gt;美国国防部发布橙皮书：Trusted Computer System Evaluation Criteria，定义了安全概念。商用可以很容易通过加装一些addon达到C1或C2。只有军用才会追求A1或B3。&lt;br&gt;&lt;img src=&quot;/images/secure-level.png&quot; alt=&quot;软件安全等级&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Trusted-Computing&quot;&gt;&lt;a href=&quot;#Trusted-Computing&quot; class=&quot;headerlink&quot; title=&quot;Trusted Computing&quot;&gt;&lt;/a&gt;Trusted Computing&lt;/h3&gt;&lt;h4 id=&quot;1-什么是TC&quot;&gt;&lt;a href=&quot;#1-什么是TC&quot; class=&quot;headerlink&quot; title=&quot;1. 什么是TC?&quot;&gt;&lt;/a&gt;1. 什么是TC?&lt;/h4&gt;&lt;p&gt;The Trusted Computing Group (TCG)是Microsoft, Intel, IBM, HP and AMD联合提出的更加安全的PC标准。这里安全的定义颇有争议。按TCG标准做的PC从微软、intel角度来看更可信，但对PC拥有者来说反而更不可信。TCG将你的控制权更多地转移给硬件、软件提供商。TC在这些公司叫法都不一样，故意让公众对此感到混淆。&lt;/p&gt;
-&lt;h4 id=&quot;2-TC做的是什么？&quot;&gt;&lt;a href=&quot;#2-TC做的是什么？&quot; class=&quot;headerlink&quot; title=&quot;2. TC做的是什么？&quot;&gt;&lt;/a&gt;2. TC做的是什么？&lt;/h4&gt;&lt;p&gt;TC提供一个让你无权控制、更改软件的计算平台。动机源于digital rights management (DRM)。&lt;/p&gt;
-&lt;p&gt;TC使得如下可能成立，例如：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;卖一个只准拷贝三次的音乐。&lt;/li&gt;
-&lt;li&gt;必须24小时看完的电影，即租用软件。&lt;/li&gt;
-&lt;li&gt;禁止使用unlicensed software。&lt;/li&gt;
-&lt;li&gt;TC app可以互相依赖，non-TC app被各种歧视。&lt;/li&gt;
-&lt;li&gt;让政府部门创立的doc一创建就是classified，不会泄露。&lt;/li&gt;
-&lt;li&gt;远程审查，用traitor tracing的方式举报非法资源，远程删除某人机器上的音乐。&lt;/li&gt;
-&lt;li&gt;office可以用只有微软产品才能访问的秘钥，使得其他软件无法打开doc等。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;当然TC不会立刻让以前的东西用不了，会潜移默化，逐步实施。TC-PC必须比普通PC更好用，否则无法流行。&lt;/p&gt;
-&lt;h4 id=&quot;3-TC是如何工作的&quot;&gt;&lt;a href=&quot;#3-TC是如何工作的&quot; class=&quot;headerlink&quot; title=&quot;3. TC是如何工作的?&quot;&gt;&lt;/a&gt;3. TC是如何工作的?&lt;/h4&gt;&lt;p&gt;TC为以后的PC提供一个监视与举报挂载组件。第一阶段的TC倾向于使用Fritz芯片——焊在主板上的智能芯片或dongle。当前的TC倾向于五个组件：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Fritz芯片&lt;/li&gt;
-&lt;li&gt;CPU中的curtained memory机制&lt;/li&gt;
-&lt;li&gt;每个TC程序中的安全内核（微软称之为“NCA”）&lt;/li&gt;
-&lt;li&gt;一个操作系统安全内核（微软称之为“Nexus”）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;早期TC和Fritz监视boot进程，这样只要软硬件已知，PC最终会进入可预测的状态。&lt;/p&gt;
-&lt;p&gt;目前TC将Fritz作为一个消极监视组件，存储极其开始时的hash。这个hash用硬件细节来计算。如果机器最终进入了approved state，Fritz就会把TC密钥提供给操作系统。否则极其就无法获取TC密钥，只能跑non-TC程序，读non-TC数据。&lt;/p&gt;
-&lt;p&gt;Nexus桥接了Fritz和NCA，检查硬件组件是否在TCG认可名单里，软件是否已签约，序列号是否吊销了。如果PC配置有变，则机器联网重新认证这些信息。Nexus协作curtained memory阻止TC程序读写其他TC程序的数据。这种curtained memory机制在Intel中被称为Lagrande Technology，在AMD被成为TrustZone.&lt;/p&gt;
-&lt;p&gt;当机器在approved state运行TC程序时，Fritz会通过第三方，比如Disney，对copy的合法性进行认证。Disney服务器发送加密数据和密钥，Fritz只会把密钥提供给授权程序。这样整个环境就是trustworthy的。&lt;/p&gt;
-&lt;h4 id=&quot;4-TC的利益相关&quot;&gt;&lt;a href=&quot;#4-TC的利益相关&quot; class=&quot;headerlink&quot; title=&quot;4. TC的利益相关&quot;&gt;&lt;/a&gt;4. TC的利益相关&lt;/h4&gt;&lt;p&gt;Disney等娱乐公司当然是最大受益方。&lt;/p&gt;
-&lt;p&gt;Intel垄断PC芯片，想要扩张，就要扩大PC市场，保证PC的DRM是避免PC地位下降的防守策略。&lt;/p&gt;
-&lt;p&gt;Microsoft可以得益于：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;卖出更多正版&lt;/li&gt;
-&lt;li&gt;增强用户黏性，提升换用其他软件的成本&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;各种安全软件提供商会血崩。&lt;/p&gt;
-&lt;p&gt;有权利掌控TC基础设施的一方会拥有强大的独裁权力，可能被滥用。&lt;/p&gt;
-&lt;h1 id=&quot;Design-principles-and-hardware-low-level-mechanisms&quot;&gt;&lt;a href=&quot;#Design-principles-and-hardware-low-level-mechanisms&quot; class=&quot;headerlink&quot; title=&quot;Design principles and hardware/low level mechanisms&quot;&gt;&lt;/a&gt;Design principles and hardware/low level mechanisms&lt;/h1&gt;
     
     </summary>
     
@@ -227,7 +192,7 @@
     <link href="wjpjw.github.io/2016/08/31/independent-game-development/"/>
     <id>wjpjw.github.io/2016/08/31/independent-game-development/</id>
     <published>2016-08-31T04:00:07.000Z</published>
-    <updated>2016-09-01T04:26:15.000Z</updated>
+    <updated>2016-09-02T00:30:17.000Z</updated>
     
     <content type="html"><![CDATA[<p>无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？</p>
 <a id="more"></a>
@@ -362,7 +327,7 @@
     <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
     <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
     <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-09-01T17:45:08.000Z</updated>
+    <updated>2016-09-02T00:29:53.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
@@ -390,9 +355,12 @@
 <li>整理secure computing system的week1~3之全部。</li>
 <li>怒刷算法。</li>
 </ol>
-<p>结果：<br>1.</p>
+<p>结果：</p>
 <ol>
-<li>删去触发器机制，重构代码，添加一个package“data”，以python dict形式写配置文件。<br>3.<br>4.</li>
+<li>写了很多，快要收尾了，不过没测试。</li>
+<li>删去触发器机制，重构代码，添加一个package“data”，以python dict形式写配置文件。</li>
+<li>week1整理完毕，相当有趣。</li>
+<li>算法等深夜再刷。</li>
 </ol>
 <p>python的import的本质上是执行代码，def里面的东西暂未定义不妨碍def。</p>
 ]]></content>
@@ -420,7 +388,7 @@
     <link href="wjpjw.github.io/2016/08/30/boost-python/"/>
     <id>wjpjw.github.io/2016/08/30/boost-python/</id>
     <published>2016-08-30T23:20:00.000Z</published>
-    <updated>2016-09-01T04:26:36.000Z</updated>
+    <updated>2016-09-02T00:30:12.000Z</updated>
     
     <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
 <a id="more"></a>
