@@ -25,6 +25,11 @@ ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/."
 <li>所有c++对象转python对象都是根据指针进行一层deep copy，把指针所指的数据复制，但不会把对象里的指针层层复制。</li>
 <li>想要把指针类型转化为python object，最好不用ptr()函数，而是用reinterpret_cast<int>。</int></li>
 <li>win_sdk中定义了ssize_t，py_config.h里又define了一下，两者不统一，前者是long，后者是int，在windows下int和long等价，所以编译boost/python时要改python源码，只一处而已，问题不大。</li>
+<li><p>cpp内嵌的python解释器不会正常识别import，简单的解决办法就是在所有python的import前面加上cpp可执行文件所在的上级目录名，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> cqscripts.core.gamelayer <span class="keyword">import</span> *</div></pre></td></tr></table></figure>
+<p>此外，cpp脚本引擎即使import了其他python模块也不会将cpp中定义的全局变量导入其中，需要手动导入main里的全局变量：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> __main__ <span class="keyword">import</span> x</div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h3 id="为何要使用脚本"><a href="#为何要使用脚本" class="headerlink" title="为何要使用脚本"></a>为何要使用脚本</h3><p>现代c++非常强大，连lambda支持都完爆python，黑科技无穷无尽，写起来其实相当方便，但仍有一些缺点：</p>
 <ul>

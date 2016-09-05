@@ -56,9 +56,10 @@
     <link href="wjpjw.github.io/2016/09/01/secure-computing-system/"/>
     <id>wjpjw.github.io/2016/09/01/secure-computing-system/</id>
     <published>2016-09-01T04:22:16.000Z</published>
-    <updated>2016-09-02T00:31:26.000Z</updated>
+    <updated>2016-09-04T03:55:58.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
+    <content type="html"><![CDATA[<!--Week1---->
+<h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
 <li>Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.</li>
 <li>Integrity: protecting information from being modified by unauthorized parties.</li>
 <li>Denial of service: 可能是机器故障导致信息损失。</li>
@@ -99,11 +100,21 @@
 </ol>
 <p>各种安全软件提供商会血崩。</p>
 <p>有权利掌控TC基础设施的一方会拥有强大的独裁权力，可能被滥用。</p>
+<h4 id="云舒的观点"><a href="#云舒的观点" class="headerlink" title="云舒的观点"></a>云舒的观点</h4><p>关于可信计算，就我的判断这确实是一个理想中的东西，解决的是真空中的球形鸡的问题，对于真实的环境毫无用处，对于其它理论的推进也毫无帮助，研究者是有意无意的骗子。做这个结论，是因为我很懂安全攻防，同时懂一点点可信计算理论。</p>
+<p>回到技术的角度，我假设你可以在计算机里面搞个芯片，对所有的进程作签名，没签名的进程不许启动（其实这步在企业中已经是不可实现的了，假设在某些特殊特殊再特殊的部门可以实现），有用？SQL注入是怎么做的？恶意代码在数据库的进程内部直接执行了。溢出攻击怎么做的？恶意代码在攻击目标的进程内部直接执行了。XSS怎么做的？CSRF怎么做的？恶意代码是你自己在浏览器里面执行的。</p>
+<p>why？这是冯诺伊曼计算机结构决定的，数据和指令没有分开啊大哥。可信计算通过进程级别的签名能够解决的了？你能够对CPU的每一条指令签名么？（且不说还有无数的网络攻击，ARP攻击怎么做的？交换机端口劫持怎么做的？BGP劫持怎么做的？）</p>
+<p>你说用TPM芯片作计算机认证，OK，这个没问题。但是这对于企业安全来说，是细枝末节的细枝末节。每年有多少入侵是因为员工PC非法授权入侵的？沧海一粟。员工都是上网看了几个网站，然后就有恶意代码在浏览器里面执行了就上线了好么？用TPM作全盘加密比如微软的BitLocker，但是别人根本不依赖TPM，有没有这东西无所谓啊，而且全盘加密对企业安全重要么？有多少企业实施了？</p>
+<p>不要想着从最底层，从BIOS层解决问题。越到底层，丢失的上下文越多，数据越失去意义。可信计算在企业中无法实施，而且即使实施了，在实质性的提升企业安全能力上面，解决不了任何问题。现在不能，将来也不能。我就是死黑可信计算，如果谁拿出可信计算在企业中的成功案例，我立马道歉。</p>
+<h4 id="现状总结"><a href="#现状总结" class="headerlink" title="现状总结"></a>现状总结</h4><p>tcg在pc上失败了，在移动领域被tee抢占风头，物联网也是悲剧，目前主流物联网安全方案都没有tcg的事。物联网上是碎片化的解决方案，各个芯片方案商方案都不一样。</p>
+<p>可信计算无法防止对应用层漏洞的攻击，然而大部分攻击都是针对应用层的。</p>
+<p>最新的可信计算保护的范围越来越小，不一定算严格的可信计算，如ARM的TrustZone，Intel的SGX。</p>
+<!--Week2~3---->
 <h1 id="Design-principles-and-hardware-low-level-mechanisms"><a href="#Design-principles-and-hardware-low-level-mechanisms" class="headerlink" title="Design principles and hardware/low level mechanisms"></a>Design principles and hardware/low level mechanisms</h1>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;安全计算系统的基本概念&quot;&gt;&lt;a href=&quot;#安全计算系统的基本概念&quot; class=&quot;headerlink&quot; title=&quot;安全计算系统的基本概念&quot;&gt;&lt;/a&gt;安全计算系统的基本概念&lt;/h1&gt;&lt;h3 id=&quot;What-is-Computer-Security-gassbook-c1&quot;&gt;&lt;a href=&quot;#What-is-Computer-Security-gassbook-c1&quot; class=&quot;headerlink&quot; title=&quot;What is Computer Security(gassbook-c1)&quot;&gt;&lt;/a&gt;What is Computer Security(gassbook-c1)&lt;/h3&gt;&lt;h4 id=&quot;SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot;&gt;&lt;a href=&quot;#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot; class=&quot;headerlink&quot; title=&quot;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&quot;&gt;&lt;/a&gt;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&lt;/h4&gt;&lt;ol&gt;
+      &lt;!--Week1----&gt;
+&lt;h1 id=&quot;安全计算系统的基本概念&quot;&gt;&lt;a href=&quot;#安全计算系统的基本概念&quot; class=&quot;headerlink&quot; title=&quot;安全计算系统的基本概念&quot;&gt;&lt;/a&gt;安全计算系统的基本概念&lt;/h1&gt;&lt;h3 id=&quot;What-is-Computer-Security-gassbook-c1&quot;&gt;&lt;a href=&quot;#What-is-Computer-Security-gassbook-c1&quot; class=&quot;headerlink&quot; title=&quot;What is Computer Security(gassbook-c1)&quot;&gt;&lt;/a&gt;What is Computer Security(gassbook-c1)&lt;/h3&gt;&lt;h4 id=&quot;SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot;&gt;&lt;a href=&quot;#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot; class=&quot;headerlink&quot; title=&quot;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&quot;&gt;&lt;/a&gt;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.&lt;/li&gt;
 &lt;li&gt;Integrity: protecting information from being modified by unauthorized parties.&lt;/li&gt;
 &lt;li&gt;Denial of service: 可能是机器故障导致信息损失。&lt;/li&gt;
@@ -325,7 +336,7 @@
     <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
     <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
     <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-09-02T00:29:53.000Z</updated>
+    <updated>2016-09-05T04:03:11.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
@@ -358,9 +369,31 @@
 <li>写了很多，快要收尾了，不过没测试。</li>
 <li>删去触发器机制，重构代码，添加一个package“data”，以python dict形式写配置文件。</li>
 <li>week1整理完毕，相当有趣。</li>
-<li>算法等深夜再刷。</li>
+<li>累了。</li>
 </ol>
-<p>python的import的本质上是执行代码，def里面的东西暂未定义不妨碍def。</p>
+<h3 id="2016-9-2"><a href="#2016-9-2" class="headerlink" title="2016/9/2"></a>2016/9/2</h3><p>目标和昨天完全一样！</p>
+<p>结果：</p>
+<ol>
+<li>接口不明，等Wally答复。</li>
+<li>写了一些，连同之前写的进行了测试，排除了bug，全部改为支持utf-8。</li>
+<li>没做。</li>
+<li>用非常现代的方式写c++算法，可读性呢很高，写起来也更愉快更有把握，略微加了一些抽象成本。</li>
+</ol>
+<h3 id="2016-9-3"><a href="#2016-9-3" class="headerlink" title="2016/9/3"></a>2016/9/3</h3><p>今天清理了垃圾；锻炼身体；去超市买了零食、水果和鸡肉；更新了写atom插件；查阅TC现状。<br>其余时间都在娱乐。于是我把目标删了，把明天的目标订的高些，加油。</p>
+<h3 id="2016-9-4"><a href="#2016-9-4" class="headerlink" title="2016/9/4"></a>2016/9/4</h3><p>目标：</p>
+<ol>
+<li>完成安全计算系统week2~3整理。</li>
+<li>刷N道算法。</li>
+<li>协同cpp引擎开发用户输入事件处理。</li>
+</ol>
+<p>结果：<br>今天早上睡懒觉，午觉又睡了3个多小时，1~2都没做。<br>3做了以下几件事，就到12点了：</p>
+<ul>
+<li>在c++引擎中获取python error的std::string。这样就可以方便地把游戏程序当做python的debug平台，按start按钮就运行python。</li>
+<li>解决了c++脚本引擎解释的python脚本无法正确import的问题，解决办法更新在<a href="http://wjpjw.github.io/2016/08/30/boost-python/#boost-python的细节">boost-python</a>里。</li>
+<li>解决了cqscripts里的小bug。</li>
+<li>解决了游戏里的中文显示问题。该问题是vs编译器造成的，应避免在c++源码里写任何中文，读入utf-8的xml, json都可以。我的解决办法是用python脚本传入中文参数给c++写的函数，就不需要额外的xml配置了，全部配置放在cqscripts脚本里。</li>
+<li>实现一些暴露给pyhton的api。</li>
+</ul>
 ]]></content>
     
     <summary type="html">
@@ -386,7 +419,7 @@
     <link href="wjpjw.github.io/2016/08/30/boost-python/"/>
     <id>wjpjw.github.io/2016/08/30/boost-python/</id>
     <published>2016-08-30T23:20:00.000Z</published>
-    <updated>2016-09-02T00:30:12.000Z</updated>
+    <updated>2016-09-05T02:16:27.000Z</updated>
     
     <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
 <a id="more"></a>
@@ -402,6 +435,11 @@
 <li>所有c++对象转python对象都是根据指针进行一层deep copy，把指针所指的数据复制，但不会把对象里的指针层层复制。</li>
 <li>想要把指针类型转化为python object，最好不用ptr()函数，而是用reinterpret_cast<int>。</int></li>
 <li>win_sdk中定义了ssize_t，py_config.h里又define了一下，两者不统一，前者是long，后者是int，在windows下int和long等价，所以编译boost/python时要改python源码，只一处而已，问题不大。</li>
+<li><p>cpp内嵌的python解释器不会正常识别import，简单的解决办法就是在所有python的import前面加上cpp可执行文件所在的上级目录名，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> cqscripts.core.gamelayer <span class="keyword">import</span> *</div></pre></td></tr></table></figure>
+<p>此外，cpp脚本引擎即使import了其他python模块也不会将cpp中定义的全局变量导入其中，需要手动导入main里的全局变量：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> __main__ <span class="keyword">import</span> x</div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h3 id="为何要使用脚本"><a href="#为何要使用脚本" class="headerlink" title="为何要使用脚本"></a>为何要使用脚本</h3><p>现代c++非常强大，连lambda支持都完爆python，黑科技无穷无尽，写起来其实相当方便，但仍有一些缺点：</p>
 <ul>
