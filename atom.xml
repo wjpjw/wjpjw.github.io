@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-09-08T07:45:45.000Z</updated>
+  <updated>2016-09-08T07:46:37.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>Cache Replacement Competition Framework</title>
     <link href="wjpjw.github.io/2016/09/08/crc-framework/"/>
     <id>wjpjw.github.io/2016/09/08/crc-framework/</id>
     <published>2016-09-08T05:31:03.000Z</published>
-    <updated>2016-09-08T07:45:45.000Z</updated>
+    <updated>2016-09-08T07:46:37.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Cache-Replacement-Competition-Framework"><a href="#Cache-Replacement-Competition-Framework" class="headerlink" title="Cache Replacement Competition Framework"></a>Cache Replacement Competition Framework</h3><p><strong>Jipeng Wu</strong></p>
+    <content type="html"><![CDATA[<p><strong>Jipeng Wu</strong></p>
 <h4 id="Why-What-and-How"><a href="#Why-What-and-How" class="headerlink" title="Why, What and How"></a>Why, What and How</h4><h5 id="Why-CRC"><a href="#Why-CRC" class="headerlink" title="Why CRC?"></a>Why CRC?</h5><ul>
 <li>CRC and its trace generator ‘pin’ are old, But it’s hard to find another cmp memory simulator.</li>
 <li>CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
@@ -52,7 +52,8 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Cache-Replacement-Competition-Framework&quot;&gt;&lt;a href=&quot;#Cache-Replacement-Competition-Framework&quot; class=&quot;headerlink&quot; title=&quot;Cache Replacem
+      &lt;p&gt;&lt;strong&gt;Jipeng Wu&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;Why-What-and-How&quot;&gt;&lt;a href=&quot;#Why-What-and-How&quot; class=&quot;headerlink&quot; title=&quot;Why, What and How&quot;&gt;&lt;/a&gt;Why
     
     </summary>
     
