@@ -30,10 +30,10 @@ ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/."
 <p>CRC uses Intel binary tool ‘pin’ as trace generator. Unfortunately even the latest pin tool doesn’t support Linux 4.x. So I installed <em>Ubuntu 12</em> whose kernel is 3.2, but it didn’t work.</p>
 <p>Then I realized this simulator is really old, and found that it was based on CMP$IM proposed in 2006. So I decided to install <em>Ubuntu 10.04</em>, the oldest ubuntu with package support.</p>
 <p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the ‘pin’ file(It’s a shell script.) and supplied everything it requires.</p>
-<h5 id="Generate-traces"><a href="#Generate-traces" class="headerlink" title="Generate traces"></a>Generate traces</h5><p>Finally, ‘pin’ is fed with correct version of everything. I generated one trace ‘cat’. The cat.out.trace.gz is<br><img src="crc3.jpg" alt=""></p>
+<h5 id="Generate-traces"><a href="#Generate-traces" class="headerlink" title="Generate traces"></a>Generate traces</h5><p>Finally, ‘pin’ is fed with correct version of everything. I generated one trace ‘cat’. The cat.out.trace.gz is<br><img src="images/crc3.jpg" alt=""></p>
 <p>‘pin’ can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
 <p>To generate N-core traces, just combine N different traces.</p>
-<h5 id="Run-simulation"><a href="#Run-simulation" class="headerlink" title="Run simulation"></a>Run simulation</h5><p>The CRC simulator can set thread number, cache configuration and replacement policy number.<br><img src="crc1.jpg" alt=""><br><img src="crc2.jpg" alt=""></p>
+<h5 id="Run-simulation"><a href="#Run-simulation" class="headerlink" title="Run simulation"></a>Run simulation</h5><p>The CRC simulator can set thread number, cache configuration and replacement policy number.<br><img src="images/crc1.jpg" alt=""><br><img src="images/crc2.jpg" alt=""></p>
 <h4 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h4><p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
 <p>The next step is to read more on Intel’s L3 caching related paper and try to implement them.</p>
 <p>My goal is to design and implement a novel algorithm. It would probably be a variant or hybrid of big names.</p>
