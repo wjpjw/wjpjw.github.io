@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-09-08T07:51:09.000Z</updated>
+  <updated>2016-09-08T07:53:54.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="wjpjw.github.io/2016/09/08/crc-framework.md/"/>
     <id>wjpjw.github.io/2016/09/08/crc-framework.md/</id>
     <published>2016-09-08T07:49:22.000Z</published>
-    <updated>2016-09-08T07:51:09.000Z</updated>
+    <updated>2016-09-08T07:53:54.000Z</updated>
     
     <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
@@ -521,13 +521,13 @@ pre.editor-colors .fold-marker:after,
 <p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the &#39;pin&#39; file(It&#39;s a shell script.) and supplied everything it requires.</p>
 <h5 id="generate-traces">Generate traces</h5>
 <p>Finally, &#39;pin&#39; is fed with correct version of everything. I generated one trace &#39;cat&#39;. The cat.out.trace.gz is used as CRC input file.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc3.jpg" alt=""></p>
+<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc3.jpg" alt=""></p>
 <p>&#39;pin&#39; can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
 <p>To generate N-core traces, just combine N different traces.</p>
 <h5 id="run-simulation">Run simulation</h5>
 <p>The CRC simulator can set thread number, cache configuration and replacement policy number.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc1.jpg" alt="">
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc2.jpg" alt=""></p>
+<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc1.jpg" alt="">
+<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc2.jpg" alt=""></p>
 <h4 id="summary">Summary</h4>
 <p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
 <p>The next step is to read more on Intel&#39;s L3 caching related paper and try to implement them.</p>
