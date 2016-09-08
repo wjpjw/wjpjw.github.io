@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-09-08T08:15:22.000Z</updated>
+  <updated>2016-09-08T08:17:58.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="wjpjw.github.io/2016/09/08/crc-framework.md/"/>
     <id>wjpjw.github.io/2016/09/08/crc-framework.md/</id>
     <published>2016-09-08T07:49:22.000Z</published>
-    <updated>2016-09-08T08:15:22.000Z</updated>
+    <updated>2016-09-08T08:17:58.000Z</updated>
     
     <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
@@ -529,13 +529,13 @@ pre.editor-colors .fold-marker:after,
 <p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the &#39;pin&#39; file(It&#39;s a shell script.) and supplied everything it requires.</p>
 <h5 id="generate-traces">Generate traces</h5>
 <p>Finally, &#39;pin&#39; is fed with correct version of everything. I generated one trace &#39;cat&#39;. The cat.out.trace.gz is used as CRC input file.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc3.jpg" alt=""></p>
+<img src="http://wjpjw.github.io/2016/09/08/crc-framework/images/crc3.jpg" alt=""></p>
 <p>&#39;pin&#39; can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
 <p>To generate N-core traces, just combine N different traces.</p>
 <h5 id="run-simulation">Run simulation</h5>
 <p>The CRC simulator can set thread number, cache configuration and replacement policy number.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc1.jpg" alt="">
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc2.jpg" alt=""></p>
+<img src="http://wjpjw.github.io/2016/09/08/crc-framework/images/crc1.jpg" alt="">
+<img src="http://wjpjw.github.io/2016/09/08/crc-framework/images/crc2.jpg" alt=""></p>
 <h4 id="summary">Summary</h4>
 <p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
 <p>The next step is to read more on Intel&#39;s L3 caching related paper and try to implement them.</p>
@@ -1397,13 +1397,18 @@ pre.editor-colors .fold-marker:after,
   </entry>
   
   <entry>
-    <title>Archlinux试玩</title>
+    <title></title>
     <link href="wjpjw.github.io/2016/08/30/archlinux/"/>
     <id>wjpjw.github.io/2016/08/30/archlinux/</id>
     <published>2016-08-31T03:52:42.000Z</published>
-    <updated>2016-09-07T18:59:19.000Z</updated>
+    <updated>2016-09-08T08:18:19.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
+    <content type="html"><![CDATA[<p>`  —<br>  title: Archlinux试玩<br>  tags:</p>
+<ul>
+<li>常识</li>
+<li>技术<br>—`</li>
+</ul>
+<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
 <a id="more"></a>
 <h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
 <li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
@@ -1420,14 +1425,15 @@ pre.editor-colors .fold-marker:after,
     
     <summary type="html">
     
-      &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
+      &lt;p&gt;`  —&lt;br&gt;  title: Archlinux试玩&lt;br&gt;  tags:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;常识&lt;/li&gt;
+&lt;li&gt;技术&lt;br&gt;—`&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
     
     </summary>
     
-    
-      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="常识" scheme="wjpjw.github.io/tags/%E5%B8%B8%E8%AF%86/"/>
     
   </entry>
   
