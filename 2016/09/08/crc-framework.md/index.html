@@ -11,7 +11,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'Your Google Analytics ID', 'auto');
-ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Jipeng's Blog</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title"></h1><span class="post-time">Sep 8, 2016</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Contents</h3><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#cache-replacement-competition-framework"><span class="toc-text">Cache Replacement Competition Framework</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#-jipeng-wu-"><span class="toc-text">Jipeng Wu</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#why-what-and-how"><span class="toc-text">Why, What and How</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#why-crc-"><span class="toc-text">Why CRC?</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#the-simulation-target"><span class="toc-text">The Simulation Target</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#how-crc-works"><span class="toc-text">How CRC works</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#build-and-run"><span class="toc-text">Build and Run</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#linux-kernel-version-problem"><span class="toc-text">Linux kernel version problem</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#generate-traces"><span class="toc-text">Generate traces</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#run-simulation"><span class="toc-text">Run simulation</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#summary"><span class="toc-text">Summary</span></a></li></ol></li></ol></div><div class="post-content"><!DOCTYPE html>
+ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Jipeng's Blog</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Accueil</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title"></h1><span class="post-time">Sep 8, 2016</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Sommaire</h3><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#cache-replacement-competition-framework"><span class="toc-text">Cache Replacement Competition Framework</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#-jipeng-wu-"><span class="toc-text">Jipeng Wu</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#why-what-and-how"><span class="toc-text">Why, What and How</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#why-crc-"><span class="toc-text">Why CRC?</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#the-simulation-target"><span class="toc-text">The Simulation Target</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#how-crc-works"><span class="toc-text">How CRC works</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#build-and-run"><span class="toc-text">Build and Run</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#linux-kernel-version-problem"><span class="toc-text">Linux kernel version problem</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#generate-traces"><span class="toc-text">Generate traces</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#run-simulation"><span class="toc-text">Run simulation</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#summary"><span class="toc-text">Summary</span></a></li></ol></li></ol></div><div class="post-content"><!DOCTYPE html>
 <html>
   <head>
       <meta charset="utf-8">
@@ -116,6 +116,13 @@ ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/."
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
+}
+
+.markdown-themeable-pdf-page-break {
+  border-top: 2px dotted #0098ff;
+}
+.markdown-themeable-pdf-page-break span {
+  opacity: .35;
 }
 
 pre.editor-colors,
@@ -490,6 +497,7 @@ pre.editor-colors .fold-marker:after,
 <li>CRC and its trace generator &#39;pin&#39; are old, But it&#39;s hard to find another cmp memory simulator.</li>
 <li>CRC&#39;s user-visible code is well decoupled. It doesn&#39;t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
 </ul>
+<a id="more"></a>
 <h5 id="the-simulation-target">The Simulation Target</h5>
 <p>CRC simulates a CMP Memory System:</p>
 <ul>
@@ -510,16 +518,16 @@ pre.editor-colors .fold-marker:after,
 <p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the &#39;pin&#39; file(It&#39;s a shell script.) and supplied everything it requires.</p>
 <h5 id="generate-traces">Generate traces</h5>
 <p>Finally, &#39;pin&#39; is fed with correct version of everything. I generated one trace &#39;cat&#39;. The cat.out.trace.gz is used as CRC input file.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc3.jpg" alt=""></p>
+<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc3.jpg" alt=""></p>
 <p>&#39;pin&#39; can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
 <p>To generate N-core traces, just combine N different traces.</p>
 <h5 id="run-simulation">Run simulation</h5>
 <p>The CRC simulator can set thread number, cache configuration and replacement policy number.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc1.jpg" alt="">
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc2.jpg" alt=""></p>
+<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc1.jpg" alt="">
+<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/crc2.jpg" alt=""></p>
 <h4 id="summary">Summary</h4>
 <p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
 <p>The next step is to read more on Intel&#39;s L3 caching related paper and try to implement them.</p>
 <p>My goal is to design and implement a novel algorithm. It would probably be a variant or hybrid of big names.</p></body>
 </html>
-</div></article><div class="tags"></div><div class="paginator"><a href="/2016/09/08/crc-framework/" class="next"><span>Next</span><i class="iconfont icon-right"></i></a></div></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Jipeng Wu</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
+</div></article><div class="tags"></div><div class="paginator"><a href="/2016/09/08/crc-framework/" class="next"><span>Suivant</span><i class="iconfont icon-right"></i></a></div></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Jipeng Wu</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>

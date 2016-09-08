@@ -11,10 +11,10 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'Your Google Analytics ID', 'auto');
-ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Jipeng's Blog</a><ul class="nav"><li class="nav-link"><a href="/" class="active">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li></ul></header><section id="container"><ul class="home"><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/08/crc-framework.md/" class="post-link"></a></h2><span class="post-time">Sep 8, 2016</span><div class="post-content"><!DOCTYPE html>
+ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Jipeng's Blog</a><ul class="nav"><li class="nav-link"><a href="/" class="active">Accueil</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li></ul></header><section id="container"><ul class="home"><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/08/crc-framework.md/" class="post-link"></a></h2><span class="post-time">Sep 8, 2016</span><div class="post-content"><!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
+      <meta charset="utf-8" />
       <title>crc-framework</title>
       <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(56, 58, 66); overflow: auto; background-color: rgb(250, 250, 250); }
 .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
@@ -116,6 +116,13 @@ ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/."
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
+}
+
+.markdown-themeable-pdf-page-break {
+  border-top: 2px dotted #0098ff;
+}
+.markdown-themeable-pdf-page-break span {
+  opacity: .35;
 }
 
 pre.editor-colors,
@@ -482,54 +489,21 @@ pre.editor-colors .fold-marker:after,
 }
 </style>
   </head>
-  <body class="markdown-preview" data-use-github-style=""><h3 id="cache-replacement-competition-framework">Cache Replacement Competition Framework</h3>
+  <body class='markdown-preview' data-use-github-style><h3 id="cache-replacement-competition-framework">Cache Replacement Competition Framework</h3>
 <h5 id="-jipeng-wu-"><strong>Jipeng Wu</strong></h5>
 <h4 id="why-what-and-how">Why, What and How</h4>
 <h5 id="why-crc-">Why CRC?</h5>
 <ul>
 <li>CRC and its trace generator &#39;pin&#39; are old, But it&#39;s hard to find another cmp memory simulator.</li>
 <li>CRC&#39;s user-visible code is well decoupled. It doesn&#39;t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
-</ul>
-<h5 id="the-simulation-target">The Simulation Target</h5>
-<p>CRC simulates a CMP Memory System:</p>
-<ul>
-<li>8-staged 4-wide pipeline</li>
-<li>out-of-order processor</li>
-<li>L1-L2-L3, 3 layer caches</li>
-<li>perfect branch prediction</li>
-</ul>
-<p>L1 has icache and dcache. L2 is dcache. L3, also called LLC, is the cache where I will try to implement novel replacement strategies.</p>
-<h5 id="how-crc-works">How CRC works</h5>
-<p>The CRC code is probably borrowed from CMP$IM.  I thought they were naturally open source but they weren&#39;t. The simulator code is a blackbox library. Only cache replacement code is user visible. So I should compile the cache replacement module, and link with CRC static lib and CRC&#39;s dependencies.</p>
-<p>The source code provided in CRC project is actually an Intel binary tool &#39;pin&#39;, used to generate traces. It is a bad news for me since it&#39;s hard to hack into cache data, which is crucial for debugging and analysis.</p>
-<h4 id="build-and-run">Build and Run</h4>
-<h5 id="linux-kernel-version-problem">Linux kernel version problem</h5>
-<p>I followed its readme, configured and compiled the CRC project on <em>Fedora 23</em>. This build was smooth and fast. It has some rarely seen lib dependencies, yet most are already provided. However I encountered a compatability problem.</p>
-<p>CRC uses Intel binary tool &#39;pin&#39; as trace generator. Unfortunately even the latest pin tool doesn&#39;t support Linux 4.x. So I installed <em>Ubuntu 12</em> whose kernel is 3.2, but it didn&#39;t work.</p>
-<p>Then I realized this simulator is really old, and found that it was based on CMP$IM proposed in 2006. So I decided to install <em>Ubuntu 10.04</em>, the oldest ubuntu with package support.</p>
-<p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the &#39;pin&#39; file(It&#39;s a shell script.) and supplied everything it requires.</p>
-<h5 id="generate-traces">Generate traces</h5>
-<p>Finally, &#39;pin&#39; is fed with correct version of everything. I generated one trace &#39;cat&#39;. The cat.out.trace.gz is used as CRC input file.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc3.jpg" alt=""></p>
-<p>&#39;pin&#39; can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
-<p>To generate N-core traces, just combine N different traces.</p>
-<h5 id="run-simulation">Run simulation</h5>
-<p>The CRC simulator can set thread number, cache configuration and replacement policy number.
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc1.jpg" alt="">
-<img src="/Users/wjp/workspace/blog/hexoblog/source/_posts/images/crc2.jpg" alt=""></p>
-<h4 id="summary">Summary</h4>
-<p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
-<p>The next step is to read more on Intel&#39;s L3 caching related paper and try to implement them.</p>
-<p>My goal is to design and implement a novel algorithm. It would probably be a variant or hybrid of big names.</p></body>
-</html>
-</div></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/08/crc-framework/" class="post-link"></a></h2><span class="post-time">Sep 8, 2016</span><div class="post-content"><h3 id="Cache-Replacement-Competition-Framework"><a href="#Cache-Replacement-Competition-Framework" class="headerlink" title="Cache Replacement Competition Framework"></a>Cache Replacement Competition Framework</h3><h5 id="Jipeng-Wu"><a href="#Jipeng-Wu" class="headerlink" title="Jipeng Wu"></a><strong>Jipeng Wu</strong></h5><h4 id="Why-What-and-How"><a href="#Why-What-and-How" class="headerlink" title="Why, What and How"></a>Why, What and How</h4><h5 id="Why-CRC"><a href="#Why-CRC" class="headerlink" title="Why CRC?"></a>Why CRC?</h5><ul>
+</ul></div><a href="/2016/09/08/crc-framework.md/" class="read-more">Lire la suite..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/08/crc-framework/" class="post-link"></a></h2><span class="post-time">Sep 8, 2016</span><div class="post-content"><h3 id="Cache-Replacement-Competition-Framework"><a href="#Cache-Replacement-Competition-Framework" class="headerlink" title="Cache Replacement Competition Framework"></a>Cache Replacement Competition Framework</h3><h5 id="Jipeng-Wu"><a href="#Jipeng-Wu" class="headerlink" title="Jipeng Wu"></a><strong>Jipeng Wu</strong></h5><h4 id="Why-What-and-How"><a href="#Why-What-and-How" class="headerlink" title="Why, What and How"></a>Why, What and How</h4><h5 id="Why-CRC"><a href="#Why-CRC" class="headerlink" title="Why CRC?"></a>Why CRC?</h5><ul>
 <li>CRC and its trace generator ‘pin’ are old, But it’s hard to find another cmp memory simulator.</li>
 <li>CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
-</ul></div><a href="/2016/09/08/crc-framework/" class="read-more">Read more..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/01/adv-microarchitecture/" class="post-link">高级微处理器架构</a></h2><span class="post-time">Sep 1, 2016</span><div class="post-content"></div></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/01/big-data/" class="post-link">大数据</a></h2><span class="post-time">Sep 1, 2016</span><div class="post-content"></div></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/01/secure-computing-system/" class="post-link">安全计算系统</a></h2><span class="post-time">Sep 1, 2016</span><div class="post-content"><!--Week1---->
+</ul></div><a href="/2016/09/08/crc-framework/" class="read-more">Lire la suite..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/01/adv-microarchitecture/" class="post-link">高级微处理器架构</a></h2><span class="post-time">Sep 1, 2016</span><div class="post-content"></div></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/01/big-data/" class="post-link">大数据</a></h2><span class="post-time">Sep 1, 2016</span><div class="post-content"></div></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/09/01/secure-computing-system/" class="post-link">安全计算系统</a></h2><span class="post-time">Sep 1, 2016</span><div class="post-content"><!--Week1---->
 <h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
 <li>Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.</li>
 <li>Integrity: protecting information from being modified by unauthorized parties.</li>
 <li>Denial of service: 可能是机器故障导致信息损失。</li>
 </ol>
-<p>计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。</p></div><a href="/2016/09/01/secure-computing-system/" class="read-more">Read more..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/31/lexical-domain-extension/" class="post-link">生活中的英语</a></h2><span class="post-time">Aug 31, 2016</span><div class="post-content"><p>词汇积累平时用quizlet，这里主要记一些日常生活里的词汇。</p></div><a href="/2016/08/31/lexical-domain-extension/" class="read-more">Read more..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/31/independent-game-development/" class="post-link">开始独立游戏开发</a></h2><span class="post-time">Aug 31, 2016</span><div class="post-content"><p>无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？</p></div><a href="/2016/08/31/independent-game-development/" class="read-more">Read more..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/30/archlinux/" class="post-link">Archlinux试玩</a></h2><span class="post-time">Aug 30, 2016</span><div class="post-content"><p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p></div><a href="/2016/08/30/archlinux/" class="read-more">Read more..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/30/cpp-core-guideline/" class="post-link">C++的一种合理用法</a></h2><span class="post-time">Aug 30, 2016</span><div class="post-content"><p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
-<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br></div><a href="/2016/08/30/cpp-core-guideline/" class="read-more">Read more..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/30/spicy-knowledge/" class="post-link">奇奇怪怪的知识</a></h2><span class="post-time">Aug 30, 2016</span><div class="post-content"><p>偶尔更新一些无意中看到的冷门知识。</p></div><a href="/2016/08/30/spicy-knowledge/" class="read-more">Read more..</a></article></li></ul><div class="paginator"><a href="/page/2/" class="next"><span>Next</span><i class="iconfont icon-right"></i></a></div></section><footer><div class="social"><a href="mailto:recvfromsockaddr@email.com" class="iconfont icon-email"> </a><a href="https://github.com/wjpjw" class="iconfont icon-github"> </a><a href="/atom.xml" class="iconfont icon-rss"> </a></div><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Jipeng Wu</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
+<p>计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。</p></div><a href="/2016/09/01/secure-computing-system/" class="read-more">Lire la suite..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/31/lexical-domain-extension/" class="post-link">生活中的英语</a></h2><span class="post-time">Aug 31, 2016</span><div class="post-content"><p>词汇积累平时用quizlet，这里主要记一些日常生活里的词汇。</p></div><a href="/2016/08/31/lexical-domain-extension/" class="read-more">Lire la suite..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/31/independent-game-development/" class="post-link">开始独立游戏开发</a></h2><span class="post-time">Aug 31, 2016</span><div class="post-content"><p>无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？</p></div><a href="/2016/08/31/independent-game-development/" class="read-more">Lire la suite..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/30/archlinux/" class="post-link">Archlinux试玩</a></h2><span class="post-time">Aug 30, 2016</span><div class="post-content"><p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p></div><a href="/2016/08/30/archlinux/" class="read-more">Lire la suite..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/30/cpp-core-guideline/" class="post-link">C++的一种合理用法</a></h2><span class="post-time">Aug 30, 2016</span><div class="post-content"><p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
+<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br></div><a href="/2016/08/30/cpp-core-guideline/" class="read-more">Lire la suite..</a></article></li><li class="post-item"><article class="post"><h2 class="post-title"><a href="/2016/08/30/spicy-knowledge/" class="post-link">奇奇怪怪的知识</a></h2><span class="post-time">Aug 30, 2016</span><div class="post-content"><p>偶尔更新一些无意中看到的冷门知识。</p></div><a href="/2016/08/30/spicy-knowledge/" class="read-more">Lire la suite..</a></article></li></ul><div class="paginator"><a href="/page/2/" class="next"><span>Suivant</span><i class="iconfont icon-right"></i></a></div></section><footer><div class="social"><a href="mailto:recvfromsockaddr@email.com" class="iconfont icon-email"> </a><a href="https://github.com/wjpjw" class="iconfont icon-github"> </a><a href="/atom.xml" class="iconfont icon-rss"> </a></div><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Jipeng Wu</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
