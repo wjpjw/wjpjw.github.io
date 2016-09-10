@@ -81,24 +81,6 @@
   </entry>
   
   <entry>
-    <title>大数据</title>
-    <link href="wjpjw.github.io/2016/09/01/big-data/"/>
-    <id>wjpjw.github.io/2016/09/01/big-data/</id>
-    <published>2016-09-01T04:34:28.000Z</published>
-    <updated>2016-09-01T04:34:46.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="学术" scheme="wjpjw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
     <title>安全计算系统</title>
     <link href="wjpjw.github.io/2016/09/01/secure-computing-system/"/>
     <id>wjpjw.github.io/2016/09/01/secure-computing-system/</id>
@@ -344,44 +326,14 @@
   </entry>
   
   <entry>
-    <title>开始独立游戏开发</title>
-    <link href="wjpjw.github.io/2016/08/31/independent-game-development/"/>
-    <id>wjpjw.github.io/2016/08/31/independent-game-development/</id>
-    <published>2016-08-31T04:00:07.000Z</published>
-    <updated>2016-09-02T00:30:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？</p>
-<a id="more"></a>
-<h2 id="绘画"><a href="#绘画" class="headerlink" title="绘画"></a>绘画</h2><p>之前一直觉得数控板很贵，的确贵，不过那是在屏幕上直接画的，只是板的话一点都不贵。我买了ugee ex07 graphic tablet，迅速上手。以我的天赋，学什么都很快，所以一定要努力，不可太懒散。</p>
-<p>我发现shading还是太难了，看了不少youtube上的视频，真是需要磨练的，而且还费时间，所以我觉得可以不用考虑shading，直接描线+纯色上色，简单干净就好。</p>
-<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>购买了60美元的spine用来制作骨骼动画，免费的骨骼动画软件没有良好的编程API支持，尝试无效，还是spine好用。骨骼动画其实对美术要求不高，既方便又灵活，我觉得比完全碾压序列帧动画（Frame by frame）。</p>
-<p>骨骼动画制作属于浪费时间的简单重复劳动。</p>
-<h2 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h2><p>目前唯一开源而且有人用的2d引擎是cocos2d，架构非常简单，功能也很少。unreal也是开源的，非常想尝试，不过目前cocos够用了，unreal以后再说吧。短期内我是不会涉足3d的，也不会有钱外包。</p>
-<p>unity固然是更好的工具，但是为我所不喜。比如用cocos我可以只用其图形部分，自己实现一个python脚本引擎，然后c++加python做游戏，指定让自己舒服的标准与风格。</p>
-<p>其他开源的游戏引擎用的人少，也就不存在特别方便的整合，也没有详实的文档。所以不会考虑。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;无论美术还是编程都让我乐在其中，既然如此，何不学习、探索独立游戏制作呢？&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="日志" scheme="wjpjw.github.io/tags/%E6%97%A5%E5%BF%97/"/>
-    
-      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
     <title></title>
     <link href="wjpjw.github.io/2016/08/30/archlinux/"/>
     <id>wjpjw.github.io/2016/08/30/archlinux/</id>
     <published>2016-08-31T03:52:42.000Z</published>
-    <updated>2016-09-08T08:18:19.000Z</updated>
+    <updated>2016-09-10T16:33:18.000Z</updated>
     
-    <content type="html"><![CDATA[<p>`  —<br>  title: Archlinux试玩<br>  tags:</p>
+    <content type="html"><![CDATA[<hr>
+<p>  title: Archlinux试玩<br>  tags:</p>
 <ul>
 <li>常识</li>
 <li>技术<br>—`</li>
@@ -403,7 +355,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;`  —&lt;br&gt;  title: Archlinux试玩&lt;br&gt;  tags:&lt;/p&gt;
+      &lt;hr&gt;
+&lt;p&gt;  title: Archlinux试玩&lt;br&gt;  tags:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;常识&lt;/li&gt;
 &lt;li&gt;技术&lt;br&gt;—`&lt;/li&gt;
@@ -492,7 +445,7 @@
     <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
     <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
     <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-09-08T05:30:44.000Z</updated>
+    <updated>2016-09-09T23:31:52.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
@@ -574,8 +527,9 @@
 <li>xface，gnome，kde都是远不如商用OS的界面，差太远。最好的办法就是用emacs(shell)+atom(editor)+chrome(web)这几个好用的软件，而完全不用系统UI。</li>
 <li>今天安装了chrome、atom、emacs。emacs懒得上我的配置了，以后主要用atom，只有在需要大量shell操作才用emacs。鉴于macbook上切屏比linux下切app还方便，所以不是特殊需要就不再archlinux里开chrome了，还是有些卡的。</li>
 </ul>
-<h5 id="Adv-MA进展："><a href="#Adv-MA进展：" class="headerlink" title="Adv. MA进展："></a>Adv. MA进展：</h5><p>上完课一直在测试crc，直到深夜。</p>
-]]></content>
+<h5 id="Adv-MA进展："><a href="#Adv-MA进展：" class="headerlink" title="Adv. MA进展："></a>Adv. MA进展：</h5><p>上完课一直在测试crc，直到凌晨。</p>
+<h3 id="2016-9-8"><a href="#2016-9-8" class="headerlink" title="2016/9/8"></a>2016/9/8</h3><p>今天休息，简单收拾房间，简短hangout。</p>
+<h3 id="2016-9-9"><a href="#2016-9-9" class="headerlink" title="2016/9/9"></a>2016/9/9</h3>]]></content>
     
     <summary type="html">
     
