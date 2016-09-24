@@ -171,9 +171,147 @@
   </entry>
   
   <entry>
+    <title>A Frequent-Pattern-Aware Cache Replacement Algorithm</title>
+    <link href="wjpjw.github.io/2016/09/21/advanced-microarchitecture/cache-repl/"/>
+    <id>wjpjw.github.io/2016/09/21/advanced-microarchitecture/cache-repl/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-24T18:51:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Initial Project Proposal</p>
+<a id="more"></a>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><ul>
+<li>Project name: FPA(Frequent-Pattern-Aware) Cache Replacement.</li>
+<li>The simulator is <em>CMP$IM</em>.</li>
+<li>Traces are generated as single-threaded by Intel binary tool <em>pin</em>.</li>
+<li>3-layer cache model. Only focus on LLC. LLC is a 16 way cache.</li>
+</ul>
+<h3 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h3><ul>
+<li>Design and implement a high performance cache replacement algorithm FPA.</li>
+<li>Run simulation and analyze FPA performance.</li>
+</ul>
+<h2 id="Project-Plan"><a href="#Project-Plan" class="headerlink" title="Project Plan"></a>Project Plan</h2><h3 id="Initial-Algorithm-Plan"><a href="#Initial-Algorithm-Plan" class="headerlink" title="Initial Algorithm Plan"></a>Initial Algorithm Plan</h3><h4 id="Frequency-Pattern-Capture"><a href="#Frequency-Pattern-Capture" class="headerlink" title="Frequency Pattern Capture"></a>Frequency Pattern Capture</h4><p>FPA’s frequency pattern awareness is based on two data structures:</p>
+<ul>
+<li>History DB: an in-cache database that stores long-term memory of recent address history.<ul>
+<li>Unlike LRU, History DB doesn’t assign bits in each cache line. It’s a consecutive cache block that stores a longer history records than the number of cache ways. Each record has two fields: address and FP-tree’s <em>support</em>.</li>
+</ul>
+</li>
+<li>FPA Tree: A FP-tree variant that maintains frequency patterns for the FPA’s decision engine.<ul>
+<li>FPA Tree is an even more compact but less complete FP-tree(FP-Growth’s data structure) variant.  It is built on History DB information by 2 scans. After built, FP-Growth algorithm can easily elicit patterns.</li>
+</ul>
+</li>
+</ul>
+<h4 id="Recency-Capture"><a href="#Recency-Capture" class="headerlink" title="Recency Capture"></a>Recency Capture</h4><p>Recency can be captured by a list that records every address that has been seen only <em>n</em> times, <em>n</em> &lt; minimum support threshold of FP-Growth.</p>
+<p>Since FPA already has a History DB that stores recent addresses and labels them with <em>support</em> count, no extra data structure is needed.</p>
+<h3 id="Minimum-Support-Threshold"><a href="#Minimum-Support-Threshold" class="headerlink" title="Minimum Support Threshold"></a>Minimum Support Threshold</h3><p>Minimum support threshold in FP-Growth defines whether a pattern is considered as frequent. It’s hard to analyze its optimal value. I will do multiple experiments to find a good one.</p>
+<h3 id="Storage-Budget"><a href="#Storage-Budget" class="headerlink" title="Storage Budget"></a>Storage Budget</h3><p>FPA simulation is only working on LLC. Apparently no memory access is allowed for cache level algorithms. The storage is very limited.</p>
+<p>There is 1KB LLC cache lines reserved for this algorithm. Each unreserved cache line also provides 8-bits for cacheline-associated storage.</p>
+<h3 id="FPA-Implementation-Overhead"><a href="#FPA-Implementation-Overhead" class="headerlink" title="FPA Implementation Overhead"></a>FPA Implementation Overhead</h3><p>Since the CMP$IM simulator is not cycle-accurate, I can’t measure the real world overhead. However I will do a static analysis of FPA’s time complexity, comparing against LRU and ARC.</p>
+<h3 id="Single-threaded-traces-only"><a href="#Single-threaded-traces-only" class="headerlink" title="Single-threaded traces only"></a>Single-threaded traces only</h3><p>I have no plan for supporting multi-application caching policy management, which is on another abstraction level. Therefore, this FPA scheme is thread-unaware and its simulation should be only fed with single-threaded traces.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Initial Project Proposal&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
+    
+      <category term="big data" scheme="wjpjw.github.io/tags/big-data/"/>
+    
+      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cache Replacement Competition Framework</title>
+    <link href="wjpjw.github.io/2016/09/21/advanced-microarchitecture/crc-framework/"/>
+    <id>wjpjw.github.io/2016/09/21/advanced-microarchitecture/crc-framework/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Why-What-and-How"><a href="#Why-What-and-How" class="headerlink" title="Why, What and How"></a>Why, What and How</h1><h3 id="Why-CRC"><a href="#Why-CRC" class="headerlink" title="Why CRC?"></a>Why CRC?</h3><ul>
+<li>CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.</li>
+<li>CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
+</ul>
+<a id="more"></a>
+<h3 id="The-Simulation-Target"><a href="#The-Simulation-Target" class="headerlink" title="The Simulation Target"></a>The Simulation Target</h3><p>CRC simulates a CMP Memory System:</p>
+<ul>
+<li>8-staged 4-wide pipeline</li>
+<li>out-of-order processor</li>
+<li>L1-L2-L3, 3 layer caches</li>
+<li>perfect branch prediction</li>
+</ul>
+<p>L1 has icache and dcache. L2 is dcache. L3, also called LLC, is the cache where I will try to implement novel replacement strategies.</p>
+<h3 id="How-CRC-works"><a href="#How-CRC-works" class="headerlink" title="How CRC works"></a>How CRC works</h3><p>The CRC code is probably borrowed from CMP$IM.  I thought they were naturally open source but they weren’t. The simulator code is a blackbox library. Only cache replacement code is user visible. So I should compile the cache replacement module, and link with CRC static lib and CRC’s dependencies.</p>
+<p>The source code provided in CRC project is actually an Intel binary tool ‘pin’, used to generate traces. It is a bad news for me since it’s hard to hack into cache data, which is crucial for debugging and analysis.</p>
+<h1 id="Build-and-Run"><a href="#Build-and-Run" class="headerlink" title="Build and Run"></a>Build and Run</h1><h3 id="Linux-kernel-version-problem"><a href="#Linux-kernel-version-problem" class="headerlink" title="Linux kernel version problem"></a>Linux kernel version problem</h3><p>I followed its readme, configured and compiled the CRC project on <em>Fedora 23</em>. This build was smooth and fast. It has some rarely seen lib dependencies, yet most are already provided. However I encountered a compatability problem.</p>
+<p>CRC uses Intel binary tool ‘pin’ as trace generator. Unfortunately even the latest pin tool doesn’t support Linux 4.x. So I installed <em>Ubuntu 12</em> whose kernel is 3.2, but it didn’t work.</p>
+<p>Then I realized this simulator is really old, and found that it was based on CMP$IM proposed in 2006. So I decided to install <em>Ubuntu 10.04</em>, the oldest ubuntu with package support.</p>
+<p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the ‘pin’ file(It’s a shell script.) and supplied everything it requires.</p>
+<h3 id="Generate-traces"><a href="#Generate-traces" class="headerlink" title="Generate traces"></a>Generate traces</h3><p>Finally, ‘pin’ is fed with correct version of everything. I generated one trace ‘cat’. The cat.out.trace.gz is<br><img src="/images/crc3.jpg" alt=""></p>
+<p>‘pin’ can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
+<p>To generate N-core traces, just combine N different traces.</p>
+<h3 id="Run-simulation"><a href="#Run-simulation" class="headerlink" title="Run simulation"></a>Run simulation</h3><p>The CRC simulator can set thread number, cache configuration and replacement policy number.<br><img src="/images/crc1.jpg" alt=""><br><img src="/images/crc2.jpg" alt=""></p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
+<p>The next step is to read more on Intel’s L3 caching related paper and try to implement them.</p>
+<p>My goal is to design and implement a novel algorithm. It would probably be a variant or hybrid of big names.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Why-What-and-How&quot;&gt;&lt;a href=&quot;#Why-What-and-How&quot; class=&quot;headerlink&quot; title=&quot;Why, What and How&quot;&gt;&lt;/a&gt;Why, What and How&lt;/h1&gt;&lt;h3 id=&quot;Why-CRC&quot;&gt;&lt;a href=&quot;#Why-CRC&quot; class=&quot;headerlink&quot; title=&quot;Why CRC?&quot;&gt;&lt;/a&gt;Why CRC?&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.&lt;/li&gt;
+&lt;li&gt;CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
+    
+      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Archlinux试玩</title>
+    <link href="wjpjw.github.io/2016/09/21/other/archlinux/"/>
+    <id>wjpjw.github.io/2016/09/21/other/archlinux/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
+<a id="more"></a>
+<h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
+<li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
+<li>启动或关闭服务：systemctl start/stop example.service</li>
+<li>pacman：-Syy，同步数据库；-S elinks，安装elinks；-Ss xxx，搜索xxx；-R是删包。</li>
+<li>fdisk或gdisk /dev/sda就可以进入partition界面，创建partition table。操作相当简单。</li>
+<li>lsblk查看bulk device的挂载情况。</li>
+<li>fstab配置挂载，locale.conf配置语言。</li>
+</ol>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>我觉得kde和gnome都不如xfce4，所以装的是xfce。启动图形界面不用startx，用startxfce4。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="wjpjw.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用Python作C++游戏的脚本</title>
-    <link href="wjpjw.github.io/2016/09/21/boost-python/"/>
-    <id>wjpjw.github.io/2016/09/21/boost-python/</id>
+    <link href="wjpjw.github.io/2016/09/21/other/boost-python/"/>
+    <id>wjpjw.github.io/2016/09/21/other/boost-python/</id>
     <published>2016-09-21T07:06:34.000Z</published>
     <updated>2016-09-21T07:06:34.000Z</updated>
     
@@ -235,8 +373,8 @@
   
   <entry>
     <title>C++的一种合理用法</title>
-    <link href="wjpjw.github.io/2016/09/21/cpp-core-guideline/"/>
-    <id>wjpjw.github.io/2016/09/21/cpp-core-guideline/</id>
+    <link href="wjpjw.github.io/2016/09/21/other/cpp-core-guideline/"/>
+    <id>wjpjw.github.io/2016/09/21/other/cpp-core-guideline/</id>
     <published>2016-09-21T07:06:34.000Z</published>
     <updated>2016-09-21T07:06:34.000Z</updated>
     
@@ -275,9 +413,73 @@
   </entry>
   
   <entry>
+    <title>苹果和超市</title>
+    <link href="wjpjw.github.io/2016/09/21/other/food-industry/"/>
+    <id>wjpjw.github.io/2016/09/21/other/food-industry/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>坐而空谈，述而不论。<br><a id="more"></a></p>
+<p>苹果手机的操作系统限制了用户的大部分自由，剥夺了用户的控制权，只允许白名单上的合法软件运行。这种是一种安全系统的设计，但是这里的“安全”二字主要是从软硬件厂商和版权商联盟的角度来讲的。对这一利益联盟来说，封闭排他且限制用户的系统意味着安全地垄断市场，安全地享受版权受益，避免盗版系统和盗版软件带来的损失。用户作为整体既是安全系统服务的对象，也是提防的对象。</p>
+<p>美国食品工业与之相似，剥夺了普通人、小作坊接触原始食材并加工的自由，只允许白名单上的合法食品企业运行。这也是一种安全的设计，这里的“安全”二字同样主要是从食品工业利益联盟的角度来讲的。对这一利益联盟来说，标准化食品工业意味着生产商可以合法滥用添加剂，超市可以为美国人民提供标准化低成本低品质的速冻食物、熟食，避免民间食品作坊、民间特色食品网店带来的竞争。美国人民作为整体既是安全系统服务的对象，也是提防的对象。</p>
+<p>在苹果手机操作系统的安全体系下：</p>
+<ol>
+<li>用户会觉得系统非常安全，因为恶意软件不见了。</li>
+<li>某些用户会觉得单调和憋屈，我改下游戏数据或者弄个外挂都不行，我想写一个脚本批量处理些文件都做不到。</li>
+<li>甚至也有警觉的用户认为自己的安全反而受到软硬件厂商与版权商联盟的侵犯或潜在侵犯，凭什么你能剥夺我的绝对控制权，将系统置于你的服务器操控之下，我的数据资料岂不是受制于你？</li>
+</ol>
+<p>在美国的食品工业化标准化法制化体系下：</p>
+<ol>
+<li>消费者会觉得美国食品非常安全，不可能有乱七八糟的食品，连长得歪一点的土豆茄子都直接作垃圾处理，进不了超市。</li>
+<li>但某些消费者也会觉得单调和憋屈，心想：虽然你们美国人觉得超市熟食好吃，但是依我看只是一味堆砌调味，千篇一律，火候刀工无一足取，能让老夫免为其难尝第二口的还不存在。</li>
+<li>甚至还有些警觉的消费者认为自己的安全反而受到食品工业利益联盟的侵犯或潜在侵犯，凭什么把偶氮二甲酰胺用在面包漂白合法，凭什么超市里把中国喂猪用的巨型牛皮菜和生菜摆在一起当同类蔬菜来卖，难道你们不觉得难吃爆了吗！</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;坐而空谈，述而不论。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="secure computing system" scheme="wjpjw.github.io/tags/secure-computing-system/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>奇奇怪怪的知识</title>
+    <link href="wjpjw.github.io/2016/09/21/other/spicy-knowledge/"/>
+    <id>wjpjw.github.io/2016/09/21/other/spicy-knowledge/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-24T18:25:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
+<a id="more"></a>
+<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
+<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
+<li>ATS-PL-SYS: Hongwei Xi</li>
+<li>F#: Tao Liu</li>
+<li>sql: 刘英武</li>
+<li>php: 惠新宸</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
+    
+  </entry>
+  
+  <entry>
     <title>安全计算系统</title>
-    <link href="wjpjw.github.io/2016/09/21/secure-computing-system/"/>
-    <id>wjpjw.github.io/2016/09/21/secure-computing-system/</id>
+    <link href="wjpjw.github.io/2016/09/21/secure-computing/secure-computing-system/"/>
+    <id>wjpjw.github.io/2016/09/21/secure-computing/secure-computing-system/</id>
     <published>2016-09-21T07:06:34.000Z</published>
     <updated>2016-09-24T18:51:05.000Z</updated>
     
@@ -446,211 +648,9 @@
   </entry>
   
   <entry>
-    <title>Archlinux试玩</title>
-    <link href="wjpjw.github.io/2016/09/21/archlinux/"/>
-    <id>wjpjw.github.io/2016/09/21/archlinux/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
-<a id="more"></a>
-<h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
-<li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
-<li>启动或关闭服务：systemctl start/stop example.service</li>
-<li>pacman：-Syy，同步数据库；-S elinks，安装elinks；-Ss xxx，搜索xxx；-R是删包。</li>
-<li>fdisk或gdisk /dev/sda就可以进入partition界面，创建partition table。操作相当简单。</li>
-<li>lsblk查看bulk device的挂载情况。</li>
-<li>fstab配置挂载，locale.conf配置语言。</li>
-</ol>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>我觉得kde和gnome都不如xfce4，所以装的是xfce。启动图形界面不用startx，用startxfce4。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="wjpjw.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奇奇怪怪的知识</title>
-    <link href="wjpjw.github.io/2016/09/21/spicy-knowledge/"/>
-    <id>wjpjw.github.io/2016/09/21/spicy-knowledge/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-24T18:25:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
-<a id="more"></a>
-<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
-<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
-<li>ATS-PL-SYS: Hongwei Xi</li>
-<li>F#: Tao Liu</li>
-<li>sql: 刘英武</li>
-<li>php: 惠新宸</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cache Replacement Competition Framework</title>
-    <link href="wjpjw.github.io/2016/09/21/crc-framework/"/>
-    <id>wjpjw.github.io/2016/09/21/crc-framework/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Why-What-and-How"><a href="#Why-What-and-How" class="headerlink" title="Why, What and How"></a>Why, What and How</h1><h3 id="Why-CRC"><a href="#Why-CRC" class="headerlink" title="Why CRC?"></a>Why CRC?</h3><ul>
-<li>CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.</li>
-<li>CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
-</ul>
-<a id="more"></a>
-<h3 id="The-Simulation-Target"><a href="#The-Simulation-Target" class="headerlink" title="The Simulation Target"></a>The Simulation Target</h3><p>CRC simulates a CMP Memory System:</p>
-<ul>
-<li>8-staged 4-wide pipeline</li>
-<li>out-of-order processor</li>
-<li>L1-L2-L3, 3 layer caches</li>
-<li>perfect branch prediction</li>
-</ul>
-<p>L1 has icache and dcache. L2 is dcache. L3, also called LLC, is the cache where I will try to implement novel replacement strategies.</p>
-<h3 id="How-CRC-works"><a href="#How-CRC-works" class="headerlink" title="How CRC works"></a>How CRC works</h3><p>The CRC code is probably borrowed from CMP$IM.  I thought they were naturally open source but they weren’t. The simulator code is a blackbox library. Only cache replacement code is user visible. So I should compile the cache replacement module, and link with CRC static lib and CRC’s dependencies.</p>
-<p>The source code provided in CRC project is actually an Intel binary tool ‘pin’, used to generate traces. It is a bad news for me since it’s hard to hack into cache data, which is crucial for debugging and analysis.</p>
-<h1 id="Build-and-Run"><a href="#Build-and-Run" class="headerlink" title="Build and Run"></a>Build and Run</h1><h3 id="Linux-kernel-version-problem"><a href="#Linux-kernel-version-problem" class="headerlink" title="Linux kernel version problem"></a>Linux kernel version problem</h3><p>I followed its readme, configured and compiled the CRC project on <em>Fedora 23</em>. This build was smooth and fast. It has some rarely seen lib dependencies, yet most are already provided. However I encountered a compatability problem.</p>
-<p>CRC uses Intel binary tool ‘pin’ as trace generator. Unfortunately even the latest pin tool doesn’t support Linux 4.x. So I installed <em>Ubuntu 12</em> whose kernel is 3.2, but it didn’t work.</p>
-<p>Then I realized this simulator is really old, and found that it was based on CMP$IM proposed in 2006. So I decided to install <em>Ubuntu 10.04</em>, the oldest ubuntu with package support.</p>
-<p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the ‘pin’ file(It’s a shell script.) and supplied everything it requires.</p>
-<h3 id="Generate-traces"><a href="#Generate-traces" class="headerlink" title="Generate traces"></a>Generate traces</h3><p>Finally, ‘pin’ is fed with correct version of everything. I generated one trace ‘cat’. The cat.out.trace.gz is<br><img src="/images/crc3.jpg" alt=""></p>
-<p>‘pin’ can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
-<p>To generate N-core traces, just combine N different traces.</p>
-<h3 id="Run-simulation"><a href="#Run-simulation" class="headerlink" title="Run simulation"></a>Run simulation</h3><p>The CRC simulator can set thread number, cache configuration and replacement policy number.<br><img src="/images/crc1.jpg" alt=""><br><img src="/images/crc2.jpg" alt=""></p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
-<p>The next step is to read more on Intel’s L3 caching related paper and try to implement them.</p>
-<p>My goal is to design and implement a novel algorithm. It would probably be a variant or hybrid of big names.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Why-What-and-How&quot;&gt;&lt;a href=&quot;#Why-What-and-How&quot; class=&quot;headerlink&quot; title=&quot;Why, What and How&quot;&gt;&lt;/a&gt;Why, What and How&lt;/h1&gt;&lt;h3 id=&quot;Why-CRC&quot;&gt;&lt;a href=&quot;#Why-CRC&quot; class=&quot;headerlink&quot; title=&quot;Why CRC?&quot;&gt;&lt;/a&gt;Why CRC?&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.&lt;/li&gt;
-&lt;li&gt;CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
-    
-      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>苹果和超市</title>
-    <link href="wjpjw.github.io/2016/09/21/food-industry/"/>
-    <id>wjpjw.github.io/2016/09/21/food-industry/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>坐而空谈，述而不论。<br><a id="more"></a></p>
-<p>苹果手机的操作系统限制了用户的大部分自由，剥夺了用户的控制权，只允许白名单上的合法软件运行。这种是一种安全系统的设计，但是这里的“安全”二字主要是从软硬件厂商和版权商联盟的角度来讲的。对这一利益联盟来说，封闭排他且限制用户的系统意味着安全地垄断市场，安全地享受版权受益，避免盗版系统和盗版软件带来的损失。用户作为整体既是安全系统服务的对象，也是提防的对象。</p>
-<p>美国食品工业与之相似，剥夺了普通人、小作坊接触原始食材并加工的自由，只允许白名单上的合法食品企业运行。这也是一种安全的设计，这里的“安全”二字同样主要是从食品工业利益联盟的角度来讲的。对这一利益联盟来说，标准化食品工业意味着生产商可以合法滥用添加剂，超市可以为美国人民提供标准化低成本低品质的速冻食物、熟食，避免民间食品作坊、民间特色食品网店带来的竞争。美国人民作为整体既是安全系统服务的对象，也是提防的对象。</p>
-<p>在苹果手机操作系统的安全体系下：</p>
-<ol>
-<li>用户会觉得系统非常安全，因为恶意软件不见了。</li>
-<li>某些用户会觉得单调和憋屈，我改下游戏数据或者弄个外挂都不行，我想写一个脚本批量处理些文件都做不到。</li>
-<li>甚至也有警觉的用户认为自己的安全反而受到软硬件厂商与版权商联盟的侵犯或潜在侵犯，凭什么你能剥夺我的绝对控制权，将系统置于你的服务器操控之下，我的数据资料岂不是受制于你？</li>
-</ol>
-<p>在美国的食品工业化标准化法制化体系下：</p>
-<ol>
-<li>消费者会觉得美国食品非常安全，不可能有乱七八糟的食品，连长得歪一点的土豆茄子都直接作垃圾处理，进不了超市。</li>
-<li>但某些消费者也会觉得单调和憋屈，心想：虽然你们美国人觉得超市熟食好吃，但是依我看只是一味堆砌调味，千篇一律，火候刀工无一足取，能让老夫免为其难尝第二口的还不存在。</li>
-<li>甚至还有些警觉的消费者认为自己的安全反而受到食品工业利益联盟的侵犯或潜在侵犯，凭什么把偶氮二甲酰胺用在面包漂白合法，凭什么超市里把中国喂猪用的巨型牛皮菜和生菜摆在一起当同类蔬菜来卖，难道你们不觉得难吃爆了吗！</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;坐而空谈，述而不论。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="secure computing system" scheme="wjpjw.github.io/tags/secure-computing-system/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A Frequent-Pattern-Aware Cache Replacement Algorithm</title>
-    <link href="wjpjw.github.io/2016/09/21/cache-repl/"/>
-    <id>wjpjw.github.io/2016/09/21/cache-repl/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-24T18:51:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Initial Project Proposal</p>
-<a id="more"></a>
-<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><ul>
-<li>Project name: FPA(Frequent-Pattern-Aware) Cache Replacement.</li>
-<li>The simulator is <em>CMP$IM</em>.</li>
-<li>Traces are generated as single-threaded by Intel binary tool <em>pin</em>.</li>
-<li>3-layer cache model. Only focus on LLC. LLC is a 16 way cache.</li>
-</ul>
-<h3 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h3><ul>
-<li>Design and implement a high performance cache replacement algorithm FPA.</li>
-<li>Run simulation and analyze FPA performance.</li>
-</ul>
-<h2 id="Project-Plan"><a href="#Project-Plan" class="headerlink" title="Project Plan"></a>Project Plan</h2><h3 id="Initial-Algorithm-Plan"><a href="#Initial-Algorithm-Plan" class="headerlink" title="Initial Algorithm Plan"></a>Initial Algorithm Plan</h3><h4 id="Frequency-Pattern-Capture"><a href="#Frequency-Pattern-Capture" class="headerlink" title="Frequency Pattern Capture"></a>Frequency Pattern Capture</h4><p>FPA’s frequency pattern awareness is based on two data structures:</p>
-<ul>
-<li>History DB: an in-cache database that stores long-term memory of recent address history.<ul>
-<li>Unlike LRU, History DB doesn’t assign bits in each cache line. It’s a consecutive cache block that stores a longer history records than the number of cache ways. Each record has two fields: address and FP-tree’s <em>support</em>.</li>
-</ul>
-</li>
-<li>FPA Tree: A FP-tree variant that maintains frequency patterns for the FPA’s decision engine.<ul>
-<li>FPA Tree is an even more compact but less complete FP-tree(FP-Growth’s data structure) variant.  It is built on History DB information by 2 scans. After built, FP-Growth algorithm can easily elicit patterns.</li>
-</ul>
-</li>
-</ul>
-<h4 id="Recency-Capture"><a href="#Recency-Capture" class="headerlink" title="Recency Capture"></a>Recency Capture</h4><p>Recency can be captured by a list that records every address that has been seen only <em>n</em> times, <em>n</em> &lt; minimum support threshold of FP-Growth.</p>
-<p>Since FPA already has a History DB that stores recent addresses and labels them with <em>support</em> count, no extra data structure is needed.</p>
-<h3 id="Minimum-Support-Threshold"><a href="#Minimum-Support-Threshold" class="headerlink" title="Minimum Support Threshold"></a>Minimum Support Threshold</h3><p>Minimum support threshold in FP-Growth defines whether a pattern is considered as frequent. It’s hard to analyze its optimal value. I will do multiple experiments to find a good one.</p>
-<h3 id="Storage-Budget"><a href="#Storage-Budget" class="headerlink" title="Storage Budget"></a>Storage Budget</h3><p>FPA simulation is only working on LLC. Apparently no memory access is allowed for cache level algorithms. The storage is very limited.</p>
-<p>There is 1KB LLC cache lines reserved for this algorithm. Each unreserved cache line also provides 8-bits for cacheline-associated storage.</p>
-<h3 id="FPA-Implementation-Overhead"><a href="#FPA-Implementation-Overhead" class="headerlink" title="FPA Implementation Overhead"></a>FPA Implementation Overhead</h3><p>Since the CMP$IM simulator is not cycle-accurate, I can’t measure the real world overhead. However I will do a static analysis of FPA’s time complexity, comparing against LRU and ARC.</p>
-<h3 id="Single-threaded-traces-only"><a href="#Single-threaded-traces-only" class="headerlink" title="Single-threaded traces only"></a>Single-threaded traces only</h3><p>I have no plan for supporting multi-application caching policy management, which is on another abstraction level. Therefore, this FPA scheme is thread-unaware and its simulation should be only fed with single-threaded traces.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Initial Project Proposal&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
-    
-      <category term="big data" scheme="wjpjw.github.io/tags/big-data/"/>
-    
-      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
-    
-  </entry>
-  
-  <entry>
     <title>微处理器结构</title>
-    <link href="wjpjw.github.io/2016/09/20/advma/"/>
-    <id>wjpjw.github.io/2016/09/20/advma/</id>
+    <link href="wjpjw.github.io/2016/09/20/advanced-microarchitecture/advma/"/>
+    <id>wjpjw.github.io/2016/09/20/advanced-microarchitecture/advma/</id>
     <published>2016-09-20T22:48:37.000Z</published>
     <updated>2016-09-20T22:49:39.000Z</updated>
     
