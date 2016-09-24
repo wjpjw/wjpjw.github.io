@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-09-12T22:41:05.000Z</updated>
+  <updated>2016-09-23T15:32:26.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -16,381 +16,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>苹果和超市</title>
-    <link href="wjpjw.github.io/2016/09/12/food-industry/"/>
-    <id>wjpjw.github.io/2016/09/12/food-industry/</id>
-    <published>2016-09-12T21:05:34.000Z</published>
-    <updated>2016-09-12T22:41:05.000Z</updated>
+    <title></title>
+    <link href="wjpjw.github.io/2016/09/23/practice/sum/"/>
+    <id>wjpjw.github.io/2016/09/23/practice/sum/</id>
+    <published>2016-09-23T15:30:21.000Z</published>
+    <updated>2016-09-23T15:32:26.000Z</updated>
     
-    <content type="html"><![CDATA[<p>坐而空谈，述而不论。<br><a id="more"></a></p>
-<p>苹果手机的操作系统限制了用户的大部分自由，剥夺了用户的控制权，只允许白名单上的合法软件运行。这种是一种安全系统的设计，但是这里的“安全”二字主要是从软硬件厂商和版权商联盟的角度来讲的。对这一利益联盟来说，封闭排他且限制用户的系统意味着安全地垄断市场，安全地享受版权受益，避免盗版系统和盗版软件带来的损失。用户作为整体既是安全系统服务的对象，也是提防的对象。</p>
-<p>美国食品工业与之相似，剥夺了普通人、小作坊接触原始食材并加工的自由，只允许白名单上的合法食品企业运行。这也是一种安全的设计，这里的“安全”二字同样主要是从食品工业利益联盟的角度来讲的。对这一利益联盟来说，标准化食品工业意味着生产商可以合法滥用添加剂，超市可以为美国人民提供标准化低成本低品质的速冻食物、熟食，避免民间食品作坊、民间特色食品网店带来的竞争。美国人民作为整体既是安全系统服务的对象，也是提防的对象。</p>
-<p>在苹果手机操作系统的安全体系下：</p>
-<ol>
-<li>用户会觉得系统非常安全，因为恶意软件不见了。</li>
-<li>某些用户会觉得单调和憋屈，我改下游戏数据或者弄个外挂都不行，我想写一个脚本批量处理些文件都做不到。</li>
-<li>甚至也有警觉的用户认为自己的安全反而受到软硬件厂商与版权商联盟的侵犯或潜在侵犯，凭什么你能剥夺我的绝对控制权，将系统置于你的服务器操控之下，我的数据资料岂不是受制于你？</li>
-</ol>
-<p>在美国的食品工业化标准化法制化体系下：</p>
-<ol>
-<li>消费者会觉得美国食品非常安全，不可能有乱七八糟的食品，连长得歪一点的土豆茄子都直接作垃圾处理，进不了超市。</li>
-<li>但某些消费者也会觉得单调和憋屈，心想：虽然你们美国人觉得超市熟食好吃，但是依我看只是一味堆砌调味，千篇一律，火候刀工无一足取，能让老夫免为其难尝第二口的还不存在。</li>
-<li>甚至还有些警觉的消费者认为自己的安全反而受到食品工业利益联盟的侵犯或潜在侵犯，凭什么把偶氮二甲酰胺用在面包漂白合法，凭什么超市里把中国喂猪用的巨型牛皮菜和生菜摆在一起当同类蔬菜来卖，难道你们不觉得难吃爆了吗！</li>
-</ol>
+    <content type="html"><![CDATA[<h1 id="O-N-交换字符串片段："><a href="#O-N-交换字符串片段：" class="headerlink" title="O(N)交换字符串片段："></a>O(N)交换字符串片段：</h1><p>把字符串切成四段，中间两段换个位置，长度不定，空间复杂度O(1)，时间复杂度O(字符串长度)。再考虑二维矩阵内子矩阵间的交换，N维呢？</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;坐而空谈，述而不论。&lt;br&gt;
+      &lt;h1 id=&quot;O-N-交换字符串片段：&quot;&gt;&lt;a href=&quot;#O-N-交换字符串片段：&quot; class=&quot;headerlink&quot; title=&quot;O(N)交换字符串片段：&quot;&gt;&lt;/a&gt;O(N)交换字符串片段：&lt;/h1&gt;&lt;p&gt;把字符串切成四段，中间两段换个位置，长度不定，空间复杂度O(
     
     </summary>
     
-    
-      <category term="学术" scheme="wjpjw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
-    
-      <category term="生活" scheme="wjpjw.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cache Replacement Competition Framework</title>
-    <link href="wjpjw.github.io/2016/09/08/crc-framework/"/>
-    <id>wjpjw.github.io/2016/09/08/crc-framework/</id>
-    <published>2016-09-08T05:31:03.000Z</published>
-    <updated>2016-09-08T09:03:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Why-What-and-How"><a href="#Why-What-and-How" class="headerlink" title="Why, What and How"></a>Why, What and How</h1><h3 id="Why-CRC"><a href="#Why-CRC" class="headerlink" title="Why CRC?"></a>Why CRC?</h3><ul>
-<li>CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.</li>
-<li>CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
-</ul>
-<a id="more"></a>
-<h3 id="The-Simulation-Target"><a href="#The-Simulation-Target" class="headerlink" title="The Simulation Target"></a>The Simulation Target</h3><p>CRC simulates a CMP Memory System:</p>
-<ul>
-<li>8-staged 4-wide pipeline</li>
-<li>out-of-order processor</li>
-<li>L1-L2-L3, 3 layer caches</li>
-<li>perfect branch prediction</li>
-</ul>
-<p>L1 has icache and dcache. L2 is dcache. L3, also called LLC, is the cache where I will try to implement novel replacement strategies.</p>
-<h3 id="How-CRC-works"><a href="#How-CRC-works" class="headerlink" title="How CRC works"></a>How CRC works</h3><p>The CRC code is probably borrowed from CMP$IM.  I thought they were naturally open source but they weren’t. The simulator code is a blackbox library. Only cache replacement code is user visible. So I should compile the cache replacement module, and link with CRC static lib and CRC’s dependencies.</p>
-<p>The source code provided in CRC project is actually an Intel binary tool ‘pin’, used to generate traces. It is a bad news for me since it’s hard to hack into cache data, which is crucial for debugging and analysis.</p>
-<h1 id="Build-and-Run"><a href="#Build-and-Run" class="headerlink" title="Build and Run"></a>Build and Run</h1><h3 id="Linux-kernel-version-problem"><a href="#Linux-kernel-version-problem" class="headerlink" title="Linux kernel version problem"></a>Linux kernel version problem</h3><p>I followed its readme, configured and compiled the CRC project on <em>Fedora 23</em>. This build was smooth and fast. It has some rarely seen lib dependencies, yet most are already provided. However I encountered a compatability problem.</p>
-<p>CRC uses Intel binary tool ‘pin’ as trace generator. Unfortunately even the latest pin tool doesn’t support Linux 4.x. So I installed <em>Ubuntu 12</em> whose kernel is 3.2, but it didn’t work.</p>
-<p>Then I realized this simulator is really old, and found that it was based on CMP$IM proposed in 2006. So I decided to install <em>Ubuntu 10.04</em>, the oldest ubuntu with package support.</p>
-<p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the ‘pin’ file(It’s a shell script.) and supplied everything it requires.</p>
-<h3 id="Generate-traces"><a href="#Generate-traces" class="headerlink" title="Generate traces"></a>Generate traces</h3><p>Finally, ‘pin’ is fed with correct version of everything. I generated one trace ‘cat’. The cat.out.trace.gz is<br><img src="/images/crc3.jpg" alt=""></p>
-<p>‘pin’ can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
-<p>To generate N-core traces, just combine N different traces.</p>
-<h3 id="Run-simulation"><a href="#Run-simulation" class="headerlink" title="Run simulation"></a>Run simulation</h3><p>The CRC simulator can set thread number, cache configuration and replacement policy number.<br><img src="/images/crc1.jpg" alt=""><br><img src="/images/crc2.jpg" alt=""></p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
-<p>The next step is to read more on Intel’s L3 caching related paper and try to implement them.</p>
-<p>My goal is to design and implement a novel algorithm. It would probably be a variant or hybrid of big names.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Why-What-and-How&quot;&gt;&lt;a href=&quot;#Why-What-and-How&quot; class=&quot;headerlink&quot; title=&quot;Why, What and How&quot;&gt;&lt;/a&gt;Why, What and How&lt;/h1&gt;&lt;h3 id=&quot;Why-CRC&quot;&gt;&lt;a href=&quot;#Why-CRC&quot; class=&quot;headerlink&quot; title=&quot;Why CRC?&quot;&gt;&lt;/a&gt;Why CRC?&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.&lt;/li&gt;
-&lt;li&gt;CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>安全计算系统</title>
-    <link href="wjpjw.github.io/2016/09/01/secure-computing-system/"/>
-    <id>wjpjw.github.io/2016/09/01/secure-computing-system/</id>
-    <published>2016-09-01T04:22:16.000Z</published>
-    <updated>2016-09-06T05:32:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<!--Week1---->
-<h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
-<li>Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.</li>
-<li>Integrity: protecting information from being modified by unauthorized parties.</li>
-<li>Denial of service: 可能是机器故障导致信息损失。</li>
-</ol>
-<p>计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。</p>
-<a id="more"></a>
-<h4 id="可信系统评价标准"><a href="#可信系统评价标准" class="headerlink" title="可信系统评价标准"></a>可信系统评价标准</h4><p>美国国防部发布橙皮书：Trusted Computer System Evaluation Criteria，定义了安全概念。商用可以很容易通过加装一些addon达到C1或C2。只有军用才会追求A1或B3。<br><img src="/images/secure-level.png" alt="软件安全等级"></p>
-<h3 id="Trusted-Computing"><a href="#Trusted-Computing" class="headerlink" title="Trusted Computing"></a>Trusted Computing</h3><h4 id="1-什么是TC"><a href="#1-什么是TC" class="headerlink" title="1. 什么是TC?"></a>1. 什么是TC?</h4><p>The Trusted Computing Group (TCG)是Microsoft, Intel, IBM, HP and AMD联合提出的更加安全的PC标准。这里安全的定义颇有争议。按TCG标准做的PC从微软、intel角度来看更可信，但对PC拥有者来说反而更不可信。TCG将你的控制权更多地转移给硬件、软件提供商。TC在这些公司叫法都不一样，故意让公众对此感到混淆。</p>
-<h4 id="2-TC做的是什么？"><a href="#2-TC做的是什么？" class="headerlink" title="2. TC做的是什么？"></a>2. TC做的是什么？</h4><p>TC提供一个让你无权控制、更改软件的计算平台。动机源于digital rights management (DRM)。</p>
-<p>TC使得如下可能成立，例如：</p>
-<ol>
-<li>卖一个只准拷贝三次的音乐。</li>
-<li>必须24小时看完的电影，即租用软件。</li>
-<li>禁止使用unlicensed software。</li>
-<li>TC app可以互相依赖，non-TC app被各种歧视。</li>
-<li>让政府部门创立的doc一创建就是classified，不会泄露。</li>
-<li>远程审查，用traitor tracing的方式举报非法资源，远程删除某人机器上的音乐。</li>
-<li>office可以用只有微软产品才能访问的秘钥，使得其他软件无法打开doc等。</li>
-</ol>
-<p>当然TC不会立刻让以前的东西用不了，会潜移默化，逐步实施。TC-PC必须比普通PC更好用，否则无法流行。</p>
-<h4 id="3-TC是如何工作的"><a href="#3-TC是如何工作的" class="headerlink" title="3. TC是如何工作的?"></a>3. TC是如何工作的?</h4><p>TC为以后的PC提供一个监视与举报挂载组件。第一阶段的TC倾向于使用Fritz芯片——焊在主板上的智能芯片或dongle。当前的TC倾向于五个组件：</p>
-<ol>
-<li>Fritz芯片</li>
-<li>CPU中的curtained memory机制</li>
-<li>每个TC程序中的安全内核（微软称之为“NCA”）</li>
-<li>一个操作系统安全内核（微软称之为“Nexus”）</li>
-</ol>
-<p>早期TC和Fritz监视boot进程，这样只要软硬件已知，PC最终会进入可预测的状态。</p>
-<p>目前TC将Fritz作为一个消极监视组件，存储极其开始时的hash。这个hash用硬件细节来计算。如果机器最终进入了approved state，Fritz就会把TC密钥提供给操作系统。否则极其就无法获取TC密钥，只能跑non-TC程序，读non-TC数据。</p>
-<p>Nexus桥接了Fritz和NCA，检查硬件组件是否在TCG认可名单里，软件是否已签约，序列号是否吊销了。如果PC配置有变，则机器联网重新认证这些信息。Nexus协作curtained memory阻止TC程序读写其他TC程序的数据。这种curtained memory机制在Intel中被称为Lagrande Technology，在AMD被成为TrustZone.</p>
-<p>当机器在approved state运行TC程序时，Fritz会通过第三方，比如Disney，对copy的合法性进行认证。Disney服务器发送加密数据和密钥，Fritz只会把密钥提供给授权程序。这样整个环境就是trustworthy的。</p>
-<h4 id="4-TC的利益相关"><a href="#4-TC的利益相关" class="headerlink" title="4. TC的利益相关"></a>4. TC的利益相关</h4><p>Disney等娱乐公司当然是最大受益方。</p>
-<p>Intel垄断PC芯片，想要扩张，就要扩大PC市场，保证PC的DRM是避免PC地位下降的防守策略。</p>
-<p>Microsoft可以得益于：</p>
-<ol>
-<li>卖出更多正版</li>
-<li>增强用户黏性，提升换用其他软件的成本</li>
-</ol>
-<p>各种安全软件提供商会血崩。</p>
-<p>有权利掌控TC基础设施的一方会拥有强大的独裁权力，可能被滥用。</p>
-<h4 id="云舒的观点"><a href="#云舒的观点" class="headerlink" title="云舒的观点"></a>云舒的观点</h4><p>关于可信计算，就我的判断这确实是一个理想中的东西，解决的是真空中的球形鸡的问题，对于真实的环境毫无用处，对于其它理论的推进也毫无帮助，研究者是有意无意的骗子。做这个结论，是因为我很懂安全攻防，同时懂一点点可信计算理论。</p>
-<p>回到技术的角度，我假设你可以在计算机里面搞个芯片，对所有的进程作签名，没签名的进程不许启动（其实这步在企业中已经是不可实现的了，假设在某些特殊特殊再特殊的部门可以实现），有用？SQL注入是怎么做的？恶意代码在数据库的进程内部直接执行了。溢出攻击怎么做的？恶意代码在攻击目标的进程内部直接执行了。XSS怎么做的？CSRF怎么做的？恶意代码是你自己在浏览器里面执行的。</p>
-<p>why？这是冯诺伊曼计算机结构决定的，数据和指令没有分开啊大哥。可信计算通过进程级别的签名能够解决的了？你能够对CPU的每一条指令签名么？（且不说还有无数的网络攻击，ARP攻击怎么做的？交换机端口劫持怎么做的？BGP劫持怎么做的？）</p>
-<p>你说用TPM芯片作计算机认证，OK，这个没问题。但是这对于企业安全来说，是细枝末节的细枝末节。每年有多少入侵是因为员工PC非法授权入侵的？沧海一粟。员工都是上网看了几个网站，然后就有恶意代码在浏览器里面执行了就上线了好么？用TPM作全盘加密比如微软的BitLocker，但是别人根本不依赖TPM，有没有这东西无所谓啊，而且全盘加密对企业安全重要么？有多少企业实施了？</p>
-<p>不要想着从最底层，从BIOS层解决问题。越到底层，丢失的上下文越多，数据越失去意义。可信计算在企业中无法实施，而且即使实施了，在实质性的提升企业安全能力上面，解决不了任何问题。现在不能，将来也不能。我就是死黑可信计算，如果谁拿出可信计算在企业中的成功案例，我立马道歉。</p>
-<h4 id="现状总结"><a href="#现状总结" class="headerlink" title="现状总结"></a>现状总结</h4><p>tcg在pc上失败了，在移动领域被tee抢占风头，物联网也是悲剧，目前主流物联网安全方案都没有tcg的事。物联网上是碎片化的解决方案，各个芯片方案商方案都不一样。</p>
-<p>可信计算无法防止对应用层漏洞的攻击，然而大部分攻击都是针对应用层的。</p>
-<p>最新的可信计算保护的范围越来越小，不一定算严格的可信计算，如ARM的TrustZone，Intel的SGX。</p>
-<!--Week2~3---->
-<h1 id="设计原则与底层实现"><a href="#设计原则与底层实现" class="headerlink" title="设计原则与底层实现"></a>设计原则与底层实现</h1><h2 id="设计原则-信息保护-see-also-chapter-5-of-Gasser-book"><a href="#设计原则-信息保护-see-also-chapter-5-of-Gasser-book" class="headerlink" title="设计原则: 信息保护 (see also chapter 5 of Gasser book)"></a>设计原则: 信息保护 (see also chapter 5 of Gasser book)</h2><h3 id="Glossary"><a href="#Glossary" class="headerlink" title="Glossary"></a>Glossary</h3><ul>
-<li>Capability: In a computer system, an unforgeable ticket, which when presented can be taken as incontestable proof that the presenter is authorized to have access to the object named in the ticket.</li>
-<li>Certify: To check the accuracy, correctness, and completeness of a security or protection mechanism</li>
-<li>Confinement: Allowing a borrowed program to have access to data, while ensuring that the program cannot release the information.</li>
-<li>Descriptor: A protected value which is (or leads to) the physical address of some protected object.</li>
-<li>Domain: The set of objects that currently may be directly accessed by a principal.</li>
-<li>Permission: A particular form of allowed access, e.g., permission to READ as contrasted with permission to WRITE</li>
-<li>Prescript: A rule that must be followed before access to an object is permitted, thereby introducing an opportunity for human judgment about the need for access, so that abuse of the access is discouraged.</li>
-<li>Principal: The entity in a computer system to which authorizations are granted; thus the unit of accountability in a computer system.</li>
-<li>Propagation: When a principal, having been authorized access to some object, in turn authorizes access to another principal.</li>
-<li>Protected object: A data structure whose existence is known, but whose internal organization is not accessible, except by invoking the protected subsystem (q.v.) that manages it.</li>
-<li>Revoke: To take away previously authorized access from some principal.</li>
-<li><em>Security: With respect to information processing systems, used to denote mechanisms and techniques that control who may use or modify the computer or the information stored in it.</em></li>
-<li><em>Privacy: The ability of an individual (or organization) to decide whether, when, and to whom personal (or organizational) information is released.</em></li>
-</ul>
-<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><h4 id="三种安全侵犯的类别："><a href="#三种安全侵犯的类别：" class="headerlink" title="三种安全侵犯的类别："></a>三种安全侵犯的类别：</h4><ol>
-<li>未授权的信息发布。</li>
-<li>未授权的信息修改。</li>
-<li>未授权的拒绝使用。<h4 id="5个信息保护的功能等级："><a href="#5个信息保护的功能等级：" class="headerlink" title="5个信息保护的功能等级："></a>5个信息保护的功能等级：</h4>后四个才有意义，是动态改变访问授权的系统。</li>
-<li>Unprotected systems：可能有许多防错机制，但本质上完全不安全。</li>
-<li>All-or-nothing systems：为用户提供隔离，使之就像在用私人pc，也有一些共享lib。</li>
-<li>Controlled sharing：明确规定谁能访问哪个数据项。每个文件维护用户列表，详注读、写、执行权。</li>
-<li>User-programmed sharing controls：用户可以编写protected objects+subsystem，subsystem提供protocol，完全避免外界直接访问object，可以提供更灵活复杂的数据访问控制，比如每天几点到几点允许谁查阅某文件，其他时候拒绝访问。</li>
-<li>Putting strings on information：以上三种都只是在release信息的条件上做文章，这一层是在release之后仍然对信息做限制或警告，比如在文件上打印Top Secret，表明这是不允许外泄的机密文件。</li>
-</ol>
-<h4 id="8个基于经验的设计原则："><a href="#8个基于经验的设计原则：" class="headerlink" title="8个基于经验的设计原则："></a>8个基于经验的设计原则：</h4><ul>
-<li>Economy of mechanism： 设计得越小越好！常规使用软件不会用到奇葩或非法路径，所以错误很难自动滚出来，所以这种代码依赖line-by-line inspection和硬件检测，程序越小越方便。</li>
-<li>Fail-safe defaults：用白名单，不用黑名单，这样名单不全问题不大。</li>
-<li>Complete mediation：所有访问都得查，那种记住check结果的思路很可能有问题。</li>
-<li>Open design：设计不应该成为秘密。安全机制不应该基于潜在攻击者的无知，因为他们说不定哪天就有知了。</li>
-<li>Separation of privilege：一个需要两个key来unlock的保护机制更加鲁棒也更加灵活。</li>
-<li>Least privilege：每个程序或用户要做某事时只需要获取最低的权限，不应获取额外的权限。</li>
-<li>Least common mechanism：减少那些对多个用户通用的共享机制，尤其是涉及共享变量的。</li>
-<li>Psychological acceptability：用户接口应该好用，不要默认地就容易出错，也要符合用户对安全机制的思维印象。</li>
-</ul>
-<p>传统物理安全分析者提出的额外两点，不是完全适用信息安全：</p>
-<ul>
-<li>Work factor： 比较规避防御机制的成本与攻击者的资源，例如算算暴力破解RSA的work factor，自然是比较大的。</li>
-<li>Compromise recording：记录信息的compromise(不得不变的一些东西)，比如文件timestamp，有时就是被人改了的证据。</li>
-</ul>
-<h4 id="虚拟机的例子（time-sharing-system的地址隔离）"><a href="#虚拟机的例子（time-sharing-system的地址隔离）" class="headerlink" title="虚拟机的例子（time-sharing system的地址隔离）"></a>虚拟机的例子（time-sharing system的地址隔离）</h4><p>一个vm对几个用户来说大家都在单机，察觉不到其他人，除了性能差了点。主要隔离手段是descriptor寄存器，descriptor存放可访问的内存的base和bound。只有privilege态才能load descriptor，有一个supervisor程序在privilege态运行并模拟各个虚拟cpu。其实和OS内核态的思路一样，就是等级制度。</p>
-<p>这个例子抽象以下就是三个防御措施：</p>
-<ul>
-<li>descriptor机制保护program界限：guard就是强制descriptor限制的硬件。带门之不可穿越之墙就是逼迫所有内存引用都要经过descriptor限制的硬件机制。descriptor的限制检查很简单，就是看看地址是否在A~B。</li>
-<li>privilege bit机制保护descriptor内容：查看程序是否在特权态，不是就不准访问、篡改descriptor。</li>
-<li>允许非特权程序执行一个指令“开启特权态并将控制权转交给supervisor”，不允许非特权程序privilege bit为on，特权程序可以变得不特权。</li>
-</ul>
-<h4 id="authen系统的例子"><a href="#authen系统的例子" class="headerlink" title="authen系统的例子"></a>authen系统的例子</h4><p>虚拟机若与终端相连，就得身份验证，第二个例子就是authen system。常用password或不可伪造之证物（钥匙、刷脸）来单向authenticate user。问题就在于user不能authenticate系统，这样入侵者可以拦截所有user输入再转发给系统，这就是隐患。<br>解决方案是system和user持有相同的key，然后将交流信息encipher+decipher，这样的authen就不怕拦截转发了。<br>其实这个在密码学里讲了很多，mac then encrypt。</p>
-<h4 id="shared-information的实现"><a href="#shared-information的实现" class="headerlink" title="shared information的实现"></a>shared information的实现</h4><ul>
-<li>list-oriented，每个guard维护一个用户list，允许多个用户使用目标数据。</li>
-<li>ticket-oriented，guard只有一个identifier的描述，每个user有很多identifiers，或者说tickets，即门票。</li>
-</ul>
-<h3 id="基于Descriptor的保护系统"><a href="#基于Descriptor的保护系统" class="headerlink" title="基于Descriptor的保护系统"></a>基于Descriptor的保护系统</h3><h4 id="地址隔离"><a href="#地址隔离" class="headerlink" title="地址隔离"></a>地址隔离</h4><p>内存分段，即segment，用descriptor描述。就是现代os里的东西。</p>
-<h4 id="The-Capability-System"><a href="#The-Capability-System" class="headerlink" title="The Capability System"></a>The Capability System</h4><h5 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h5><p>capability system可以由supervisor+privilege bit实现。</p>
-<h5 id="共享的动态授权"><a href="#共享的动态授权" class="headerlink" title="共享的动态授权"></a>共享的动态授权</h5><p>Sender’s part:</p>
-<ul>
-<li>Sender learns receiver’s principal identifier via a communication path outside the system.</li>
-<li>Sender transmits receiver’s principal identifier to some program running inside the system under the accountability of the sender.</li>
-<li>Sender’s program uses receiver’s principal identifier to ensure that only virtual processors operating under the accountability of the receiver will be able to obtain the capability being transmitted.</li>
-</ul>
-<p>Receiver’s part:</p>
-<ul>
-<li>Receiver learns sender’s principal identifier, via a communication path outside the system.</li>
-<li>Receiver transmits sender’s principal identifier to some program running inside the system under the accountability of the receiver.</li>
-<li>Receiver’s program uses the sender’s principal identifier to ensure that only a virtual processor operating under the accountability of the sender could have sent the capability being received.</li>
-</ul>
-<h5 id="Propagation-Copy-Bit"><a href="#Propagation-Copy-Bit" class="headerlink" title="Propagation(Copy Bit!)"></a>Propagation(Copy Bit!)</h5><p> A bit added to a capability (the copy bit) may be used to indicate whether or not the capability may be stored in a segment. If one user gives another user access to a capability with the copy bit OFF, then the second user could not make copies of the capability he has borrowed. Propagation would be prevented, at the price of lost flexibility.</p>
-<h4 id="访问控制列表系统-Prescript-）"><a href="#访问控制列表系统-Prescript-）" class="headerlink" title="访问控制列表系统(Prescript!）"></a>访问控制列表系统(Prescript!）</h4><p>Capability system如果是ticket-oriented，那么Access Control List System必然是list-oriented。</p>
-<p>The hierarchical control scheme might be used in a timesharing system as follows. The first access controller created is given an access control list naming one user, a system administrator. The system administrator creates several access controllers (for example, one for each department in his company) and grants permission to modify access in each controller to the department administrator. The department administrator can create additional access controllers in a tree below the one for his department, perhaps for subdepartments or individual computer users in his department. These individual users can develop any pattern of sharing they wish, through the use of access control lists in access controllers, for the segments they create. In an emergency, however, the department administrator can intevene and modify any access control list in his department. Similarly, the system administrator can intervene in case a department administrator makes a mistake or is unavailable.41</p>
-<p>Whenever an attempt is made to modify an access control list (either by a special store instruction or by a call to a supervisor entry, depending on the implementation), the access-modifying permission of the higher level access controller regulating the access control list is checked as always. If the permission exists, the <em>prescript field</em> of the access control list that is about to be modified is examined, and some action, depending on the value found, is automatically triggered. The following list suggests some possible actions that might be triggered by the prescript value, and some external policies that can be modeled with the prescript scheme:</p>
-<ul>
-<li>No action.</li>
-<li>Identifier of principal making change is logged (the “audit trail”).</li>
-<li>Change is delayed one day (“cooling-off” period).</li>
-<li>Change is delayed until some other principal attempts the same change (“buddy” system).</li>
-<li>Change is delayed until signal is received from some specific (system-designated) principal (“court order”).</li>
-</ul>
-<h4 id="Protecting-Objects-Other-Than-Segments"><a href="#Protecting-Objects-Other-Than-Segments" class="headerlink" title="Protecting Objects Other Than Segments"></a>Protecting Objects Other Than Segments</h4><p><a href="http://web.mit.edu/Saltzer/www/publications/protection/Descriptors.html" target="_blank" rel="external">这几段以后用到再看吧，尤其是访问控制列表系统。</a></p>
-<h2 id="IA32的内存保护"><a href="#IA32的内存保护" class="headerlink" title="IA32的内存保护"></a>IA32的内存保护</h2><p>Segment不必说，我以前写过。</p>
-<p>Paging当时跳过了，不过IA32是提供page-level protection的：</p>
-<ul>
-<li>Restriction of addressable domain (supervisor and user modes).</li>
-<li>Page type (read only or read/write).</li>
-</ul>
-<p>IA32的segment protection实际上已经成为一种legacy，paging开启之后，主要靠paging的protection，可以设置read-only，哪个权限下read-only。</p>
-<h2 id="VM以及VM-Monitor"><a href="#VM以及VM-Monitor" class="headerlink" title="VM以及VM Monitor"></a>VM以及VM Monitor</h2><p>Virtualization本质上是接口实现解耦的过程，是guest system与host之间同构(isomorphism)的构造。VM的实现就是用真实硬件+软件一起实现一个接口。</p>
-<p>VM分类：</p>
-<ul>
-<li>Process VM：基于特定ISA开发的VM，为Application层提供虚拟ABI。缺点是不同硬件平台要重新开发，不同操作系统也要重新开发。在Process VM上，程序编译出来字节码和真实的差不多，只是没有详细的寄存器分配，然后根据ISA去跑。换平台字节码要重新编译。</li>
-<li>High Level Language VM：基于跨平台理念开发的VM，其实就是硬件解耦做的更好。在编译时生成更加抽象更通用的generic stack-based ISA code。这种虚拟ISA本质上就是HLLVM跑的机器码。JVM和CLI .Net是最著名的HLLVM。</li>
-<li>System VM：其实就是一台硬件上的的多个软件分身，每一个都感觉自己独一无二，这种感觉依赖VMM(又叫hypervisor)。</li>
-</ul>
-<p>没提到bochs，qmenu这种完全模拟的，应该是接近Full emulation，所以不算virtualization。</p>
-<p>至于VMM，实际上是运行在VM与多个客户终端间的another layer of indirection，将file、user、group、process tree、device、semaphore/shared memory/msgs全部isolate。VMM又称Hypervisor。VMM使得各个用户觉得自己拥有所有硬件，实际上是分享的。譬如用户终端在调用syscall时，VVM知道ISR在哪，相当于中介。用户的os运行在较低privilege的mode下。VVM则是kernel mode。此外，VVM还再存了一个page table，把用户的逻辑地址映射到真实machine地址上。目前Xen、KVM、OpenVZ(只有linux版，但是也好用)就是最常用的VMM，性能比Process VM高多了，又不像JVM之类的有语言限定，模拟的是系统，所以在企业界有广泛应用，可以大幅提高单个服务器主机的利用率。16GB server跑Xen虚拟给两个users，8GB。</p>
-<p>Xen在linux上是个application， KVM是个kernel module。SmartOS是一个基于KVM的云操作系统，可以关注下。</p>
-<h2 id="Chromium的体系结构"><a href="#Chromium的体系结构" class="headerlink" title="Chromium的体系结构"></a>Chromium的体系结构</h2><p>两层结构：</p>
-<ul>
-<li>browser kernel：与操作系统互动。代表user行事。它将rendering engine当做解析web内容并输出渲染后的位图文档的黑箱。输入输出依赖IPC。</li>
-<li>rendering engine：在一个privilege严格受限的沙盒内运行。代表web发布内容。即使入侵者利用rendering engine漏洞获取其最高权限，也会被沙盒隔离，无法读写用户的文件系统。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;!--Week1----&gt;
-&lt;h1 id=&quot;安全计算系统的基本概念&quot;&gt;&lt;a href=&quot;#安全计算系统的基本概念&quot; class=&quot;headerlink&quot; title=&quot;安全计算系统的基本概念&quot;&gt;&lt;/a&gt;安全计算系统的基本概念&lt;/h1&gt;&lt;h3 id=&quot;What-is-Computer-Security-gassbook-c1&quot;&gt;&lt;a href=&quot;#What-is-Computer-Security-gassbook-c1&quot; class=&quot;headerlink&quot; title=&quot;What is Computer Security(gassbook-c1)&quot;&gt;&lt;/a&gt;What is Computer Security(gassbook-c1)&lt;/h3&gt;&lt;h4 id=&quot;SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot;&gt;&lt;a href=&quot;#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot; class=&quot;headerlink&quot; title=&quot;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&quot;&gt;&lt;/a&gt;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.&lt;/li&gt;
-&lt;li&gt;Integrity: protecting information from being modified by unauthorized parties.&lt;/li&gt;
-&lt;li&gt;Denial of service: 可能是机器故障导致信息损失。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="学术" scheme="wjpjw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Archlinux试玩</title>
-    <link href="wjpjw.github.io/2016/08/30/archlinux/"/>
-    <id>wjpjw.github.io/2016/08/30/archlinux/</id>
-    <published>2016-08-31T03:52:42.000Z</published>
-    <updated>2016-09-12T22:19:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
-<a id="more"></a>
-<h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
-<li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
-<li>启动或关闭服务：systemctl start/stop example.service</li>
-<li>pacman：-Syy，同步数据库；-S elinks，安装elinks；-Ss xxx，搜索xxx；-R是删包。</li>
-<li>fdisk或gdisk /dev/sda就可以进入partition界面，创建partition table。操作相当简单。</li>
-<li>lsblk查看bulk device的挂载情况。</li>
-<li>fstab配置挂载，locale.conf配置语言。</li>
-</ol>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>我觉得kde和gnome都不如xfce4，所以装的是xfce。启动图形界面不用startx，用startxfce4。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="常识" scheme="wjpjw.github.io/tags/%E5%B8%B8%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++的一种合理用法</title>
-    <link href="wjpjw.github.io/2016/08/30/cpp-core-guideline/"/>
-    <id>wjpjw.github.io/2016/08/30/cpp-core-guideline/</id>
-    <published>2016-08-31T03:06:54.000Z</published>
-    <updated>2016-09-01T04:27:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
-<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
-<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><ol>
-<li>RAII+值语义是最方便的。所有权明确、生命周期明确、异常安全。依靠现代c++提供的各种值语义工具，自己的类大部分都可以实现值语义。</li>
-<li>应该只允许存在const全局变量。单例也不要用。对全局变量的依赖会干扰判断，影响正确性分析。</li>
-<li>使用异常。catch里面处理错误，看起来不美观，实际上还是比c风格清晰的。</li>
-<li>函数参数应该用裸指针，对象own的成员用unique_ptr。裸指针表示引用，绝对不表示所有权转让。</li>
-<li>接口类无状态，就是像java那样。不要用继承去实现代码复用，那只会增加强耦合代码。</li>
-<li>可能异常的代码throw就好了，没必要catch，即使catch也只是按照不同异常进行log，不做补救，直接让系统crash掉。</li>
-<li>保持简洁，能不写的就不写，比如不需要构造函数、析构函数，那就不写。需要暴露的变量，不写get/set，直接public。</li>
-</ol>
-<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><ol>
-<li>纯c或纯c风格的函数缀上noexcept，表明无异常处理，可优化性能。</li>
-<li>基类应该禁用拷贝构造函数，提供virtual的clone。clone返回owner<t*>, owner只用来表示这指针有所有权。</t*></li>
-<li>虚函数应该明确指明virtual，override还是final。</li>
-<li>使用enum class，不用enum，避免enum转型int这种可能性。</li>
-<li>复杂变量初始化可以用lambda。</li>
-<li>只要是值语义，就用unique_ptr<t>，不要用T本身，那样需要include类型T的头文件。</t></li>
-<li>用vs的话，哪怕实际上编译时不需要，头文件也要include各种类型所在头文件，让静态分析立刻生效，避免语法错误。要知道，c++写错了编译一次又等半天，很痛苦。</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。&lt;/p&gt;
-&lt;p&gt;不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="日志" scheme="wjpjw.github.io/tags/%E6%97%A5%E5%BF%97/"/>
-    
-      <category term="胡扯" scheme="wjpjw.github.io/tags/%E8%83%A1%E6%89%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奇奇怪怪的知识</title>
-    <link href="wjpjw.github.io/2016/08/30/spicy-knowledge/"/>
-    <id>wjpjw.github.io/2016/08/30/spicy-knowledge/</id>
-    <published>2016-08-31T02:51:30.000Z</published>
-    <updated>2016-09-01T15:12:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
-<a id="more"></a>
-<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
-<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
-<li>ATS-PL-SYS: Hongwei Xi</li>
-<li>F#: Tao Liu</li>
-<li>sql: 刘英武</li>
-<li>php: 惠新宸</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="常识" scheme="wjpjw.github.io/tags/%E5%B8%B8%E8%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>9月日志</title>
-    <link href="wjpjw.github.io/2016/08/30/2016-9-log/"/>
-    <id>wjpjw.github.io/2016/08/30/2016-9-log/</id>
-    <published>2016-08-31T01:41:04.000Z</published>
-    <updated>2016-09-12T02:49:14.000Z</updated>
+    <link href="wjpjw.github.io/2016/09/21/2016-9-log/"/>
+    <id>wjpjw.github.io/2016/09/21/2016-9-log/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-24T06:22:21.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
@@ -483,6 +132,43 @@
 <li>算法</li>
 </ol>
 <p>Big data Hw1 is due 11:55pm Sep. 16.<br>Adv. microarchitecture project proposal is due 6:pm Sep. 16</p>
+<h3 id="2016-9-12"><a href="#2016-9-12" class="headerlink" title="2016/9/12"></a>2016/9/12</h3><p>只睡了不到4小时，写了很多很多算法，写起来还是比较流畅的。尤其是c++用lambda一边组织思路一边写，无压力。此外还写了一篇文章。<br>晚上有点困了，准备休息吧。</p>
+<h3 id="2016-9-13"><a href="#2016-9-13" class="headerlink" title="2016/9/13"></a>2016/9/13</h3><p>今天要研究advma cache repl的最新成果，试图与big data方法融合。同时解决两个project。</p>
+<h3 id="2016-9-14"><a href="#2016-9-14" class="headerlink" title="2016/9/14"></a>2016/9/14</h3><p>写了cache repl研究的proposal。</p>
+<h3 id="2016-9-15"><a href="#2016-9-15" class="headerlink" title="2016/9/15"></a>2016/9/15</h3><p>一天基本浪费了，不过确定了两个project的主题，可以轻松很多，很开心。</p>
+<h3 id="2016-9-16"><a href="#2016-9-16" class="headerlink" title="2016/9/16"></a>2016/9/16</h3><p>非常紧张的一天，完成3项作业。</p>
+<h3 id="2016-9-17"><a href="#2016-9-17" class="headerlink" title="2016/9/17"></a>2016/9/17</h3><p>睡眠极少，完成cse的hw1。</p>
+<h3 id="2016-9-18"><a href="#2016-9-18" class="headerlink" title="2016/9/18"></a>2016/9/18</h3><p>周日休息。</p>
+<h3 id="2016-9-19"><a href="#2016-9-19" class="headerlink" title="2016/9/19"></a>2016/9/19</h3><ol>
+<li>完成医疗项目界面美化。</li>
+</ol>
+<h3 id="2016-9-20"><a href="#2016-9-20" class="headerlink" title="2016/9/20"></a>2016/9/20</h3><ol>
+<li>建立cs927的slack群。</li>
+<li>进行cache replacement project的初步尝试。</li>
+<li>数位dp，区间dp。</li>
+<li>个人quiz写完。</li>
+</ol>
+<h3 id="2016-9-21"><a href="#2016-9-21" class="headerlink" title="2016/9/21"></a>2016/9/21</h3><ol>
+<li>更新linkedin</li>
+<li>cache replacement project proposal review</li>
+<li>完成quiz1的最终整合</li>
+</ol>
+<h3 id="2016-9-22"><a href="#2016-9-22" class="headerlink" title="2016/9/22"></a>2016/9/22</h3><ol>
+<li>完成secure-computing-system-hw1</li>
+<li>加入cse project team</li>
+<li>完善简历</li>
+<li>完成VMWare申请</li>
+<li>有趣，vmware什么都不歧视，就不招russian，还问几遍你是否是俄罗斯公民。</li>
+</ol>
+<h3 id="2016-9-23"><a href="#2016-9-23" class="headerlink" title="2016/9/23"></a>2016/9/23</h3><ol>
+<li>记住：10月13日，安全midterm</li>
+<li>今天无脑休息。</li>
+<li>日常对话时候应该加一些废话，不然不像美语。<br>What’s about that, … Yeah Okay. Un-hn. It’s like. So now… I hate to be jugemental about … If you fuck up with … Now i do have the tendency to leave karmma… label these people as lazy. on top of… That doesn’t make sense to me. It is illegal right now. Lastly, … I just forgot something that didn’t exist thirty years ago. Give me two good reasons. The price is still up there. Still high. Fuck that!  </li>
+<li>对了，一月前完成毕业申请。</li>
+</ol>
+<h3 id="2016-9-24"><a href="#2016-9-24" class="headerlink" title="2016/9/24"></a>2016/9/24</h3><ol>
+<li>医保enroll。<br>2.</li>
+</ol>
 ]]></content>
     
     <summary type="html">
@@ -499,16 +185,267 @@
     </summary>
     
     
-      <category term="日志" scheme="wjpjw.github.io/tags/%E6%97%A5%E5%BF%97/"/>
+      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++的一种合理用法</title>
+    <link href="wjpjw.github.io/2016/09/21/cpp-core-guideline/"/>
+    <id>wjpjw.github.io/2016/09/21/cpp-core-guideline/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
+<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
+<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><ol>
+<li>RAII+值语义是最方便的。所有权明确、生命周期明确、异常安全。依靠现代c++提供的各种值语义工具，自己的类大部分都可以实现值语义。</li>
+<li>应该只允许存在const全局变量。单例也不要用。对全局变量的依赖会干扰判断，影响正确性分析。</li>
+<li>使用异常。catch里面处理错误，看起来不美观，实际上还是比c风格清晰的。</li>
+<li>函数参数应该用裸指针，对象own的成员用unique_ptr。裸指针表示引用，绝对不表示所有权转让。</li>
+<li>接口类无状态，就是像java那样。不要用继承去实现代码复用，那只会增加强耦合代码。</li>
+<li>可能异常的代码throw就好了，没必要catch，即使catch也只是按照不同异常进行log，不做补救，直接让系统crash掉。</li>
+<li>保持简洁，能不写的就不写，比如不需要构造函数、析构函数，那就不写。需要暴露的变量，不写get/set，直接public。</li>
+</ol>
+<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><ol>
+<li>纯c或纯c风格的函数缀上noexcept，表明无异常处理，可优化性能。</li>
+<li>基类应该禁用拷贝构造函数，提供virtual的clone。clone返回owner<t*>, owner只用来表示这指针有所有权。</t*></li>
+<li>虚函数应该明确指明virtual，override还是final。</li>
+<li>使用enum class，不用enum，避免enum转型int这种可能性。</li>
+<li>复杂变量初始化可以用lambda。</li>
+<li>只要是值语义，就用unique_ptr<t>，不要用T本身，那样需要include类型T的头文件。</t></li>
+<li>用vs的话，哪怕实际上编译时不需要，头文件也要include各种类型所在头文件，让静态分析立刻生效，避免语法错误。要知道，c++写错了编译一次又等半天，很痛苦。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。&lt;/p&gt;
+&lt;p&gt;不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="c++" scheme="wjpjw.github.io/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安全计算系统</title>
+    <link href="wjpjw.github.io/2016/09/21/secure-computing-system/"/>
+    <id>wjpjw.github.io/2016/09/21/secure-computing-system/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-22T15:44:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<!--Week1---->
+<h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
+<li>Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.</li>
+<li>Integrity: protecting information from being modified by unauthorized parties.</li>
+<li>Denial of service: 可能是机器故障导致信息损失。</li>
+</ol>
+<p>计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。</p>
+<a id="more"></a>
+<h4 id="可信系统评价标准"><a href="#可信系统评价标准" class="headerlink" title="可信系统评价标准"></a>可信系统评价标准</h4><p>美国国防部发布橙皮书：Trusted Computer System Evaluation Criteria，定义了安全概念。商用可以很容易通过加装一些addon达到C1或C2。只有军用才会追求A1或B3。<br><img src="/images/secure-level.png" alt="软件安全等级"></p>
+<h3 id="Trusted-Computing"><a href="#Trusted-Computing" class="headerlink" title="Trusted Computing"></a>Trusted Computing</h3><h4 id="1-什么是TC"><a href="#1-什么是TC" class="headerlink" title="1. 什么是TC?"></a>1. 什么是TC?</h4><p>The Trusted Computing Group (TCG)是Microsoft, Intel, IBM, HP and AMD联合提出的更加安全的PC标准。这里安全的定义颇有争议。按TCG标准做的PC从微软、intel角度来看更可信，但对PC拥有者来说反而更不可信。TCG将你的控制权更多地转移给硬件、软件提供商。TC在这些公司叫法都不一样，故意让公众对此感到混淆。</p>
+<h4 id="2-TC做的是什么？"><a href="#2-TC做的是什么？" class="headerlink" title="2. TC做的是什么？"></a>2. TC做的是什么？</h4><p>TC提供一个让你无权控制、更改软件的计算平台。动机源于digital rights management (DRM)。</p>
+<p>TC使得如下可能成立，例如：</p>
+<ol>
+<li>卖一个只准拷贝三次的音乐。</li>
+<li>必须24小时看完的电影，即租用软件。</li>
+<li>禁止使用unlicensed software。</li>
+<li>TC app可以互相依赖，non-TC app被各种歧视。</li>
+<li>让政府部门创立的doc一创建就是classified，不会泄露。</li>
+<li>远程审查，用traitor tracing的方式举报非法资源，远程删除某人机器上的音乐。</li>
+<li>office可以用只有微软产品才能访问的秘钥，使得其他软件无法打开doc等。</li>
+</ol>
+<p>当然TC不会立刻让以前的东西用不了，会潜移默化，逐步实施。TC-PC必须比普通PC更好用，否则无法流行。</p>
+<h4 id="3-TC是如何工作的"><a href="#3-TC是如何工作的" class="headerlink" title="3. TC是如何工作的?"></a>3. TC是如何工作的?</h4><p>TC为以后的PC提供一个监视与举报挂载组件。第一阶段的TC倾向于使用Fritz芯片——焊在主板上的智能芯片或dongle。当前的TC倾向于五个组件：</p>
+<ol>
+<li>Fritz芯片</li>
+<li>CPU中的curtained memory机制</li>
+<li>每个TC程序中的安全内核（微软称之为“NCA”）</li>
+<li>一个操作系统安全内核（微软称之为“Nexus”）</li>
+</ol>
+<p>早期TC和Fritz监视boot进程，这样只要软硬件已知，PC最终会进入可预测的状态。</p>
+<p>目前TC将Fritz作为一个消极监视组件，存储极其开始时的hash。这个hash用硬件细节来计算。如果机器最终进入了approved state，Fritz就会把TC密钥提供给操作系统。否则极其就无法获取TC密钥，只能跑non-TC程序，读non-TC数据。</p>
+<p>Nexus桥接了Fritz和NCA，检查硬件组件是否在TCG认可名单里，软件是否已签约，序列号是否吊销了。如果PC配置有变，则机器联网重新认证这些信息。Nexus协作curtained memory阻止TC程序读写其他TC程序的数据。这种curtained memory机制在Intel中被称为Lagrande Technology，在AMD被成为TrustZone.</p>
+<p>当机器在approved state运行TC程序时，Fritz会通过第三方，比如Disney，对copy的合法性进行认证。Disney服务器发送加密数据和密钥，Fritz只会把密钥提供给授权程序。这样整个环境就是trustworthy的。</p>
+<h4 id="4-TC的利益相关"><a href="#4-TC的利益相关" class="headerlink" title="4. TC的利益相关"></a>4. TC的利益相关</h4><p>Disney等娱乐公司当然是最大受益方。</p>
+<p>Intel垄断PC芯片，想要扩张，就要扩大PC市场，保证PC的DRM是避免PC地位下降的防守策略。</p>
+<p>Microsoft可以得益于：</p>
+<ol>
+<li>卖出更多正版</li>
+<li>增强用户黏性，提升换用其他软件的成本</li>
+</ol>
+<p>各种安全软件提供商会血崩。</p>
+<p>有权利掌控TC基础设施的一方会拥有强大的独裁权力，可能被滥用。</p>
+<h4 id="云舒的观点"><a href="#云舒的观点" class="headerlink" title="云舒的观点"></a>云舒的观点</h4><p>关于可信计算，就我的判断这确实是一个理想中的东西，解决的是真空中的球形鸡的问题，对于真实的环境毫无用处，对于其它理论的推进也毫无帮助，研究者是有意无意的骗子。做这个结论，是因为我很懂安全攻防，同时懂一点点可信计算理论。</p>
+<p>回到技术的角度，我假设你可以在计算机里面搞个芯片，对所有的进程作签名，没签名的进程不许启动（其实这步在企业中已经是不可实现的了，假设在某些特殊特殊再特殊的部门可以实现），有用？SQL注入是怎么做的？恶意代码在数据库的进程内部直接执行了。溢出攻击怎么做的？恶意代码在攻击目标的进程内部直接执行了。XSS怎么做的？CSRF怎么做的？恶意代码是你自己在浏览器里面执行的。</p>
+<p>why？这是冯诺伊曼计算机结构决定的，数据和指令没有分开啊大哥。可信计算通过进程级别的签名能够解决的了？你能够对CPU的每一条指令签名么？（且不说还有无数的网络攻击，ARP攻击怎么做的？交换机端口劫持怎么做的？BGP劫持怎么做的？）</p>
+<p>你说用TPM芯片作计算机认证，OK，这个没问题。但是这对于企业安全来说，是细枝末节的细枝末节。每年有多少入侵是因为员工PC非法授权入侵的？沧海一粟。员工都是上网看了几个网站，然后就有恶意代码在浏览器里面执行了就上线了好么？用TPM作全盘加密比如微软的BitLocker，但是别人根本不依赖TPM，有没有这东西无所谓啊，而且全盘加密对企业安全重要么？有多少企业实施了？</p>
+<p>不要想着从最底层，从BIOS层解决问题。越到底层，丢失的上下文越多，数据越失去意义。可信计算在企业中无法实施，而且即使实施了，在实质性的提升企业安全能力上面，解决不了任何问题。现在不能，将来也不能。我就是死黑可信计算，如果谁拿出可信计算在企业中的成功案例，我立马道歉。</p>
+<h4 id="现状总结"><a href="#现状总结" class="headerlink" title="现状总结"></a>现状总结</h4><p>tcg在pc上失败了，在移动领域被tee抢占风头，物联网也是悲剧，目前主流物联网安全方案都没有tcg的事。物联网上是碎片化的解决方案，各个芯片方案商方案都不一样。</p>
+<p>可信计算无法防止对应用层漏洞的攻击，然而大部分攻击都是针对应用层的。</p>
+<p>最新的可信计算保护的范围越来越小，不一定算严格的可信计算，如ARM的TrustZone，Intel的SGX。</p>
+<!--Week2~3---->
+<h1 id="设计原则与底层实现"><a href="#设计原则与底层实现" class="headerlink" title="设计原则与底层实现"></a>设计原则与底层实现</h1><h2 id="设计原则-信息保护-see-also-chapter-5-of-Gasser-book"><a href="#设计原则-信息保护-see-also-chapter-5-of-Gasser-book" class="headerlink" title="设计原则: 信息保护 (see also chapter 5 of Gasser book)"></a>设计原则: 信息保护 (see also chapter 5 of Gasser book)</h2><h3 id="Glossary"><a href="#Glossary" class="headerlink" title="Glossary"></a>Glossary</h3><ul>
+<li>Capability: In a computer system, an unforgeable ticket, which when presented can be taken as incontestable proof that the presenter is authorized to have access to the object named in the ticket.</li>
+<li>Certify: To check the accuracy, correctness, and completeness of a security or protection mechanism</li>
+<li>Confinement: Allowing a borrowed program to have access to data, while ensuring that the program cannot release the information.</li>
+<li>Descriptor: A protected value which is (or leads to) the physical address of some protected object.</li>
+<li>Domain: The set of objects that currently may be directly accessed by a principal.</li>
+<li>Permission: A particular form of allowed access, e.g., permission to READ as contrasted with permission to WRITE</li>
+<li>Prescript: A rule that must be followed before access to an object is permitted, thereby introducing an opportunity for human judgment about the need for access, so that abuse of the access is discouraged.</li>
+<li>Principal: The entity in a computer system to which authorizations are granted; thus the unit of accountability in a computer system.</li>
+<li>Propagation: When a principal, having been authorized access to some object, in turn authorizes access to another principal.</li>
+<li>Protected object: A data structure whose existence is known, but whose internal organization is not accessible, except by invoking the protected subsystem (q.v.) that manages it.</li>
+<li>Revoke: To take away previously authorized access from some principal.</li>
+<li><em>Security: With respect to information processing systems, used to denote mechanisms and techniques that control who may use or modify the computer or the information stored in it.</em></li>
+<li><em>Privacy: The ability of an individual (or organization) to decide whether, when, and to whom personal (or organizational) information is released.</em></li>
+</ul>
+<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><h4 id="三种安全侵犯的类别："><a href="#三种安全侵犯的类别：" class="headerlink" title="三种安全侵犯的类别："></a>三种安全侵犯的类别：</h4><ol>
+<li>未授权的信息发布。</li>
+<li>未授权的信息修改。</li>
+<li>未授权的拒绝使用。<h4 id="5个信息保护的功能等级："><a href="#5个信息保护的功能等级：" class="headerlink" title="5个信息保护的功能等级："></a>5个信息保护的功能等级：</h4>后四个才有意义，是动态改变访问授权的系统。</li>
+<li>Unprotected systems：可能有许多防错机制，但本质上完全不安全。</li>
+<li>All-or-nothing systems：为用户提供隔离，使之就像在用私人pc，也有一些共享lib。</li>
+<li>Controlled sharing：明确规定谁能访问哪个数据项。每个文件维护用户列表，详注读、写、执行权。</li>
+<li>User-programmed sharing controls：用户可以编写protected objects+subsystem，subsystem提供protocol，完全避免外界直接访问object，可以提供更灵活复杂的数据访问控制，比如每天几点到几点允许谁查阅某文件，其他时候拒绝访问。</li>
+<li>Putting strings on information：以上三种都只是在release信息的条件上做文章，这一层是在release之后仍然对信息做限制或警告，比如在文件上打印Top Secret，表明这是不允许外泄的机密文件。</li>
+</ol>
+<h4 id="8个基于经验的设计原则："><a href="#8个基于经验的设计原则：" class="headerlink" title="8个基于经验的设计原则："></a>8个基于经验的设计原则：</h4><ul>
+<li>Economy of mechanism： 设计得越小越好！常规使用软件不会用到奇葩或非法路径，所以错误很难自动滚出来，所以这种代码依赖line-by-line inspection和硬件检测，程序越小越方便。</li>
+<li>Fail-safe defaults：用白名单，不用黑名单，这样名单不全问题不大。创建之初默认不应该给任何用户或程序任何特权。</li>
+<li>Complete mediation：所有访问都得查，那种记住check结果的思路很可能有问题。</li>
+<li>Open design：设计不应该成为秘密。安全机制不应该基于潜在攻击者的无知，因为他们说不定哪天就有知了。</li>
+<li>Separation of privilege：一个需要两个key来unlock的保护机制更加鲁棒也更加灵活。</li>
+<li>Least privilege：每个程序或用户要做某事时只需要获取最低的权限，不应获取额外的权限。</li>
+<li>Least common mechanism：减少那些对多个用户通用的共享机制，尤其是涉及共享变量的。</li>
+<li>Psychological acceptability：用户接口应该好用，不要默认地就容易出错，也要符合用户对安全机制的思维印象。</li>
+</ul>
+<p>传统物理安全分析者提出的额外两点，不是完全适用信息安全：</p>
+<ul>
+<li>Work factor： 比较规避防御机制的成本与攻击者的资源，例如算算暴力破解RSA的work factor，自然是比较大的。</li>
+<li>Compromise recording：记录信息的compromise(不得不变的一些东西)，比如文件timestamp，有时就是被人改了的证据。</li>
+</ul>
+<h4 id="虚拟机的例子（time-sharing-system的地址隔离）"><a href="#虚拟机的例子（time-sharing-system的地址隔离）" class="headerlink" title="虚拟机的例子（time-sharing system的地址隔离）"></a>虚拟机的例子（time-sharing system的地址隔离）</h4><p>一个vm对几个用户来说大家都在单机，察觉不到其他人，除了性能差了点。主要隔离手段是descriptor寄存器，descriptor存放可访问的内存的base和bound。只有privilege态才能load descriptor，有一个supervisor程序在privilege态运行并模拟各个虚拟cpu。其实和OS内核态的思路一样，就是等级制度。</p>
+<p>这个例子抽象以下就是三个防御措施：</p>
+<ul>
+<li>descriptor机制保护program界限：guard就是强制descriptor限制的硬件。带门之不可穿越之墙就是逼迫所有内存引用都要经过descriptor限制的硬件机制。descriptor的限制检查很简单，就是看看地址是否在A~B。</li>
+<li>privilege bit机制保护descriptor内容：查看程序是否在特权态，不是就不准访问、篡改descriptor。</li>
+<li>允许非特权程序执行一个指令“开启特权态并将控制权转交给supervisor”，不允许非特权程序privilege bit为on，特权程序可以变得不特权。</li>
+</ul>
+<h4 id="authen系统的例子"><a href="#authen系统的例子" class="headerlink" title="authen系统的例子"></a>authen系统的例子</h4><p>虚拟机若与终端相连，就得身份验证，第二个例子就是authen system。常用password或不可伪造之证物（钥匙、刷脸）来单向authenticate user。问题就在于user不能authenticate系统，这样入侵者可以拦截所有user输入再转发给系统，这就是隐患。<br>解决方案是system和user持有相同的key，然后将交流信息encipher+decipher，这样的authen就不怕拦截转发了。<br>其实这个在密码学里讲了很多，mac then encrypt。</p>
+<h4 id="shared-information的实现"><a href="#shared-information的实现" class="headerlink" title="shared information的实现"></a>shared information的实现</h4><ul>
+<li>list-oriented，每个guard维护一个用户list，允许多个用户使用目标数据。</li>
+<li>ticket-oriented，guard只有一个identifier的描述，每个user有很多identifiers，或者说tickets，即门票。</li>
+</ul>
+<h3 id="基于Descriptor的保护系统"><a href="#基于Descriptor的保护系统" class="headerlink" title="基于Descriptor的保护系统"></a>基于Descriptor的保护系统</h3><h4 id="地址隔离"><a href="#地址隔离" class="headerlink" title="地址隔离"></a>地址隔离</h4><p>内存分段，即segment，用descriptor描述。就是现代os里的东西。</p>
+<h4 id="The-Capability-System"><a href="#The-Capability-System" class="headerlink" title="The Capability System"></a>The Capability System</h4><h5 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h5><p>capability system可以由supervisor+privilege bit实现。</p>
+<h5 id="共享的动态授权"><a href="#共享的动态授权" class="headerlink" title="共享的动态授权"></a>共享的动态授权</h5><p>Sender’s part:</p>
+<ul>
+<li>Sender learns receiver’s principal identifier via a communication path outside the system.</li>
+<li>Sender transmits receiver’s principal identifier to some program running inside the system under the accountability of the sender.</li>
+<li>Sender’s program uses receiver’s principal identifier to ensure that only virtual processors operating under the accountability of the receiver will be able to obtain the capability being transmitted.</li>
+</ul>
+<p>Receiver’s part:</p>
+<ul>
+<li>Receiver learns sender’s principal identifier, via a communication path outside the system.</li>
+<li>Receiver transmits sender’s principal identifier to some program running inside the system under the accountability of the receiver.</li>
+<li>Receiver’s program uses the sender’s principal identifier to ensure that only a virtual processor operating under the accountability of the sender could have sent the capability being received.</li>
+</ul>
+<h5 id="Propagation-Copy-Bit"><a href="#Propagation-Copy-Bit" class="headerlink" title="Propagation(Copy Bit!)"></a>Propagation(Copy Bit!)</h5><p> A bit added to a capability (the copy bit) may be used to indicate whether or not the capability may be stored in a segment. If one user gives another user access to a capability with the copy bit OFF, then the second user could not make copies of the capability he has borrowed. Propagation would be prevented, at the price of lost flexibility.</p>
+<h4 id="访问控制列表系统-Prescript-）"><a href="#访问控制列表系统-Prescript-）" class="headerlink" title="访问控制列表系统(Prescript!）"></a>访问控制列表系统(Prescript!）</h4><p>Capability system如果是ticket-oriented，那么Access Control List System必然是list-oriented。</p>
+<p>The hierarchical control scheme might be used in a timesharing system as follows. The first access controller created is given an access control list naming one user, a system administrator. The system administrator creates several access controllers (for example, one for each department in his company) and grants permission to modify access in each controller to the department administrator. The department administrator can create additional access controllers in a tree below the one for his department, perhaps for subdepartments or individual computer users in his department. These individual users can develop any pattern of sharing they wish, through the use of access control lists in access controllers, for the segments they create. In an emergency, however, the department administrator can intevene and modify any access control list in his department. Similarly, the system administrator can intervene in case a department administrator makes a mistake or is unavailable.41</p>
+<p>Whenever an attempt is made to modify an access control list (either by a special store instruction or by a call to a supervisor entry, depending on the implementation), the access-modifying permission of the higher level access controller regulating the access control list is checked as always. If the permission exists, the <em>prescript field</em> of the access control list that is about to be modified is examined, and some action, depending on the value found, is automatically triggered. The following list suggests some possible actions that might be triggered by the prescript value, and some external policies that can be modeled with the prescript scheme:</p>
+<ul>
+<li>No action.</li>
+<li>Identifier of principal making change is logged (the “audit trail”).</li>
+<li>Change is delayed one day (“cooling-off” period).</li>
+<li>Change is delayed until some other principal attempts the same change (“buddy” system).</li>
+<li>Change is delayed until signal is received from some specific (system-designated) principal (“court order”).</li>
+</ul>
+<h4 id="Protecting-Objects-Other-Than-Segments"><a href="#Protecting-Objects-Other-Than-Segments" class="headerlink" title="Protecting Objects Other Than Segments"></a>Protecting Objects Other Than Segments</h4><p><a href="http://web.mit.edu/Saltzer/www/publications/protection/Descriptors.html" target="_blank" rel="external">这几段以后用到再看吧，尤其是访问控制列表系统。</a></p>
+<h2 id="IA32的内存保护"><a href="#IA32的内存保护" class="headerlink" title="IA32的内存保护"></a>IA32的内存保护</h2><p>Segment不必说，我以前写过。</p>
+<p>Paging当时跳过了，不过IA32是提供page-level protection的：</p>
+<ul>
+<li>Restriction of addressable domain (supervisor and user modes).</li>
+<li>Page type (read only or read/write).</li>
+</ul>
+<p>IA32的segment protection实际上已经成为一种legacy，paging开启之后，主要靠paging的protection，可以设置read-only，哪个权限下read-only。</p>
+<h2 id="VM以及VM-Monitor"><a href="#VM以及VM-Monitor" class="headerlink" title="VM以及VM Monitor"></a>VM以及VM Monitor</h2><p>Virtualization本质上是接口实现解耦的过程，是guest system与host之间同构(isomorphism)的构造。VM的实现就是用真实硬件+软件一起实现一个接口。</p>
+<p>VM分类：</p>
+<ul>
+<li>Process VM：基于特定ISA开发的VM，为Application层提供虚拟ABI。缺点是不同硬件平台要重新开发，不同操作系统也要重新开发。在Process VM上，程序编译出来字节码和真实的差不多，只是没有详细的寄存器分配，然后根据ISA去跑。换平台字节码要重新编译。</li>
+<li>High Level Language VM：基于跨平台理念开发的VM，其实就是硬件解耦做的更好。在编译时生成更加抽象更通用的generic stack-based ISA code。这种虚拟ISA本质上就是HLLVM跑的机器码。JVM和CLI .Net是最著名的HLLVM。</li>
+<li>System VM：其实就是一台硬件上的的多个软件分身，每一个都感觉自己独一无二，这种感觉依赖VMM(又叫hypervisor)。</li>
+</ul>
+<p>没提到bochs，qmenu这种完全模拟的，应该是接近Full emulation，所以不算virtualization。</p>
+<p>至于VMM，实际上是运行在VM与多个客户终端间的another layer of indirection，将file、user、group、process tree、device、semaphore/shared memory/msgs全部isolate。VMM又称Hypervisor。VMM使得各个用户觉得自己拥有所有硬件，实际上是分享的。譬如用户终端在调用syscall时，VVM知道ISR在哪，相当于中介。用户的os运行在较低privilege的mode下。VVM则是kernel mode。此外，VVM还再存了一个page table，把用户的逻辑地址映射到真实machine地址上。目前Xen、KVM、OpenVZ(只有linux版，但是也好用)就是最常用的VMM，性能比Process VM高多了，又不像JVM之类的有语言限定，模拟的是系统，所以在企业界有广泛应用，可以大幅提高单个服务器主机的利用率。16GB server跑Xen虚拟给两个users，8GB。</p>
+<p>Xen在linux上是个application， KVM是个kernel module。SmartOS是一个基于KVM的云操作系统，可以关注下。</p>
+<h2 id="Chromium的体系结构"><a href="#Chromium的体系结构" class="headerlink" title="Chromium的体系结构"></a>Chromium的体系结构</h2><p>两层结构：</p>
+<ul>
+<li>browser kernel：与操作系统互动。代表user行事。它将rendering engine当做解析web内容并输出渲染后的位图文档的黑箱。输入输出依赖IPC。</li>
+<li>rendering engine：在一个privilege严格受限的沙盒内运行。代表web发布内容。即使入侵者利用rendering engine漏洞获取其最高权限，也会被沙盒隔离，无法读写用户的文件系统。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!--Week1----&gt;
+&lt;h1 id=&quot;安全计算系统的基本概念&quot;&gt;&lt;a href=&quot;#安全计算系统的基本概念&quot; class=&quot;headerlink&quot; title=&quot;安全计算系统的基本概念&quot;&gt;&lt;/a&gt;安全计算系统的基本概念&lt;/h1&gt;&lt;h3 id=&quot;What-is-Computer-Security-gassbook-c1&quot;&gt;&lt;a href=&quot;#What-is-Computer-Security-gassbook-c1&quot; class=&quot;headerlink&quot; title=&quot;What is Computer Security(gassbook-c1)&quot;&gt;&lt;/a&gt;What is Computer Security(gassbook-c1)&lt;/h3&gt;&lt;h4 id=&quot;SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot;&gt;&lt;a href=&quot;#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot; class=&quot;headerlink&quot; title=&quot;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&quot;&gt;&lt;/a&gt;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.&lt;/li&gt;
+&lt;li&gt;Integrity: protecting information from being modified by unauthorized parties.&lt;/li&gt;
+&lt;li&gt;Denial of service: 可能是机器故障导致信息损失。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="secure computing system" scheme="wjpjw.github.io/tags/secure-computing-system/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Archlinux试玩</title>
+    <link href="wjpjw.github.io/2016/09/21/archlinux/"/>
+    <id>wjpjw.github.io/2016/09/21/archlinux/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
+<a id="more"></a>
+<h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
+<li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
+<li>启动或关闭服务：systemctl start/stop example.service</li>
+<li>pacman：-Syy，同步数据库；-S elinks，安装elinks；-Ss xxx，搜索xxx；-R是删包。</li>
+<li>fdisk或gdisk /dev/sda就可以进入partition界面，创建partition table。操作相当简单。</li>
+<li>lsblk查看bulk device的挂载情况。</li>
+<li>fstab配置挂载，locale.conf配置语言。</li>
+</ol>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>我觉得kde和gnome都不如xfce4，所以装的是xfce。启动图形界面不用startx，用startxfce4。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="wjpjw.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>使用Python作C++游戏的脚本</title>
-    <link href="wjpjw.github.io/2016/08/30/boost-python/"/>
-    <id>wjpjw.github.io/2016/08/30/boost-python/</id>
-    <published>2016-08-30T23:20:00.000Z</published>
-    <updated>2016-09-05T02:16:27.000Z</updated>
+    <link href="wjpjw.github.io/2016/09/21/boost-python/"/>
+    <id>wjpjw.github.io/2016/09/21/boost-python/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
     
     <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
 <a id="more"></a>
@@ -558,7 +495,195 @@
     </summary>
     
     
-      <category term="技术" scheme="wjpjw.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="python" scheme="wjpjw.github.io/tags/python/"/>
+    
+      <category term="c++" scheme="wjpjw.github.io/tags/c/"/>
+    
+      <category term="game" scheme="wjpjw.github.io/tags/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cache Replacement Competition Framework</title>
+    <link href="wjpjw.github.io/2016/09/21/crc-framework/"/>
+    <id>wjpjw.github.io/2016/09/21/crc-framework/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Why-What-and-How"><a href="#Why-What-and-How" class="headerlink" title="Why, What and How"></a>Why, What and How</h1><h3 id="Why-CRC"><a href="#Why-CRC" class="headerlink" title="Why CRC?"></a>Why CRC?</h3><ul>
+<li>CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.</li>
+<li>CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.</li>
+</ul>
+<a id="more"></a>
+<h3 id="The-Simulation-Target"><a href="#The-Simulation-Target" class="headerlink" title="The Simulation Target"></a>The Simulation Target</h3><p>CRC simulates a CMP Memory System:</p>
+<ul>
+<li>8-staged 4-wide pipeline</li>
+<li>out-of-order processor</li>
+<li>L1-L2-L3, 3 layer caches</li>
+<li>perfect branch prediction</li>
+</ul>
+<p>L1 has icache and dcache. L2 is dcache. L3, also called LLC, is the cache where I will try to implement novel replacement strategies.</p>
+<h3 id="How-CRC-works"><a href="#How-CRC-works" class="headerlink" title="How CRC works"></a>How CRC works</h3><p>The CRC code is probably borrowed from CMP$IM.  I thought they were naturally open source but they weren’t. The simulator code is a blackbox library. Only cache replacement code is user visible. So I should compile the cache replacement module, and link with CRC static lib and CRC’s dependencies.</p>
+<p>The source code provided in CRC project is actually an Intel binary tool ‘pin’, used to generate traces. It is a bad news for me since it’s hard to hack into cache data, which is crucial for debugging and analysis.</p>
+<h1 id="Build-and-Run"><a href="#Build-and-Run" class="headerlink" title="Build and Run"></a>Build and Run</h1><h3 id="Linux-kernel-version-problem"><a href="#Linux-kernel-version-problem" class="headerlink" title="Linux kernel version problem"></a>Linux kernel version problem</h3><p>I followed its readme, configured and compiled the CRC project on <em>Fedora 23</em>. This build was smooth and fast. It has some rarely seen lib dependencies, yet most are already provided. However I encountered a compatability problem.</p>
+<p>CRC uses Intel binary tool ‘pin’ as trace generator. Unfortunately even the latest pin tool doesn’t support Linux 4.x. So I installed <em>Ubuntu 12</em> whose kernel is 3.2, but it didn’t work.</p>
+<p>Then I realized this simulator is really old, and found that it was based on CMP$IM proposed in 2006. So I decided to install <em>Ubuntu 10.04</em>, the oldest ubuntu with package support.</p>
+<p>On Ubuntu 10.04, the default CRC project still has some problems. I modified the ‘pin’ file(It’s a shell script.) and supplied everything it requires.</p>
+<h3 id="Generate-traces"><a href="#Generate-traces" class="headerlink" title="Generate traces"></a>Generate traces</h3><p>Finally, ‘pin’ is fed with correct version of everything. I generated one trace ‘cat’. The cat.out.trace.gz is<br><img src="/images/crc3.jpg" alt=""></p>
+<p>‘pin’ can generate millions of instructions. I just minimizes the inst_nr to run a short benchmark.</p>
+<p>To generate N-core traces, just combine N different traces.</p>
+<h3 id="Run-simulation"><a href="#Run-simulation" class="headerlink" title="Run simulation"></a>Run simulation</h3><p>The CRC simulator can set thread number, cache configuration and replacement policy number.<br><img src="/images/crc1.jpg" alt=""><br><img src="/images/crc2.jpg" alt=""></p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>I spent quite a few hours installing older linux today. But in the end the environment was set up.</p>
+<p>The next step is to read more on Intel’s L3 caching related paper and try to implement them.</p>
+<p>My goal is to design and implement a novel algorithm. It would probably be a variant or hybrid of big names.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Why-What-and-How&quot;&gt;&lt;a href=&quot;#Why-What-and-How&quot; class=&quot;headerlink&quot; title=&quot;Why, What and How&quot;&gt;&lt;/a&gt;Why, What and How&lt;/h1&gt;&lt;h3 id=&quot;Why-CRC&quot;&gt;&lt;a href=&quot;#Why-CRC&quot; class=&quot;headerlink&quot; title=&quot;Why CRC?&quot;&gt;&lt;/a&gt;Why CRC?&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;CRC and its trace generator ‘pin’ are old, but it’s hard to find another cmp memory simulator.&lt;/li&gt;
+&lt;li&gt;CRC’s user-visible code is well decoupled. It doesn’t include any header of simulator or 3rd party libraries. Therefore, there is zero technical obstacle even without decent documentation.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
+    
+      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>苹果和超市</title>
+    <link href="wjpjw.github.io/2016/09/21/food-industry/"/>
+    <id>wjpjw.github.io/2016/09/21/food-industry/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>坐而空谈，述而不论。<br><a id="more"></a></p>
+<p>苹果手机的操作系统限制了用户的大部分自由，剥夺了用户的控制权，只允许白名单上的合法软件运行。这种是一种安全系统的设计，但是这里的“安全”二字主要是从软硬件厂商和版权商联盟的角度来讲的。对这一利益联盟来说，封闭排他且限制用户的系统意味着安全地垄断市场，安全地享受版权受益，避免盗版系统和盗版软件带来的损失。用户作为整体既是安全系统服务的对象，也是提防的对象。</p>
+<p>美国食品工业与之相似，剥夺了普通人、小作坊接触原始食材并加工的自由，只允许白名单上的合法食品企业运行。这也是一种安全的设计，这里的“安全”二字同样主要是从食品工业利益联盟的角度来讲的。对这一利益联盟来说，标准化食品工业意味着生产商可以合法滥用添加剂，超市可以为美国人民提供标准化低成本低品质的速冻食物、熟食，避免民间食品作坊、民间特色食品网店带来的竞争。美国人民作为整体既是安全系统服务的对象，也是提防的对象。</p>
+<p>在苹果手机操作系统的安全体系下：</p>
+<ol>
+<li>用户会觉得系统非常安全，因为恶意软件不见了。</li>
+<li>某些用户会觉得单调和憋屈，我改下游戏数据或者弄个外挂都不行，我想写一个脚本批量处理些文件都做不到。</li>
+<li>甚至也有警觉的用户认为自己的安全反而受到软硬件厂商与版权商联盟的侵犯或潜在侵犯，凭什么你能剥夺我的绝对控制权，将系统置于你的服务器操控之下，我的数据资料岂不是受制于你？</li>
+</ol>
+<p>在美国的食品工业化标准化法制化体系下：</p>
+<ol>
+<li>消费者会觉得美国食品非常安全，不可能有乱七八糟的食品，连长得歪一点的土豆茄子都直接作垃圾处理，进不了超市。</li>
+<li>但某些消费者也会觉得单调和憋屈，心想：虽然你们美国人觉得超市熟食好吃，但是依我看只是一味堆砌调味，千篇一律，火候刀工无一足取，能让老夫免为其难尝第二口的还不存在。</li>
+<li>甚至还有些警觉的消费者认为自己的安全反而受到食品工业利益联盟的侵犯或潜在侵犯，凭什么把偶氮二甲酰胺用在面包漂白合法，凭什么超市里把中国喂猪用的巨型牛皮菜和生菜摆在一起当同类蔬菜来卖，难道你们不觉得难吃爆了吗！</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;坐而空谈，述而不论。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="secure computing system" scheme="wjpjw.github.io/tags/secure-computing-system/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A Frequent-Pattern-Aware Cache Replacement Algorithm</title>
+    <link href="wjpjw.github.io/2016/09/21/cache-repl/"/>
+    <id>wjpjw.github.io/2016/09/21/cache-repl/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><ul>
+<li>Project name: FPA(Frequent-Pattern-Aware) Cache Replacement.</li>
+<li>The simulator is <em>CMP$IM</em>.</li>
+<li>Traces are generated as single-threaded by Intel binary tool <em>pin</em>.</li>
+<li>3-layer cache model. Only focus on LLC. LLC is a 16 way cache.</li>
+</ul>
+<h3 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h3><ul>
+<li>Design and implement a high performance cache replacement algorithm FPA.</li>
+<li>Run simulation and analyze FPA performance.</li>
+</ul>
+<h2 id="Project-Plan"><a href="#Project-Plan" class="headerlink" title="Project Plan"></a>Project Plan</h2><h3 id="Initial-Algorithm-Plan"><a href="#Initial-Algorithm-Plan" class="headerlink" title="Initial Algorithm Plan"></a>Initial Algorithm Plan</h3><h4 id="Frequency-Pattern-Capture"><a href="#Frequency-Pattern-Capture" class="headerlink" title="Frequency Pattern Capture"></a>Frequency Pattern Capture</h4><p>FPA’s frequency pattern awareness is based on two data structures:</p>
+<ul>
+<li>History DB: an in-cache database that stores long-term memory of recent address history.<ul>
+<li>Unlike LRU, History DB doesn’t assign bits in each cache line. It’s a consecutive cache block that stores a longer history records than the number of cache ways. Each record has two fields: address and FP-tree’s <em>support</em>.</li>
+</ul>
+</li>
+<li>FPA Tree: A FP-tree variant that maintains frequency patterns for the FPA’s decision engine.<ul>
+<li>FPA Tree is an even more compact but less complete FP-tree(FP-Growth’s data structure) variant.  It is built on History DB information by 2 scans. After built, FP-Growth algorithm can easily elicit patterns.</li>
+</ul>
+</li>
+</ul>
+<h4 id="Recency-Capture"><a href="#Recency-Capture" class="headerlink" title="Recency Capture"></a>Recency Capture</h4><p>Recency can be captured by a list that records every address that has been seen only <em>n</em> times, <em>n</em> &lt; minimum support threshold of FP-Growth.</p>
+<p>Since FPA already has a History DB that stores recent addresses and labels them with <em>support</em> count, no extra data structure is needed.</p>
+<h3 id="Minimum-Support-Threshold"><a href="#Minimum-Support-Threshold" class="headerlink" title="Minimum Support Threshold"></a>Minimum Support Threshold</h3><p>Minimum support threshold in FP-Growth defines whether a pattern is considered as frequent. It’s hard to analyze its optimal value. I will do multiple experiments to find a good one.</p>
+<h3 id="Storage-Budget"><a href="#Storage-Budget" class="headerlink" title="Storage Budget"></a>Storage Budget</h3><p>FPA simulation is only working on LLC. Apparently no memory access is allowed for cache level algorithms. The storage is very limited.</p>
+<p>There is 1KB LLC cache lines reserved for this algorithm. Each unreserved cache line also provides 8-bits for cacheline-associated storage.</p>
+<h3 id="FPA-Implementation-Overhead"><a href="#FPA-Implementation-Overhead" class="headerlink" title="FPA Implementation Overhead"></a>FPA Implementation Overhead</h3><p>Since the CMP$IM simulator is not cycle-accurate, I can’t measure the real world overhead. However I will do a static analysis of FPA’s time complexity, comparing against LRU and ARC.</p>
+<h3 id="Single-threaded-traces-only"><a href="#Single-threaded-traces-only" class="headerlink" title="Single-threaded traces only"></a>Single-threaded traces only</h3><p>I have no plan for supporting multi-application caching policy management, which is on another abstraction level. Therefore, this FPA scheme is thread-unaware and its simulation should be only fed with single-threaded traces.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Project name: FPA(Freque
+    
+    </summary>
+    
+    
+      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
+    
+      <category term="big data" scheme="wjpjw.github.io/tags/big-data/"/>
+    
+      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>奇奇怪怪的知识</title>
+    <link href="wjpjw.github.io/2016/09/21/spicy-knowledge/"/>
+    <id>wjpjw.github.io/2016/09/21/spicy-knowledge/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-24T18:25:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
+<a id="more"></a>
+<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
+<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
+<li>ATS-PL-SYS: Hongwei Xi</li>
+<li>F#: Tao Liu</li>
+<li>sql: 刘英武</li>
+<li>php: 惠新宸</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微处理器结构</title>
+    <link href="wjpjw.github.io/2016/09/20/advma/"/>
+    <id>wjpjw.github.io/2016/09/20/advma/</id>
+    <published>2016-09-20T22:48:37.000Z</published>
+    <updated>2016-09-20T22:49:39.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="学术" scheme="wjpjw.github.io/tags/%E5%AD%A6%E6%9C%AF/"/>
     
   </entry>
   

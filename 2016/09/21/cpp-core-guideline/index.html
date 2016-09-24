@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Jipeng Wu"><meta name="description" content="C++是多范式的，即使是最传统的BetterC或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+u"><meta name="keywords" content="c++"><title>C++的一种合理用法 · Jipeng's Blog</title><link rel="icon" href="/images/2.png"><link rel="canonical" href="/wjpjw.github.io/2016/09/21/cpp-core-guideline/"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics ID', 'auto');
+ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Jipeng's Blog</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Accueil</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title">C++的一种合理用法</h1><span class="post-time">Sep 21, 2016</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Sommaire</h3><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本原则"><span class="toc-text">基本原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#细节"><span class="toc-text">细节</span></a></li></ol></div><div class="post-content"><p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
+<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
+<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><ol>
+<li>RAII+值语义是最方便的。所有权明确、生命周期明确、异常安全。依靠现代c++提供的各种值语义工具，自己的类大部分都可以实现值语义。</li>
+<li>应该只允许存在const全局变量。单例也不要用。对全局变量的依赖会干扰判断，影响正确性分析。</li>
+<li>使用异常。catch里面处理错误，看起来不美观，实际上还是比c风格清晰的。</li>
+<li>函数参数应该用裸指针，对象own的成员用unique_ptr。裸指针表示引用，绝对不表示所有权转让。</li>
+<li>接口类无状态，就是像java那样。不要用继承去实现代码复用，那只会增加强耦合代码。</li>
+<li>可能异常的代码throw就好了，没必要catch，即使catch也只是按照不同异常进行log，不做补救，直接让系统crash掉。</li>
+<li>保持简洁，能不写的就不写，比如不需要构造函数、析构函数，那就不写。需要暴露的变量，不写get/set，直接public。</li>
+</ol>
+<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><ol>
+<li>纯c或纯c风格的函数缀上noexcept，表明无异常处理，可优化性能。</li>
+<li>基类应该禁用拷贝构造函数，提供virtual的clone。clone返回owner<t*>, owner只用来表示这指针有所有权。</t*></li>
+<li>虚函数应该明确指明virtual，override还是final。</li>
+<li>使用enum class，不用enum，避免enum转型int这种可能性。</li>
+<li>复杂变量初始化可以用lambda。</li>
+<li>只要是值语义，就用unique_ptr<t>，不要用T本身，那样需要include类型T的头文件。</t></li>
+<li>用vs的话，哪怕实际上编译时不需要，头文件也要include各种类型所在头文件，让静态分析立刻生效，避免语法错误。要知道，c++写错了编译一次又等半天，很痛苦。</li>
+</ol>
+</div></article><div class="tags"><a href="/tags/c/">c++</a></div><div class="paginator"><a href="/2016/09/21/2016-9-log/" class="prev"><i class="iconfont icon-left"></i><span> Précédent</span></a><a href="/2016/09/21/secure-computing-system/" class="next"><span>Suivant</span><i class="iconfont icon-right"></i></a></div></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Jipeng Wu</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>

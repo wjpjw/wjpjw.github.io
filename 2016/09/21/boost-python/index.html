@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Jipeng Wu"><meta name="description" content="Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。"><meta name="keywords" content="python,c++,game"><title>使用Python作C++游戏的脚本 · Jipeng's Blog</title><link rel="icon" href="/images/2.png"><link rel="canonical" href="/wjpjw.github.io/2016/09/21/boost-python/"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics ID', 'auto');
+ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Jipeng's Blog</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Accueil</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title">使用Python作C++游戏的脚本</h1><span class="post-time">Sep 21, 2016</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Sommaire</h3><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#脚本引擎架构设计"><span class="toc-text">脚本引擎架构设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#boost-python的细节"><span class="toc-text">boost/python的细节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#为何要使用脚本"><span class="toc-text">为何要使用脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python语言作脚本的优缺点"><span class="toc-text">Python语言作脚本的优缺点</span></a></li></ol></div><div class="post-content"><p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
+<a id="more"></a>
+<h3 id="脚本引擎架构设计"><a href="#脚本引擎架构设计" class="headerlink" title="脚本引擎架构设计"></a>脚本引擎架构设计</h3><ul>
+<li>游戏加载时的init，每帧的update以及用户触摸点击事件touched。这三处可以执行对应的三个python文件，将控制权转交脚本。</li>
+<li>c++应该专注实现图形相关的内容，提供的抽象全部基于图形，与游戏逻辑无关。python实现游戏逻辑，比如Unit是python中的纯逻辑对象，只不过创建它时存储了c++中包含骨骼动画的SkeletonUnit指针地址，和图形对象绑定了。</li>
+<li>c++应该把图形相关的类、类函数、计算密集的函数导出，提供给python。python再浅包装一下c++暴露的原始接口，提供文档和默认参数，方便python开发、测试。</li>
+</ul>
+<h3 id="boost-python的细节"><a href="#boost-python的细节" class="headerlink" title="boost/python的细节"></a>boost/python的细节</h3><ul>
+<li>并不是所有类都可以作为python对象的，很多类都delete掉了拷贝构造函数，这种类不能导出到python模块里，需要另写一个简单的代理类。</li>
+<li>导出时随便def多少函数、变量，不影响类结构的完整导出。一个类如果所有成员变量类型都对python解释器已知，即使不导出任何方法也是可以作为python对象存储所有数据的。</li>
+<li>def的所有函数在python看来都是不正常的，无参数默认值，无形参，所以最好在python里包装一下顺便写个文档。</li>
+<li>所有c++对象转python对象都是根据指针进行一层deep copy，把指针所指的数据复制，但不会把对象里的指针层层复制。</li>
+<li>想要把指针类型转化为python object，最好不用ptr()函数，而是用reinterpret_cast<int>。</int></li>
+<li>win_sdk中定义了ssize_t，py_config.h里又define了一下，两者不统一，前者是long，后者是int，在windows下int和long等价，所以编译boost/python时要改python源码，只一处而已，问题不大。</li>
+<li><p>cpp内嵌的python解释器不会正常识别import，简单的解决办法就是在所有python的import前面加上cpp可执行文件所在的上级目录名，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> cqscripts.core.gamelayer <span class="keyword">import</span> *</div></pre></td></tr></table></figure>
+<p>此外，cpp脚本引擎即使import了其他python模块也不会将cpp中定义的全局变量导入其中，需要手动导入main里的全局变量：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> __main__ <span class="keyword">import</span> x</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="为何要使用脚本"><a href="#为何要使用脚本" class="headerlink" title="为何要使用脚本"></a>为何要使用脚本</h3><p>现代c++非常强大，连lambda支持都完爆python，黑科技无穷无尽，写起来其实相当方便，但仍有一些缺点：</p>
+<ul>
+<li>c++需要VS或XCode支持。其他环境，例如武装到牙齿的emacs对复杂的c++项目依旧无力，IDE的整合是必需的。VS现在做的非常好用，但是特别笨重，又慢又占内存。不像编辑器打开了就写，随时随地的碎片时间可以利用起来。</li>
+<li>c++随便改几句，编译一下就要几分钟甚至半小时。这导致无论开发还是debug都极其痛苦。脚本语言支持的热更新不仅方便了玩家，也节约了开发者的时间。</li>
+<li>c++的方便高效建立在合理使用基础之上，门槛很高。即使合理使用了，还是有”声明”的额外书写代价，所以总归比脚本语言慢一些。</li>
+</ul>
+<h3 id="Python语言作脚本的优缺点"><a href="#Python语言作脚本的优缺点" class="headerlink" title="Python语言作脚本的优缺点"></a>Python语言作脚本的优缺点</h3><p>优点：</p>
+<ul>
+<li>JS，Lua都没有完备的类，与c++的逻辑绑定需要额外抽象成本。</li>
+<li>JS其实很好，然而V8不支持ios设备。Boost/python支持各平台。</li>
+<li>Python可以很方便地序列化。</li>
+<li>Python作为抽象工具比较方便，语法甜，轮子也多。</li>
+<li>layout控制语法，看起来清爽。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>计算性能低：V8&gt;Lua&gt;Python。</li>
+<li>layout控制语法的设计会导致歧义、无法压缩脚本、修改代码时的麻烦。</li>
+</ul>
+</div></article><div class="tags"><a href="/tags/python/">python</a><a href="/tags/c/">c++</a><a href="/tags/game/">game</a></div><div class="paginator"><a href="/2016/09/21/archlinux/" class="prev"><i class="iconfont icon-left"></i><span> Précédent</span></a><a href="/2016/09/21/crc-framework/" class="next"><span>Suivant</span><i class="iconfont icon-right"></i></a></div></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Jipeng Wu</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
