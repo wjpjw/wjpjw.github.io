@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-09-23T15:32:26.000Z</updated>
+  <updated>2016-09-24T06:22:21.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -14,25 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="wjpjw.github.io/2016/09/23/practice/sum/"/>
-    <id>wjpjw.github.io/2016/09/23/practice/sum/</id>
-    <published>2016-09-23T15:30:21.000Z</published>
-    <updated>2016-09-23T15:32:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="O-N-交换字符串片段："><a href="#O-N-交换字符串片段：" class="headerlink" title="O(N)交换字符串片段："></a>O(N)交换字符串片段：</h1><p>把字符串切成四段，中间两段换个位置，长度不定，空间复杂度O(1)，时间复杂度O(字符串长度)。再考虑二维矩阵内子矩阵间的交换，N维呢？</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;O-N-交换字符串片段：&quot;&gt;&lt;a href=&quot;#O-N-交换字符串片段：&quot; class=&quot;headerlink&quot; title=&quot;O(N)交换字符串片段：&quot;&gt;&lt;/a&gt;O(N)交换字符串片段：&lt;/h1&gt;&lt;p&gt;把字符串切成四段，中间两段换个位置，长度不定，空间复杂度O(
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>9月日志</title>
@@ -190,6 +171,69 @@
   </entry>
   
   <entry>
+    <title>使用Python作C++游戏的脚本</title>
+    <link href="wjpjw.github.io/2016/09/21/boost-python/"/>
+    <id>wjpjw.github.io/2016/09/21/boost-python/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
+<a id="more"></a>
+<h3 id="脚本引擎架构设计"><a href="#脚本引擎架构设计" class="headerlink" title="脚本引擎架构设计"></a>脚本引擎架构设计</h3><ul>
+<li>游戏加载时的init，每帧的update以及用户触摸点击事件touched。这三处可以执行对应的三个python文件，将控制权转交脚本。</li>
+<li>c++应该专注实现图形相关的内容，提供的抽象全部基于图形，与游戏逻辑无关。python实现游戏逻辑，比如Unit是python中的纯逻辑对象，只不过创建它时存储了c++中包含骨骼动画的SkeletonUnit指针地址，和图形对象绑定了。</li>
+<li>c++应该把图形相关的类、类函数、计算密集的函数导出，提供给python。python再浅包装一下c++暴露的原始接口，提供文档和默认参数，方便python开发、测试。</li>
+</ul>
+<h3 id="boost-python的细节"><a href="#boost-python的细节" class="headerlink" title="boost/python的细节"></a>boost/python的细节</h3><ul>
+<li>并不是所有类都可以作为python对象的，很多类都delete掉了拷贝构造函数，这种类不能导出到python模块里，需要另写一个简单的代理类。</li>
+<li>导出时随便def多少函数、变量，不影响类结构的完整导出。一个类如果所有成员变量类型都对python解释器已知，即使不导出任何方法也是可以作为python对象存储所有数据的。</li>
+<li>def的所有函数在python看来都是不正常的，无参数默认值，无形参，所以最好在python里包装一下顺便写个文档。</li>
+<li>所有c++对象转python对象都是根据指针进行一层deep copy，把指针所指的数据复制，但不会把对象里的指针层层复制。</li>
+<li>想要把指针类型转化为python object，最好不用ptr()函数，而是用reinterpret_cast<int>。</int></li>
+<li>win_sdk中定义了ssize_t，py_config.h里又define了一下，两者不统一，前者是long，后者是int，在windows下int和long等价，所以编译boost/python时要改python源码，只一处而已，问题不大。</li>
+<li><p>cpp内嵌的python解释器不会正常识别import，简单的解决办法就是在所有python的import前面加上cpp可执行文件所在的上级目录名，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> cqscripts.core.gamelayer <span class="keyword">import</span> *</div></pre></td></tr></table></figure>
+<p>此外，cpp脚本引擎即使import了其他python模块也不会将cpp中定义的全局变量导入其中，需要手动导入main里的全局变量：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> __main__ <span class="keyword">import</span> x</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="为何要使用脚本"><a href="#为何要使用脚本" class="headerlink" title="为何要使用脚本"></a>为何要使用脚本</h3><p>现代c++非常强大，连lambda支持都完爆python，黑科技无穷无尽，写起来其实相当方便，但仍有一些缺点：</p>
+<ul>
+<li>c++需要VS或XCode支持。其他环境，例如武装到牙齿的emacs对复杂的c++项目依旧无力，IDE的整合是必需的。VS现在做的非常好用，但是特别笨重，又慢又占内存。不像编辑器打开了就写，随时随地的碎片时间可以利用起来。</li>
+<li>c++随便改几句，编译一下就要几分钟甚至半小时。这导致无论开发还是debug都极其痛苦。脚本语言支持的热更新不仅方便了玩家，也节约了开发者的时间。</li>
+<li>c++的方便高效建立在合理使用基础之上，门槛很高。即使合理使用了，还是有”声明”的额外书写代价，所以总归比脚本语言慢一些。</li>
+</ul>
+<h3 id="Python语言作脚本的优缺点"><a href="#Python语言作脚本的优缺点" class="headerlink" title="Python语言作脚本的优缺点"></a>Python语言作脚本的优缺点</h3><p>优点：</p>
+<ul>
+<li>JS，Lua都没有完备的类，与c++的逻辑绑定需要额外抽象成本。</li>
+<li>JS其实很好，然而V8不支持ios设备。Boost/python支持各平台。</li>
+<li>Python可以很方便地序列化。</li>
+<li>Python作为抽象工具比较方便，语法甜，轮子也多。</li>
+<li>layout控制语法，看起来清爽。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>计算性能低：V8&gt;Lua&gt;Python。</li>
+<li>layout控制语法的设计会导致歧义、无法压缩脚本、修改代码时的麻烦。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="wjpjw.github.io/tags/python/"/>
+    
+      <category term="c++" scheme="wjpjw.github.io/tags/c/"/>
+    
+      <category term="game" scheme="wjpjw.github.io/tags/game/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++的一种合理用法</title>
     <link href="wjpjw.github.io/2016/09/21/cpp-core-guideline/"/>
     <id>wjpjw.github.io/2016/09/21/cpp-core-guideline/</id>
@@ -235,16 +279,16 @@
     <link href="wjpjw.github.io/2016/09/21/secure-computing-system/"/>
     <id>wjpjw.github.io/2016/09/21/secure-computing-system/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-22T15:44:00.000Z</updated>
+    <updated>2016-09-24T18:51:05.000Z</updated>
     
-    <content type="html"><![CDATA[<!--Week1---->
+    <content type="html"><![CDATA[<p>文献整理。<br><a id="more"></a></p>
+<!--Week1---->
 <h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
 <li>Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.</li>
 <li>Integrity: protecting information from being modified by unauthorized parties.</li>
 <li>Denial of service: 可能是机器故障导致信息损失。</li>
 </ol>
 <p>计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。</p>
-<a id="more"></a>
 <h4 id="可信系统评价标准"><a href="#可信系统评价标准" class="headerlink" title="可信系统评价标准"></a>可信系统评价标准</h4><p>美国国防部发布橙皮书：Trusted Computer System Evaluation Criteria，定义了安全概念。商用可以很容易通过加装一些addon达到C1或C2。只有军用才会追求A1或B3。<br><img src="/images/secure-level.png" alt="软件安全等级"></p>
 <h3 id="Trusted-Computing"><a href="#Trusted-Computing" class="headerlink" title="Trusted Computing"></a>Trusted Computing</h3><h4 id="1-什么是TC"><a href="#1-什么是TC" class="headerlink" title="1. 什么是TC?"></a>1. 什么是TC?</h4><p>The Trusted Computing Group (TCG)是Microsoft, Intel, IBM, HP and AMD联合提出的更加安全的PC标准。这里安全的定义颇有争议。按TCG标准做的PC从微软、intel角度来看更可信，但对PC拥有者来说反而更不可信。TCG将你的控制权更多地转移给硬件、软件提供商。TC在这些公司叫法都不一样，故意让公众对此感到混淆。</p>
 <h4 id="2-TC做的是什么？"><a href="#2-TC做的是什么？" class="headerlink" title="2. TC做的是什么？"></a>2. TC做的是什么？</h4><p>TC提供一个让你无权控制、更改软件的计算平台。动机源于digital rights management (DRM)。</p>
@@ -392,13 +436,7 @@
     
     <summary type="html">
     
-      &lt;!--Week1----&gt;
-&lt;h1 id=&quot;安全计算系统的基本概念&quot;&gt;&lt;a href=&quot;#安全计算系统的基本概念&quot; class=&quot;headerlink&quot; title=&quot;安全计算系统的基本概念&quot;&gt;&lt;/a&gt;安全计算系统的基本概念&lt;/h1&gt;&lt;h3 id=&quot;What-is-Computer-Security-gassbook-c1&quot;&gt;&lt;a href=&quot;#What-is-Computer-Security-gassbook-c1&quot; class=&quot;headerlink&quot; title=&quot;What is Computer Security(gassbook-c1)&quot;&gt;&lt;/a&gt;What is Computer Security(gassbook-c1)&lt;/h3&gt;&lt;h4 id=&quot;SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot;&gt;&lt;a href=&quot;#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE&quot; class=&quot;headerlink&quot; title=&quot;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&quot;&gt;&lt;/a&gt;SECRECY, INTEGRITY, AND DENIAL OF SERVICE&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.&lt;/li&gt;
-&lt;li&gt;Integrity: protecting information from being modified by unauthorized parties.&lt;/li&gt;
-&lt;li&gt;Denial of service: 可能是机器故障导致信息损失。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;计算安全主要研究的是secrecy，信息不泄露。至于信息的integrity主要是指信息没被修改，实际上在商业软件中更常用，不过没多少研究者感兴趣，还好integrity需要的技术和secrecy差不多。至于denial of service虽然也是信息安全的话题，却不再讨论范围内，原因是软件正确性这一话题太难了，大多数情况下根本实现不了。&lt;/p&gt;
+      &lt;p&gt;文献整理。&lt;br&gt;
     
     </summary>
     
@@ -441,65 +479,31 @@
   </entry>
   
   <entry>
-    <title>使用Python作C++游戏的脚本</title>
-    <link href="wjpjw.github.io/2016/09/21/boost-python/"/>
-    <id>wjpjw.github.io/2016/09/21/boost-python/</id>
+    <title>奇奇怪怪的知识</title>
+    <link href="wjpjw.github.io/2016/09/21/spicy-knowledge/"/>
+    <id>wjpjw.github.io/2016/09/21/spicy-knowledge/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
+    <updated>2016-09-24T18:25:50.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。</p>
+    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
 <a id="more"></a>
-<h3 id="脚本引擎架构设计"><a href="#脚本引擎架构设计" class="headerlink" title="脚本引擎架构设计"></a>脚本引擎架构设计</h3><ul>
-<li>游戏加载时的init，每帧的update以及用户触摸点击事件touched。这三处可以执行对应的三个python文件，将控制权转交脚本。</li>
-<li>c++应该专注实现图形相关的内容，提供的抽象全部基于图形，与游戏逻辑无关。python实现游戏逻辑，比如Unit是python中的纯逻辑对象，只不过创建它时存储了c++中包含骨骼动画的SkeletonUnit指针地址，和图形对象绑定了。</li>
-<li>c++应该把图形相关的类、类函数、计算密集的函数导出，提供给python。python再浅包装一下c++暴露的原始接口，提供文档和默认参数，方便python开发、测试。</li>
-</ul>
-<h3 id="boost-python的细节"><a href="#boost-python的细节" class="headerlink" title="boost/python的细节"></a>boost/python的细节</h3><ul>
-<li>并不是所有类都可以作为python对象的，很多类都delete掉了拷贝构造函数，这种类不能导出到python模块里，需要另写一个简单的代理类。</li>
-<li>导出时随便def多少函数、变量，不影响类结构的完整导出。一个类如果所有成员变量类型都对python解释器已知，即使不导出任何方法也是可以作为python对象存储所有数据的。</li>
-<li>def的所有函数在python看来都是不正常的，无参数默认值，无形参，所以最好在python里包装一下顺便写个文档。</li>
-<li>所有c++对象转python对象都是根据指针进行一层deep copy，把指针所指的数据复制，但不会把对象里的指针层层复制。</li>
-<li>想要把指针类型转化为python object，最好不用ptr()函数，而是用reinterpret_cast<int>。</int></li>
-<li>win_sdk中定义了ssize_t，py_config.h里又define了一下，两者不统一，前者是long，后者是int，在windows下int和long等价，所以编译boost/python时要改python源码，只一处而已，问题不大。</li>
-<li><p>cpp内嵌的python解释器不会正常识别import，简单的解决办法就是在所有python的import前面加上cpp可执行文件所在的上级目录名，例如：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> cqscripts.core.gamelayer <span class="keyword">import</span> *</div></pre></td></tr></table></figure>
-<p>此外，cpp脚本引擎即使import了其他python模块也不会将cpp中定义的全局变量导入其中，需要手动导入main里的全局变量：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> __main__ <span class="keyword">import</span> x</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="为何要使用脚本"><a href="#为何要使用脚本" class="headerlink" title="为何要使用脚本"></a>为何要使用脚本</h3><p>现代c++非常强大，连lambda支持都完爆python，黑科技无穷无尽，写起来其实相当方便，但仍有一些缺点：</p>
-<ul>
-<li>c++需要VS或XCode支持。其他环境，例如武装到牙齿的emacs对复杂的c++项目依旧无力，IDE的整合是必需的。VS现在做的非常好用，但是特别笨重，又慢又占内存。不像编辑器打开了就写，随时随地的碎片时间可以利用起来。</li>
-<li>c++随便改几句，编译一下就要几分钟甚至半小时。这导致无论开发还是debug都极其痛苦。脚本语言支持的热更新不仅方便了玩家，也节约了开发者的时间。</li>
-<li>c++的方便高效建立在合理使用基础之上，门槛很高。即使合理使用了，还是有”声明”的额外书写代价，所以总归比脚本语言慢一些。</li>
-</ul>
-<h3 id="Python语言作脚本的优缺点"><a href="#Python语言作脚本的优缺点" class="headerlink" title="Python语言作脚本的优缺点"></a>Python语言作脚本的优缺点</h3><p>优点：</p>
-<ul>
-<li>JS，Lua都没有完备的类，与c++的逻辑绑定需要额外抽象成本。</li>
-<li>JS其实很好，然而V8不支持ios设备。Boost/python支持各平台。</li>
-<li>Python可以很方便地序列化。</li>
-<li>Python作为抽象工具比较方便，语法甜，轮子也多。</li>
-<li>layout控制语法，看起来清爽。</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li>计算性能低：V8&gt;Lua&gt;Python。</li>
-<li>layout控制语法的设计会导致歧义、无法压缩脚本、修改代码时的麻烦。</li>
-</ul>
+<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
+<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
+<li>ATS-PL-SYS: Hongwei Xi</li>
+<li>F#: Tao Liu</li>
+<li>sql: 刘英武</li>
+<li>php: 惠新宸</li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Boost/python是无缝桥接cpp与python的最好工具。只需“exec某些python文件”，“写入读取python的全局变量”，”将c++类与函数以module形式提供给python”这3个功能就足以实现一个脚本引擎。&lt;/p&gt;
+      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="python" scheme="wjpjw.github.io/tags/python/"/>
-    
-      <category term="c++" scheme="wjpjw.github.io/tags/c/"/>
-    
-      <category term="game" scheme="wjpjw.github.io/tags/game/"/>
+      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
     
   </entry>
   
@@ -594,9 +598,11 @@
     <link href="wjpjw.github.io/2016/09/21/cache-repl/"/>
     <id>wjpjw.github.io/2016/09/21/cache-repl/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
+    <updated>2016-09-24T18:51:43.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><ul>
+    <content type="html"><![CDATA[<p>Initial Project Proposal</p>
+<a id="more"></a>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><ul>
 <li>Project name: FPA(Frequent-Pattern-Aware) Cache Replacement.</li>
 <li>The simulator is <em>CMP$IM</em>.</li>
 <li>Traces are generated as single-threaded by Intel binary tool <em>pin</em>.</li>
@@ -628,8 +634,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Project name: FPA(Freque
+      &lt;p&gt;Initial Project Proposal&lt;/p&gt;
     
     </summary>
     
@@ -639,35 +644,6 @@
       <category term="big data" scheme="wjpjw.github.io/tags/big-data/"/>
     
       <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奇奇怪怪的知识</title>
-    <link href="wjpjw.github.io/2016/09/21/spicy-knowledge/"/>
-    <id>wjpjw.github.io/2016/09/21/spicy-knowledge/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-24T18:25:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
-<a id="more"></a>
-<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
-<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
-<li>ATS-PL-SYS: Hongwei Xi</li>
-<li>F#: Tao Liu</li>
-<li>sql: 刘英武</li>
-<li>php: 惠新宸</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
     
   </entry>
   
