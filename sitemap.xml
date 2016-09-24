@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>wjpjw.github.io/2016/09/20/advanced-microarchitecture/advma/</loc>
+    
+    <lastmod>2016-09-24T19:01:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>wjpjw.github.io/2016/09/24/big-data/bigdata/</loc>
+    
+    <lastmod>2016-09-24T19:01:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>wjpjw.github.io/2016/09/21/advanced-microarchitecture/crc-framework/</loc>
+    
+    <lastmod>2016-09-24T18:59:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>wjpjw.github.io/2016/09/21/advanced-microarchitecture/cache-repl/</loc>
     
     <lastmod>2016-09-24T18:51:43.000Z</lastmod>
@@ -30,6 +51,13 @@
   </url>
   
   <url>
+    <loc>wjpjw.github.io/2016/09/21/other/food-industry/</loc>
+    
+    <lastmod>2016-09-21T07:06:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>wjpjw.github.io/2016/09/21/other/archlinux/</loc>
     
     <lastmod>2016-09-21T07:06:34.000Z</lastmod>
@@ -47,27 +75,6 @@
     <loc>wjpjw.github.io/2016/09/21/other/cpp-core-guideline/</loc>
     
     <lastmod>2016-09-21T07:06:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/other/food-industry/</loc>
-    
-    <lastmod>2016-09-21T07:06:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/advanced-microarchitecture/crc-framework/</loc>
-    
-    <lastmod>2016-09-21T07:06:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/20/advanced-microarchitecture/advma/</loc>
-    
-    <lastmod>2016-09-20T22:49:39.000Z</lastmod>
     
   </url>
   
