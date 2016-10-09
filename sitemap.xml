@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>wjpjw.github.io/2016/09/24/big-data/bigdata/</loc>
+    
+    <lastmod>2016-10-09T19:57:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>wjpjw.github.io/2016/10/06/2016-10-log/</loc>
     
     <lastmod>2016-10-09T19:36:44.000Z</lastmod>
@@ -23,13 +30,6 @@
   </url>
   
   <url>
-    <loc>wjpjw.github.io/2016/09/29/other/dva/</loc>
-    
-    <lastmod>2016-09-29T20:00:51.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>wjpjw.github.io/2016/09/20/advanced-microarchitecture/advma/</loc>
     
     <lastmod>2016-09-28T21:09:24.000Z</lastmod>
@@ -37,58 +37,9 @@
   </url>
   
   <url>
-    <loc>wjpjw.github.io/2016/09/24/big-data/bigdata/</loc>
-    
-    <lastmod>2016-09-24T19:01:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/advanced-microarchitecture/crc-framework/</loc>
-    
-    <lastmod>2016-09-24T18:59:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/advanced-microarchitecture/cache-repl/</loc>
-    
-    <lastmod>2016-09-24T18:51:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>wjpjw.github.io/2016/09/21/secure-computing/secure-computing-system/</loc>
     
     <lastmod>2016-09-24T18:51:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/other/spicy-knowledge/</loc>
-    
-    <lastmod>2016-09-24T18:25:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/other/archlinux/</loc>
-    
-    <lastmod>2016-09-21T07:06:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/other/food-industry/</loc>
-    
-    <lastmod>2016-09-21T07:06:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>wjpjw.github.io/2016/09/21/other/boost-python/</loc>
-    
-    <lastmod>2016-09-21T07:06:34.000Z</lastmod>
     
   </url>
   
