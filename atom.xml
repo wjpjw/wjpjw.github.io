@@ -118,7 +118,7 @@
     <link href="wjpjw.github.io/2016/09/21/2016-9-log/"/>
     <id>wjpjw.github.io/2016/09/21/2016-9-log/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-10-06T14:53:22.000Z</updated>
+    <updated>2016-10-09T20:07:25.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
@@ -126,9 +126,9 @@
 <li>抽象cqscripts的游戏逻辑。<em>——写了一些，通过了stub测试！</em></li>
 <li>研究adv. microarchitecture的project选题。<em>——哪有空，明天再说！</em></li>
 </ol>
+<a id="more"></a>
 <p>目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。</p>
 <p>最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。</p>
-<a id="more"></a>
 <h3 id="2016-8-31"><a href="#2016-8-31" class="headerlink" title="2016/8/31"></a>2016/8/31</h3><p>经过研究，发现研究adv. microarchitecture的project选题中，我选择了PIM Cache Replacement Optimization。这门课的选题非常前沿，除了这个话题以外，其他的课题很难找到两篇以上的论文。Cache replacement optimization则是经典话题。</p>
 <p>之前名字差不多的课用C++写过模拟，这门课要用更真实的模拟框架，即SST。这门课老师带队做的MacSim是sst里面的一个component。MacSim是trace-driven cycle-level的异构模拟器，能够为异构提供timing model。这种为论文而产生的工具大多不靠谱，好在老师就是作者，出问题可以很方便地问。</p>
 <p>此外，我发现secure computing system不需要课堂参与，但需要海量阅读，我需要在这周花大量时间阅读、整理，不懂的发邮件询问。加油！</p>
@@ -279,8 +279,6 @@
 &lt;li&gt;抽象cqscripts的游戏逻辑。&lt;em&gt;——写了一些，通过了stub测试！&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;研究adv. microarchitecture的project选题。&lt;em&gt;——哪有空，明天再说！&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。&lt;/p&gt;
-&lt;p&gt;最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。&lt;/p&gt;
     
     </summary>
     
@@ -334,13 +332,13 @@
     <link href="wjpjw.github.io/2016/09/21/secure-computing/secure-computing-system/"/>
     <id>wjpjw.github.io/2016/09/21/secure-computing/secure-computing-system/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-10-09T20:06:40.000Z</updated>
+    <updated>2016-10-09T20:08:29.000Z</updated>
     
     <content type="html"><![CDATA[<p>文献整理。<br><a id="more"></a></p>
 <h1 id="作业一"><a href="#作业一" class="headerlink" title="作业一"></a>作业一</h1>
 
 	<div class="row">
-		<iframe src="https://drive.google.com/file/d/0Bx7VXO4jC7TUU1piSzhmcFFqTDg/view?usp=sharing" style="width:100%; height:550px"></iframe>
+		<iframe src="https://drive.google.com/file/d/0Bx7VXO4jC7TUU1piSzhmcFFqTDg/view" style="width:100%; height:550px"></iframe>
 	</div>
 
 
