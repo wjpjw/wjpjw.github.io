@@ -75,21 +75,36 @@
     <link href="wjpjw.github.io/2016/09/24/big-data/bigdata/"/>
     <id>wjpjw.github.io/2016/09/24/big-data/bigdata/</id>
     <published>2016-09-24T19:00:20.000Z</published>
-    <updated>2016-10-09T19:57:03.000Z</updated>
+    <updated>2016-10-09T20:04:23.000Z</updated>
     
-    <content type="html"><![CDATA[<p>文献整理。<br><a id="more"></a><br>
+    <content type="html"><![CDATA[<h2 id="文献阅读：AMC和Apriori"><a href="#文献阅读：AMC和Apriori" class="headerlink" title="文献阅读：AMC和Apriori"></a>文献阅读：AMC和Apriori</h2><p>AMC是较新的topic modeling方法，Apriori是比较早期的经典Frequent pattern mining方法。<br><a id="more"></a><br>
 
 	<div class="row">
-		<iframe src="https://drive.google.com/file/d/0B6qSwdwPxPRdTEliX0dhQ2JfUEU/preview" style="width:100%; height:550px"></iframe>
+		<iframe src="https://drive.google.com/file/d/0Bx7VXO4jC7TUS21xQ3doOUpLcDQ/view?usp=sharing" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+<br>
+
+	<div class="row">
+		<iframe src="https://drive.google.com/file/d/0Bx7VXO4jC7TUN3lYSW9nTE1wVmc/view?usp=sharing" style="width:100%; height:550px"></iframe>
 	</div>
 
 
 </p>
+<h2 id="项目方案"><a href="#项目方案" class="headerlink" title="项目方案"></a>项目方案</h2>
+
+	<div class="row">
+		<iframe src="https://drive.google.com/file/d/0Bx7VXO4jC7TUQmUzUzZvWlc3dFk/view?usp=sharing" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;文献整理。&lt;br&gt;
+      &lt;h2 id=&quot;文献阅读：AMC和Apriori&quot;&gt;&lt;a href=&quot;#文献阅读：AMC和Apriori&quot; class=&quot;headerlink&quot; title=&quot;文献阅读：AMC和Apriori&quot;&gt;&lt;/a&gt;文献阅读：AMC和Apriori&lt;/h2&gt;&lt;p&gt;AMC是较新的topic modeling方法，Apriori是比较早期的经典Frequent pattern mining方法。&lt;br&gt;
     
     </summary>
     
@@ -315,54 +330,21 @@
   </entry>
   
   <entry>
-    <title>C++的一种合理用法</title>
-    <link href="wjpjw.github.io/2016/09/21/other/cpp-core-guideline/"/>
-    <id>wjpjw.github.io/2016/09/21/other/cpp-core-guideline/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
-<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
-<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><ol>
-<li>RAII+值语义是最方便的。所有权明确、生命周期明确、异常安全。依靠现代c++提供的各种值语义工具，自己的类大部分都可以实现值语义。</li>
-<li>应该只允许存在const全局变量。单例也不要用。对全局变量的依赖会干扰判断，影响正确性分析。</li>
-<li>使用异常。catch里面处理错误，看起来不美观，实际上还是比c风格清晰的。</li>
-<li>函数参数应该用裸指针，对象own的成员用unique_ptr。裸指针表示引用，绝对不表示所有权转让。</li>
-<li>接口类无状态，就是像java那样。不要用继承去实现代码复用，那只会增加强耦合代码。</li>
-<li>可能异常的代码throw就好了，没必要catch，即使catch也只是按照不同异常进行log，不做补救，直接让系统crash掉。</li>
-<li>保持简洁，能不写的就不写，比如不需要构造函数、析构函数，那就不写。需要暴露的变量，不写get/set，直接public。</li>
-</ol>
-<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><ol>
-<li>纯c或纯c风格的函数缀上noexcept，表明无异常处理，可优化性能。</li>
-<li>基类应该禁用拷贝构造函数，提供virtual的clone。clone返回owner<t*>, owner只用来表示这指针有所有权。</t*></li>
-<li>虚函数应该明确指明virtual，override还是final。</li>
-<li>使用enum class，不用enum，避免enum转型int这种可能性。</li>
-<li>复杂变量初始化可以用lambda。</li>
-<li>只要是值语义，就用unique_ptr<t>，不要用T本身，那样需要include类型T的头文件。</t></li>
-<li>用vs的话，哪怕实际上编译时不需要，头文件也要include各种类型所在头文件，让静态分析立刻生效，避免语法错误。要知道，c++写错了编译一次又等半天，很痛苦。</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。&lt;/p&gt;
-&lt;p&gt;不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="c++" scheme="wjpjw.github.io/tags/c/"/>
-    
-  </entry>
-  
-  <entry>
     <title>安全计算系统</title>
     <link href="wjpjw.github.io/2016/09/21/secure-computing/secure-computing-system/"/>
     <id>wjpjw.github.io/2016/09/21/secure-computing/secure-computing-system/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-24T18:51:05.000Z</updated>
+    <updated>2016-10-09T20:06:40.000Z</updated>
     
     <content type="html"><![CDATA[<p>文献整理。<br><a id="more"></a></p>
+<h1 id="作业一"><a href="#作业一" class="headerlink" title="作业一"></a>作业一</h1>
+
+	<div class="row">
+		<iframe src="https://drive.google.com/file/d/0Bx7VXO4jC7TUU1piSzhmcFFqTDg/view?usp=sharing" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+
 <!--Week1---->
 <h1 id="安全计算系统的基本概念"><a href="#安全计算系统的基本概念" class="headerlink" title="安全计算系统的基本概念"></a>安全计算系统的基本概念</h1><h3 id="What-is-Computer-Security-gassbook-c1"><a href="#What-is-Computer-Security-gassbook-c1" class="headerlink" title="What is Computer Security(gassbook-c1)"></a>What is Computer Security(gassbook-c1)</h3><h4 id="SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE"><a href="#SECRECY-INTEGRITY-AND-DENIAL-OF-SERVICE" class="headerlink" title="SECRECY, INTEGRITY, AND DENIAL OF SERVICE"></a>SECRECY, INTEGRITY, AND DENIAL OF SERVICE</h4><ol>
 <li>Secrecy/Confidentiality：protecting the information from disclosure to unauthorized parties.</li>
