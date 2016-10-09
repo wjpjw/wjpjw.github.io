@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-10-09T19:24:12.000Z</updated>
+  <updated>2016-10-09T19:36:44.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -20,9 +20,15 @@
     <link href="wjpjw.github.io/2016/10/06/2016-10-log/"/>
     <id>wjpjw.github.io/2016/10/06/2016-10-log/</id>
     <published>2016-10-06T14:51:45.000Z</published>
-    <updated>2016-10-09T19:24:12.000Z</updated>
+    <updated>2016-10-09T19:36:44.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="2016-10-6"><a href="#2016-10-6" class="headerlink" title="2016/10/6"></a>2016/10/6</h2><ol>
+    <content type="html"><![CDATA[<h2 id="classification-vs-clustering"><a href="#classification-vs-clustering" class="headerlink" title="classification vs clustering"></a>classification vs clustering</h2><p>In the context of machine learning, classification is supervised learning and clustering is unsupervised learning.</p>
+<h2 id="topic-modeling-vs-clustering"><a href="#topic-modeling-vs-clustering" class="headerlink" title="topic modeling vs clustering"></a>topic modeling vs clustering</h2><ul>
+<li>Topic modeling uses the presumptive likelihood of words occurring in specific patterns, relative to some topic.</li>
+<li>Cluster analysis uses the presumptive similarities between some set of objects to create groupings inside that set.</li>
+</ul>
+<a id="more"></a>
+<h2 id="2016-10-6"><a href="#2016-10-6" class="headerlink" title="2016/10/6"></a>2016/10/6</h2><ol>
 <li>big data论文阅读整理。</li>
 <li>红黑树，排序，多源最短路径，求凸包和相邻点，动态规划，二分图匹配和网络流算法，Splay Tree，数位dp，区间dp。</li>
 <li>元编程是盲点，有空钻研。</li>
@@ -31,11 +37,6 @@
 <li>ExpressVPN</li>
 <li>AUC for binary-results visualization</li>
 </ol>
-<h2 id="classification-vs-clustering"><a href="#classification-vs-clustering" class="headerlink" title="classification vs clustering"></a>classification vs clustering</h2><p>In the context of machine learning, classification is supervised learning and clustering is unsupervised learning.</p>
-<h2 id="topic-modeling-vs-clustering"><a href="#topic-modeling-vs-clustering" class="headerlink" title="topic modeling vs clustering"></a>topic modeling vs clustering</h2><ul>
-<li>Topic modeling uses the presumptive likelihood of words occurring in specific patterns, relative to some topic.</li>
-<li>Cluster analysis uses the presumptive similarities between some set of objects to create groupings inside that set.</li>
-</ul>
 <h2 id="2016-10-7"><a href="#2016-10-7" class="headerlink" title="2016/10/7"></a>2016/10/7</h2><ol>
 <li>今天主要在写两篇论文review，每篇4小时，效率略低，看这次分数高低，若高，则以后可妥协质量。</li>
 <li>state-of-the-art:最新的（研究成果、论文）</li>
@@ -56,9 +57,11 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;2016-10-6&quot;&gt;&lt;a href=&quot;#2016-10-6&quot; class=&quot;headerlink&quot; title=&quot;2016/10/6&quot;&gt;&lt;/a&gt;2016/10/6&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;big data论文阅读整理。&lt;/li&gt;
-&lt;li&gt;红黑树，排序，多源最短
+      &lt;h2 id=&quot;classification-vs-clustering&quot;&gt;&lt;a href=&quot;#classification-vs-clustering&quot; class=&quot;headerlink&quot; title=&quot;classification vs clustering&quot;&gt;&lt;/a&gt;classification vs clustering&lt;/h2&gt;&lt;p&gt;In the context of machine learning, classification is supervised learning and clustering is unsupervised learning.&lt;/p&gt;
+&lt;h2 id=&quot;topic-modeling-vs-clustering&quot;&gt;&lt;a href=&quot;#topic-modeling-vs-clustering&quot; class=&quot;headerlink&quot; title=&quot;topic modeling vs clustering&quot;&gt;&lt;/a&gt;topic modeling vs clustering&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Topic modeling uses the presumptive likelihood of words occurring in specific patterns, relative to some topic.&lt;/li&gt;
+&lt;li&gt;Cluster analysis uses the presumptive similarities between some set of objects to create groupings inside that set.&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
