@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="wjpjw.github.io/"/>
-  <updated>2016-09-24T19:01:26.000Z</updated>
+  <updated>2016-10-09T19:24:12.000Z</updated>
   <id>wjpjw.github.io/</id>
   
   <author>
@@ -14,6 +14,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>10月日志</title>
+    <link href="wjpjw.github.io/2016/10/06/2016-10-log/"/>
+    <id>wjpjw.github.io/2016/10/06/2016-10-log/</id>
+    <published>2016-10-06T14:51:45.000Z</published>
+    <updated>2016-10-09T19:24:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="2016-10-6"><a href="#2016-10-6" class="headerlink" title="2016/10/6"></a>2016/10/6</h2><ol>
+<li>big data论文阅读整理。</li>
+<li>红黑树，排序，多源最短路径，求凸包和相邻点，动态规划，二分图匹配和网络流算法，Splay Tree，数位dp，区间dp。</li>
+<li>元编程是盲点，有空钻研。</li>
+<li>热更新：Hot patching</li>
+<li>有空看看python如何实现Gevent异步IO</li>
+<li>ExpressVPN</li>
+<li>AUC for binary-results visualization</li>
+</ol>
+<h2 id="classification-vs-clustering"><a href="#classification-vs-clustering" class="headerlink" title="classification vs clustering"></a>classification vs clustering</h2><p>In the context of machine learning, classification is supervised learning and clustering is unsupervised learning.</p>
+<h2 id="topic-modeling-vs-clustering"><a href="#topic-modeling-vs-clustering" class="headerlink" title="topic modeling vs clustering"></a>topic modeling vs clustering</h2><ul>
+<li>Topic modeling uses the presumptive likelihood of words occurring in specific patterns, relative to some topic.</li>
+<li>Cluster analysis uses the presumptive similarities between some set of objects to create groupings inside that set.</li>
+</ul>
+<h2 id="2016-10-7"><a href="#2016-10-7" class="headerlink" title="2016/10/7"></a>2016/10/7</h2><ol>
+<li>今天主要在写两篇论文review，每篇4小时，效率略低，看这次分数高低，若高，则以后可妥协质量。</li>
+<li>state-of-the-art:最新的（研究成果、论文）</li>
+<li>on-the-fly:即时提供的（binary instruction、workload）</li>
+<li>prune out: 修剪出</li>
+<li>hudson river trading, two sigma</li>
+</ol>
+<h2 id="2016-10-8"><a href="#2016-10-8" class="headerlink" title="2016/10/8"></a>2016/10/8</h2><ol>
+<li>买了很多吃的，做了番茄蛋汤缓一缓过量盐分摄入。</li>
+<li>信用卡、借记卡插入机器时带敏感信息的腹部朝下，带visa/master字样的一端在外。</li>
+</ol>
+<h2 id="2016-10-9"><a href="#2016-10-9" class="headerlink" title="2016/10/9"></a>2016/10/9</h2><ol>
+<li>daily commute: (从家到工作处的)通勤</li>
+<li>spouse:  配偶</li>
+<li></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;2016-10-6&quot;&gt;&lt;a href=&quot;#2016-10-6&quot; class=&quot;headerlink&quot; title=&quot;2016/10/6&quot;&gt;&lt;/a&gt;2016/10/6&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;big data论文阅读整理。&lt;/li&gt;
+&lt;li&gt;红黑树，排序，多源最短
+    
+    </summary>
+    
+    
+      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DVA Proposal</title>
+    <link href="wjpjw.github.io/2016/09/29/other/dva/"/>
+    <id>wjpjw.github.io/2016/09/29/other/dva/</id>
+    <published>2016-09-29T20:00:29.000Z</published>
+    <updated>2016-09-29T20:00:51.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="big data" scheme="wjpjw.github.io/tags/big-data/"/>
+    
+  </entry>
   
   <entry>
     <title>大数据</title>
@@ -37,152 +105,26 @@
   </entry>
   
   <entry>
-    <title>9月日志</title>
-    <link href="wjpjw.github.io/2016/09/21/2016-9-log/"/>
-    <id>wjpjw.github.io/2016/09/21/2016-9-log/</id>
+    <title>奇奇怪怪的知识</title>
+    <link href="wjpjw.github.io/2016/09/21/other/spicy-knowledge/"/>
+    <id>wjpjw.github.io/2016/09/21/other/spicy-knowledge/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-24T06:22:21.000Z</updated>
+    <updated>2016-09-24T18:25:50.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
-<ol>
-<li>搭建blog，hexo+atom，用md写日志。<em>——写了很多！</em></li>
-<li>抽象cqscripts的游戏逻辑。<em>——写了一些，通过了stub测试！</em></li>
-<li>研究adv. microarchitecture的project选题。<em>——哪有空，明天再说！</em></li>
-</ol>
-<p>目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。</p>
-<p>最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。</p>
+    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
 <a id="more"></a>
-<h3 id="2016-8-31"><a href="#2016-8-31" class="headerlink" title="2016/8/31"></a>2016/8/31</h3><p>经过研究，发现研究adv. microarchitecture的project选题中，我选择了PIM Cache Replacement Optimization。这门课的选题非常前沿，除了这个话题以外，其他的课题很难找到两篇以上的论文。Cache replacement optimization则是经典话题。</p>
-<p>之前名字差不多的课用C++写过模拟，这门课要用更真实的模拟框架，即SST。这门课老师带队做的MacSim是sst里面的一个component。MacSim是trace-driven cycle-level的异构模拟器，能够为异构提供timing model。这种为论文而产生的工具大多不靠谱，好在老师就是作者，出问题可以很方便地问。</p>
-<p>此外，我发现secure computing system不需要课堂参与，但需要海量阅读，我需要在这周花大量时间阅读、整理，不懂的发邮件询问。加油！</p>
-<p>今天得主要目标是：</p>
-<ol>
-<li>继续写游戏，能写多少是多少。</li>
-<li>开始做医疗项目，不需要花太多时间，有进度即可。</li>
-<li>刷算法题，能写多少是多少。</li>
-</ol>
-<p><em>很遗憾今天所有目标都没达成，看了一部纪录片the Chinese Mayor和一部cg电影，然后就12点了！</em></p>
-<h3 id="2016-9-1"><a href="#2016-9-1" class="headerlink" title="2016/9/1"></a>2016/9/1</h3><p>目标：</p>
-<ol>
-<li>做医疗项目。不hangout，在slack上报告进度。</li>
-<li>怒写游戏逻辑，能写多少是多少。</li>
-<li>整理secure computing system的week1~3之全部。</li>
-<li>怒刷算法。</li>
-</ol>
-<p>结果：</p>
-<ol>
-<li>写了很多，快要收尾了，不过没测试。</li>
-<li>删去触发器机制，重构代码，添加一个package“data”，以python dict形式写配置文件。</li>
-<li>week1整理完毕，相当有趣。</li>
-<li>累了。</li>
-</ol>
-<h3 id="2016-9-2"><a href="#2016-9-2" class="headerlink" title="2016/9/2"></a>2016/9/2</h3><p>目标和昨天完全一样！</p>
-<p>结果：</p>
-<ol>
-<li>接口不明，等Wally答复。</li>
-<li>写了一些，连同之前写的进行了测试，排除了bug，全部改为支持utf-8。</li>
-<li>没做。</li>
-<li>用非常现代的方式写c++算法，可读性呢很高，写起来也更愉快更有把握，略微加了一些抽象成本。</li>
-</ol>
-<h3 id="2016-9-3"><a href="#2016-9-3" class="headerlink" title="2016/9/3"></a>2016/9/3</h3><p>今天清理了垃圾；锻炼身体；去超市买了零食、水果和鸡肉；更新了写atom插件；查阅TC现状。<br>其余时间都在娱乐。于是我把目标删了，把明天的目标订的高些，加油。</p>
-<h3 id="2016-9-4"><a href="#2016-9-4" class="headerlink" title="2016/9/4"></a>2016/9/4</h3><p>目标：</p>
-<ol>
-<li>完成安全计算系统week2~3整理。</li>
-<li>刷N道算法。</li>
-<li>协同cpp引擎开发用户输入事件处理。</li>
-</ol>
-<p>结果：<br>今天早上睡懒觉，午觉又睡了3个多小时，1~2都没做。<br>3做了以下几件事，就到12点了：</p>
-<ul>
-<li>在c++引擎中获取python error的std::string。这样就可以方便地把游戏程序当做python的debug平台，按start按钮就运行python。</li>
-<li>解决了c++脚本引擎解释的python脚本无法正确import的问题，解决办法更新在<a href="http://wjpjw.github.io/2016/08/30/boost-python/#boost-python的细节">boost-python</a>里。</li>
-<li>解决了cqscripts里的小bug。</li>
-<li>解决了游戏里的中文显示问题。该问题是vs编译器造成的，应避免在c++源码里写任何中文，读入utf-8的xml, json都可以。我的解决办法是用python脚本传入中文参数给c++写的函数，就不需要额外的xml配置了，全部配置放在cqscripts脚本里。</li>
-<li>实现一些暴露给pyhton的api。</li>
-</ul>
-<h3 id="2016-9-5"><a href="#2016-9-5" class="headerlink" title="2016/9/5"></a>2016/9/5</h3><p>今天是美国劳工节，放假一天。</p>
-<ul>
-<li>我把atom改成轻色调的，这样虽然屏幕更白，但对比度低，反而不伤眼，把亮度稍微调低一些就很柔和。</li>
-<li>花了很长时间整理安全计算系统的诸多论文。</li>
-</ul>
-<h3 id="2016-9-6"><a href="#2016-9-6" class="headerlink" title="2016/9/6"></a>2016/9/6</h3><p>把宝贵的时间花在文明5上了。</p>
-<h3 id="2016-9-7"><a href="#2016-9-7" class="headerlink" title="2016/9/7"></a>2016/9/7</h3><h5 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h5><ol>
-<li>完成Adv.MA的MacSim的安装与benchmark。</li>
-<li>刷题。</li>
-<li>继续写cpp-python游戏引擎。</li>
-</ol>
-<h5 id="cpp-python进展："><a href="#cpp-python进展：" class="headerlink" title="cpp-python进展："></a>cpp-python进展：</h5><ul>
-<li>重构了cpp-python引擎的架构，只在新建gamelayer时运行一次python文件，读取整个python项目的符号。之后所有的update、touched函数都直接在c++中以object的operator()方式调用，简单方便还避免了I/O。</li>
-<li>Boost-python的文档很差，没有调用python代码的有用的例子，实际上很简单，就是执行一次exec_file，将python项目执行一遍，各种def就已知了，然后c++从main dict里取出的python函数就可以直接运行，没有任何问题。</li>
-<li>此外，boost-python不允许Py_Finalize，必须始终维持同一个解释器。</li>
-<li>今天花费很多时间，发现了一个隐式设定：Boost-python里c++先设定一个python全局变量，然后定义一些python函数依赖这个变量，c++再改这个变量，python函数里依赖的变量是固定了不会改的，再去秩序也没用（而且boost-python还禁止Finalize），所以一旦设定了哪个全局变量，就不能重设。因此gamelayer这个联系c++和python的object必须拥有和python解释器相同的生命周期。这也就意味着设计时应该避免销毁gamelayer，把它作为Game全局变量的一个成员。（以后要做的就是讲GameLayer全局化，现在还没做，而是在界面上禁止新建gamelayer。）</li>
-</ul>
-<h5 id="archlinux进展："><a href="#archlinux进展：" class="headerlink" title="archlinux进展："></a>archlinux进展：</h5><ul>
-<li>安装了一个package helper：yaourt，提供了google-chrome。</li>
-<li>去掉archlinux的光盘，直接进grub，免得每次开机先进living盘再选进入existing os。</li>
-<li>另外，用户名是wjp，密码是123。</li>
-<li>xface，gnome，kde都是远不如商用OS的界面，差太远。最好的办法就是用emacs(shell)+atom(editor)+chrome(web)这几个好用的软件，而完全不用系统UI。</li>
-<li>今天安装了chrome、atom、emacs。emacs懒得上我的配置了，以后主要用atom，只有在需要大量shell操作才用emacs。鉴于macbook上切屏比linux下切app还方便，所以不是特殊需要就不再archlinux里开chrome了，还是有些卡的。</li>
-</ul>
-<h5 id="Adv-MA进展："><a href="#Adv-MA进展：" class="headerlink" title="Adv. MA进展："></a>Adv. MA进展：</h5><p>上完课一直在测试crc，直到凌晨。</p>
-<h3 id="2016-9-8"><a href="#2016-9-8" class="headerlink" title="2016/9/8"></a>2016/9/8</h3><p>今天休息，简单收拾房间，简短hangout。</p>
-<h3 id="2016-9-9"><a href="#2016-9-9" class="headerlink" title="2016/9/9"></a>2016/9/9</h3><p>休息。</p>
-<h3 id="2016-9-10"><a href="#2016-9-10" class="headerlink" title="2016/9/10"></a>2016/9/10</h3><p>休息。</p>
-<h3 id="2016-9-11"><a href="#2016-9-11" class="headerlink" title="2016/9/11"></a>2016/9/11</h3><p>目标：</p>
-<ol>
-<li>CSE is due 11:55pm Sep. 16</li>
-<li>Dashboard UI (repo unavailable til tonight)</li>
-<li>算法</li>
-</ol>
-<p>Big data Hw1 is due 11:55pm Sep. 16.<br>Adv. microarchitecture project proposal is due 6:pm Sep. 16</p>
-<h3 id="2016-9-12"><a href="#2016-9-12" class="headerlink" title="2016/9/12"></a>2016/9/12</h3><p>只睡了不到4小时，写了很多很多算法，写起来还是比较流畅的。尤其是c++用lambda一边组织思路一边写，无压力。此外还写了一篇文章。<br>晚上有点困了，准备休息吧。</p>
-<h3 id="2016-9-13"><a href="#2016-9-13" class="headerlink" title="2016/9/13"></a>2016/9/13</h3><p>今天要研究advma cache repl的最新成果，试图与big data方法融合。同时解决两个project。</p>
-<h3 id="2016-9-14"><a href="#2016-9-14" class="headerlink" title="2016/9/14"></a>2016/9/14</h3><p>写了cache repl研究的proposal。</p>
-<h3 id="2016-9-15"><a href="#2016-9-15" class="headerlink" title="2016/9/15"></a>2016/9/15</h3><p>一天基本浪费了，不过确定了两个project的主题，可以轻松很多，很开心。</p>
-<h3 id="2016-9-16"><a href="#2016-9-16" class="headerlink" title="2016/9/16"></a>2016/9/16</h3><p>非常紧张的一天，完成3项作业。</p>
-<h3 id="2016-9-17"><a href="#2016-9-17" class="headerlink" title="2016/9/17"></a>2016/9/17</h3><p>睡眠极少，完成cse的hw1。</p>
-<h3 id="2016-9-18"><a href="#2016-9-18" class="headerlink" title="2016/9/18"></a>2016/9/18</h3><p>周日休息。</p>
-<h3 id="2016-9-19"><a href="#2016-9-19" class="headerlink" title="2016/9/19"></a>2016/9/19</h3><ol>
-<li>完成医疗项目界面美化。</li>
-</ol>
-<h3 id="2016-9-20"><a href="#2016-9-20" class="headerlink" title="2016/9/20"></a>2016/9/20</h3><ol>
-<li>建立cs927的slack群。</li>
-<li>进行cache replacement project的初步尝试。</li>
-<li>数位dp，区间dp。</li>
-<li>个人quiz写完。</li>
-</ol>
-<h3 id="2016-9-21"><a href="#2016-9-21" class="headerlink" title="2016/9/21"></a>2016/9/21</h3><ol>
-<li>更新linkedin</li>
-<li>cache replacement project proposal review</li>
-<li>完成quiz1的最终整合</li>
-</ol>
-<h3 id="2016-9-22"><a href="#2016-9-22" class="headerlink" title="2016/9/22"></a>2016/9/22</h3><ol>
-<li>完成secure-computing-system-hw1</li>
-<li>加入cse project team</li>
-<li>完善简历</li>
-<li>完成VMWare申请</li>
-<li>有趣，vmware什么都不歧视，就不招russian，还问几遍你是否是俄罗斯公民。</li>
-</ol>
-<h3 id="2016-9-23"><a href="#2016-9-23" class="headerlink" title="2016/9/23"></a>2016/9/23</h3><ol>
-<li>记住：10月13日，安全midterm</li>
-<li>今天无脑休息。</li>
-<li>日常对话时候应该加一些废话，不然不像美语。<br>What’s about that, … Yeah Okay. Un-hn. It’s like. So now… I hate to be jugemental about … If you fuck up with … Now i do have the tendency to leave karmma… label these people as lazy. on top of… That doesn’t make sense to me. It is illegal right now. Lastly, … I just forgot something that didn’t exist thirty years ago. Give me two good reasons. The price is still up there. Still high. Fuck that!  </li>
-<li>对了，一月前完成毕业申请。</li>
-</ol>
-<h3 id="2016-9-24"><a href="#2016-9-24" class="headerlink" title="2016/9/24"></a>2016/9/24</h3><ol>
-<li>医保enroll。<br>2.</li>
+<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
+<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
+<li>ATS-PL-SYS: Hongwei Xi</li>
+<li>F#: Tao Liu</li>
+<li>sql: 刘英武</li>
+<li>php: 惠新宸</li>
 </ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;2016-8-30&quot;&gt;&lt;a href=&quot;#2016-8-30&quot; class=&quot;headerlink&quot; title=&quot;2016/8/30&quot;&gt;&lt;/a&gt;2016/8/30&lt;/h3&gt;&lt;p&gt;今天得主要目标是：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;搭建blog，hexo+atom，用md写日志。&lt;em&gt;——写了很多！&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;抽象cqscripts的游戏逻辑。&lt;em&gt;——写了一些，通过了stub测试！&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;研究adv. microarchitecture的project选题。&lt;em&gt;——哪有空，明天再说！&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。&lt;/p&gt;
-&lt;p&gt;最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。&lt;/p&gt;
+      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
     
     </summary>
     
@@ -237,11 +179,11 @@
     </summary>
     
     
+      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
+    
       <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
     
       <category term="big data" scheme="wjpjw.github.io/tags/big-data/"/>
-    
-      <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
     
   </entry>
   
@@ -287,42 +229,9 @@
     </summary>
     
     
-      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
-    
       <category term="microarchitecture" scheme="wjpjw.github.io/tags/microarchitecture/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Archlinux试玩</title>
-    <link href="wjpjw.github.io/2016/09/21/other/archlinux/"/>
-    <id>wjpjw.github.io/2016/09/21/other/archlinux/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
-<a id="more"></a>
-<h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
-<li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
-<li>启动或关闭服务：systemctl start/stop example.service</li>
-<li>pacman：-Syy，同步数据库；-S elinks，安装elinks；-Ss xxx，搜索xxx；-R是删包。</li>
-<li>fdisk或gdisk /dev/sda就可以进入partition界面，创建partition table。操作相当简单。</li>
-<li>lsblk查看bulk device的挂载情况。</li>
-<li>fstab配置挂载，locale.conf配置语言。</li>
-</ol>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
-<li>我觉得kde和gnome都不如xfce4，所以装的是xfce。启动图形界面不用startx，用startxfce4。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="wjpjw.github.io/tags/linux/"/>
+      <category term="cache replacement" scheme="wjpjw.github.io/tags/cache-replacement/"/>
     
   </entry>
   
@@ -498,102 +407,173 @@
   </entry>
   
   <entry>
-    <title>C++的一种合理用法</title>
-    <link href="wjpjw.github.io/2016/09/21/other/cpp-core-guideline/"/>
-    <id>wjpjw.github.io/2016/09/21/other/cpp-core-guideline/</id>
+    <title>9月日志</title>
+    <link href="wjpjw.github.io/2016/09/21/2016-9-log/"/>
+    <id>wjpjw.github.io/2016/09/21/2016-9-log/</id>
     <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
+    <updated>2016-10-06T14:53:22.000Z</updated>
     
-    <content type="html"><![CDATA[<p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
-<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
-<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><ol>
-<li>RAII+值语义是最方便的。所有权明确、生命周期明确、异常安全。依靠现代c++提供的各种值语义工具，自己的类大部分都可以实现值语义。</li>
-<li>应该只允许存在const全局变量。单例也不要用。对全局变量的依赖会干扰判断，影响正确性分析。</li>
-<li>使用异常。catch里面处理错误，看起来不美观，实际上还是比c风格清晰的。</li>
-<li>函数参数应该用裸指针，对象own的成员用unique_ptr。裸指针表示引用，绝对不表示所有权转让。</li>
-<li>接口类无状态，就是像java那样。不要用继承去实现代码复用，那只会增加强耦合代码。</li>
-<li>可能异常的代码throw就好了，没必要catch，即使catch也只是按照不同异常进行log，不做补救，直接让系统crash掉。</li>
-<li>保持简洁，能不写的就不写，比如不需要构造函数、析构函数，那就不写。需要暴露的变量，不写get/set，直接public。</li>
-</ol>
-<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><ol>
-<li>纯c或纯c风格的函数缀上noexcept，表明无异常处理，可优化性能。</li>
-<li>基类应该禁用拷贝构造函数，提供virtual的clone。clone返回owner<t*>, owner只用来表示这指针有所有权。</t*></li>
-<li>虚函数应该明确指明virtual，override还是final。</li>
-<li>使用enum class，不用enum，避免enum转型int这种可能性。</li>
-<li>复杂变量初始化可以用lambda。</li>
-<li>只要是值语义，就用unique_ptr<t>，不要用T本身，那样需要include类型T的头文件。</t></li>
-<li>用vs的话，哪怕实际上编译时不需要，头文件也要include各种类型所在头文件，让静态分析立刻生效，避免语法错误。要知道，c++写错了编译一次又等半天，很痛苦。</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。&lt;/p&gt;
-&lt;p&gt;不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="c++" scheme="wjpjw.github.io/tags/c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>苹果和超市</title>
-    <link href="wjpjw.github.io/2016/09/21/other/food-industry/"/>
-    <id>wjpjw.github.io/2016/09/21/other/food-industry/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-21T07:06:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>坐而空谈，述而不论。<br><a id="more"></a></p>
-<p>苹果手机的操作系统限制了用户的大部分自由，剥夺了用户的控制权，只允许白名单上的合法软件运行。这种是一种安全系统的设计，但是这里的“安全”二字主要是从软硬件厂商和版权商联盟的角度来讲的。对这一利益联盟来说，封闭排他且限制用户的系统意味着安全地垄断市场，安全地享受版权受益，避免盗版系统和盗版软件带来的损失。用户作为整体既是安全系统服务的对象，也是提防的对象。</p>
-<p>美国食品工业与之相似，剥夺了普通人、小作坊接触原始食材并加工的自由，只允许白名单上的合法食品企业运行。这也是一种安全的设计，这里的“安全”二字同样主要是从食品工业利益联盟的角度来讲的。对这一利益联盟来说，标准化食品工业意味着生产商可以合法滥用添加剂，超市可以为美国人民提供标准化低成本低品质的速冻食物、熟食，避免民间食品作坊、民间特色食品网店带来的竞争。美国人民作为整体既是安全系统服务的对象，也是提防的对象。</p>
-<p>在苹果手机操作系统的安全体系下：</p>
+    <content type="html"><![CDATA[<h3 id="2016-8-30"><a href="#2016-8-30" class="headerlink" title="2016/8/30"></a>2016/8/30</h3><p>今天得主要目标是：</p>
 <ol>
-<li>用户会觉得系统非常安全，因为恶意软件不见了。</li>
-<li>某些用户会觉得单调和憋屈，我改下游戏数据或者弄个外挂都不行，我想写一个脚本批量处理些文件都做不到。</li>
-<li>甚至也有警觉的用户认为自己的安全反而受到软硬件厂商与版权商联盟的侵犯或潜在侵犯，凭什么你能剥夺我的绝对控制权，将系统置于你的服务器操控之下，我的数据资料岂不是受制于你？</li>
+<li>搭建blog，hexo+atom，用md写日志。<em>——写了很多！</em></li>
+<li>抽象cqscripts的游戏逻辑。<em>——写了一些，通过了stub测试！</em></li>
+<li>研究adv. microarchitecture的project选题。<em>——哪有空，明天再说！</em></li>
 </ol>
-<p>在美国的食品工业化标准化法制化体系下：</p>
-<ol>
-<li>消费者会觉得美国食品非常安全，不可能有乱七八糟的食品，连长得歪一点的土豆茄子都直接作垃圾处理，进不了超市。</li>
-<li>但某些消费者也会觉得单调和憋屈，心想：虽然你们美国人觉得超市熟食好吃，但是依我看只是一味堆砌调味，千篇一律，火候刀工无一足取，能让老夫免为其难尝第二口的还不存在。</li>
-<li>甚至还有些警觉的消费者认为自己的安全反而受到食品工业利益联盟的侵犯或潜在侵犯，凭什么把偶氮二甲酰胺用在面包漂白合法，凭什么超市里把中国喂猪用的巨型牛皮菜和生菜摆在一起当同类蔬菜来卖，难道你们不觉得难吃爆了吗！</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;坐而空谈，述而不论。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="secure computing system" scheme="wjpjw.github.io/tags/secure-computing-system/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奇奇怪怪的知识</title>
-    <link href="wjpjw.github.io/2016/09/21/other/spicy-knowledge/"/>
-    <id>wjpjw.github.io/2016/09/21/other/spicy-knowledge/</id>
-    <published>2016-09-21T07:06:34.000Z</published>
-    <updated>2016-09-24T18:25:50.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>偶尔更新一些无意中看到的冷门知识。</p>
+<p>目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。</p>
+<p>最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。</p>
 <a id="more"></a>
-<h3 id="阳光直射图"><a href="#阳光直射图" class="headerlink" title="阳光直射图"></a>阳光直射图</h3><p><img src="/images/irradiation.jpg" alt="果然国内的太阳温和很多"></p>
-<h3 id="华人实现的语言"><a href="#华人实现的语言" class="headerlink" title="华人实现的语言"></a>华人实现的语言</h3><ol>
-<li>ATS-PL-SYS: Hongwei Xi</li>
-<li>F#: Tao Liu</li>
-<li>sql: 刘英武</li>
-<li>php: 惠新宸</li>
+<h3 id="2016-8-31"><a href="#2016-8-31" class="headerlink" title="2016/8/31"></a>2016/8/31</h3><p>经过研究，发现研究adv. microarchitecture的project选题中，我选择了PIM Cache Replacement Optimization。这门课的选题非常前沿，除了这个话题以外，其他的课题很难找到两篇以上的论文。Cache replacement optimization则是经典话题。</p>
+<p>之前名字差不多的课用C++写过模拟，这门课要用更真实的模拟框架，即SST。这门课老师带队做的MacSim是sst里面的一个component。MacSim是trace-driven cycle-level的异构模拟器，能够为异构提供timing model。这种为论文而产生的工具大多不靠谱，好在老师就是作者，出问题可以很方便地问。</p>
+<p>此外，我发现secure computing system不需要课堂参与，但需要海量阅读，我需要在这周花大量时间阅读、整理，不懂的发邮件询问。加油！</p>
+<p>今天得主要目标是：</p>
+<ol>
+<li>继续写游戏，能写多少是多少。</li>
+<li>开始做医疗项目，不需要花太多时间，有进度即可。</li>
+<li>刷算法题，能写多少是多少。</li>
 </ol>
+<p><em>很遗憾今天所有目标都没达成，看了一部纪录片the Chinese Mayor和一部cg电影，然后就12点了！</em></p>
+<h3 id="2016-9-1"><a href="#2016-9-1" class="headerlink" title="2016/9/1"></a>2016/9/1</h3><p>目标：</p>
+<ol>
+<li>做医疗项目。不hangout，在slack上报告进度。</li>
+<li>怒写游戏逻辑，能写多少是多少。</li>
+<li>整理secure computing system的week1~3之全部。</li>
+<li>怒刷算法。</li>
+</ol>
+<p>结果：</p>
+<ol>
+<li>写了很多，快要收尾了，不过没测试。</li>
+<li>删去触发器机制，重构代码，添加一个package“data”，以python dict形式写配置文件。</li>
+<li>week1整理完毕，相当有趣。</li>
+<li>累了。</li>
+</ol>
+<h3 id="2016-9-2"><a href="#2016-9-2" class="headerlink" title="2016/9/2"></a>2016/9/2</h3><p>目标和昨天完全一样！</p>
+<p>结果：</p>
+<ol>
+<li>接口不明，等Wally答复。</li>
+<li>写了一些，连同之前写的进行了测试，排除了bug，全部改为支持utf-8。</li>
+<li>没做。</li>
+<li>用非常现代的方式写c++算法，可读性呢很高，写起来也更愉快更有把握，略微加了一些抽象成本。</li>
+</ol>
+<h3 id="2016-9-3"><a href="#2016-9-3" class="headerlink" title="2016/9/3"></a>2016/9/3</h3><p>今天清理了垃圾；锻炼身体；去超市买了零食、水果和鸡肉；更新了写atom插件；查阅TC现状。<br>其余时间都在娱乐。于是我把目标删了，把明天的目标订的高些，加油。</p>
+<h3 id="2016-9-4"><a href="#2016-9-4" class="headerlink" title="2016/9/4"></a>2016/9/4</h3><p>目标：</p>
+<ol>
+<li>完成安全计算系统week2~3整理。</li>
+<li>刷N道算法。</li>
+<li>协同cpp引擎开发用户输入事件处理。</li>
+</ol>
+<p>结果：<br>今天早上睡懒觉，午觉又睡了3个多小时，1~2都没做。<br>3做了以下几件事，就到12点了：</p>
+<ul>
+<li>在c++引擎中获取python error的std::string。这样就可以方便地把游戏程序当做python的debug平台，按start按钮就运行python。</li>
+<li>解决了c++脚本引擎解释的python脚本无法正确import的问题，解决办法更新在<a href="http://wjpjw.github.io/2016/08/30/boost-python/#boost-python的细节">boost-python</a>里。</li>
+<li>解决了cqscripts里的小bug。</li>
+<li>解决了游戏里的中文显示问题。该问题是vs编译器造成的，应避免在c++源码里写任何中文，读入utf-8的xml, json都可以。我的解决办法是用python脚本传入中文参数给c++写的函数，就不需要额外的xml配置了，全部配置放在cqscripts脚本里。</li>
+<li>实现一些暴露给pyhton的api。</li>
+</ul>
+<h3 id="2016-9-5"><a href="#2016-9-5" class="headerlink" title="2016/9/5"></a>2016/9/5</h3><p>今天是美国劳工节，放假一天。</p>
+<ul>
+<li>我把atom改成轻色调的，这样虽然屏幕更白，但对比度低，反而不伤眼，把亮度稍微调低一些就很柔和。</li>
+<li>花了很长时间整理安全计算系统的诸多论文。</li>
+</ul>
+<h3 id="2016-9-6"><a href="#2016-9-6" class="headerlink" title="2016/9/6"></a>2016/9/6</h3><p>把宝贵的时间花在文明5上了。</p>
+<h3 id="2016-9-7"><a href="#2016-9-7" class="headerlink" title="2016/9/7"></a>2016/9/7</h3><h5 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h5><ol>
+<li>完成Adv.MA的MacSim的安装与benchmark。</li>
+<li>刷题。</li>
+<li>继续写cpp-python游戏引擎。</li>
+</ol>
+<h5 id="cpp-python进展："><a href="#cpp-python进展：" class="headerlink" title="cpp-python进展："></a>cpp-python进展：</h5><ul>
+<li>重构了cpp-python引擎的架构，只在新建gamelayer时运行一次python文件，读取整个python项目的符号。之后所有的update、touched函数都直接在c++中以object的operator()方式调用，简单方便还避免了I/O。</li>
+<li>Boost-python的文档很差，没有调用python代码的有用的例子，实际上很简单，就是执行一次exec_file，将python项目执行一遍，各种def就已知了，然后c++从main dict里取出的python函数就可以直接运行，没有任何问题。</li>
+<li>此外，boost-python不允许Py_Finalize，必须始终维持同一个解释器。</li>
+<li>今天花费很多时间，发现了一个隐式设定：Boost-python里c++先设定一个python全局变量，然后定义一些python函数依赖这个变量，c++再改这个变量，python函数里依赖的变量是固定了不会改的，再去秩序也没用（而且boost-python还禁止Finalize），所以一旦设定了哪个全局变量，就不能重设。因此gamelayer这个联系c++和python的object必须拥有和python解释器相同的生命周期。这也就意味着设计时应该避免销毁gamelayer，把它作为Game全局变量的一个成员。（以后要做的就是讲GameLayer全局化，现在还没做，而是在界面上禁止新建gamelayer。）</li>
+</ul>
+<h5 id="archlinux进展："><a href="#archlinux进展：" class="headerlink" title="archlinux进展："></a>archlinux进展：</h5><ul>
+<li>安装了一个package helper：yaourt，提供了google-chrome。</li>
+<li>去掉archlinux的光盘，直接进grub，免得每次开机先进living盘再选进入existing os。</li>
+<li>另外，用户名是wjp，密码是123。</li>
+<li>xface，gnome，kde都是远不如商用OS的界面，差太远。最好的办法就是用emacs(shell)+atom(editor)+chrome(web)这几个好用的软件，而完全不用系统UI。</li>
+<li>今天安装了chrome、atom、emacs。emacs懒得上我的配置了，以后主要用atom，只有在需要大量shell操作才用emacs。鉴于macbook上切屏比linux下切app还方便，所以不是特殊需要就不再archlinux里开chrome了，还是有些卡的。</li>
+</ul>
+<h5 id="Adv-MA进展："><a href="#Adv-MA进展：" class="headerlink" title="Adv. MA进展："></a>Adv. MA进展：</h5><p>上完课一直在测试crc，直到凌晨。</p>
+<h3 id="2016-9-8"><a href="#2016-9-8" class="headerlink" title="2016/9/8"></a>2016/9/8</h3><p>今天休息，简单收拾房间，简短hangout。</p>
+<h3 id="2016-9-9"><a href="#2016-9-9" class="headerlink" title="2016/9/9"></a>2016/9/9</h3><p>休息。</p>
+<h3 id="2016-9-10"><a href="#2016-9-10" class="headerlink" title="2016/9/10"></a>2016/9/10</h3><p>休息。</p>
+<h3 id="2016-9-11"><a href="#2016-9-11" class="headerlink" title="2016/9/11"></a>2016/9/11</h3><p>目标：</p>
+<ol>
+<li>CSE is due 11:55pm Sep. 16</li>
+<li>Dashboard UI (repo unavailable til tonight)</li>
+<li>算法</li>
+</ol>
+<p>Big data Hw1 is due 11:55pm Sep. 16.<br>Adv. microarchitecture project proposal is due 6:pm Sep. 16</p>
+<h3 id="2016-9-12"><a href="#2016-9-12" class="headerlink" title="2016/9/12"></a>2016/9/12</h3><p>只睡了不到4小时，写了很多很多算法，写起来还是比较流畅的。尤其是c++用lambda一边组织思路一边写，无压力。此外还写了一篇文章。<br>晚上有点困了，准备休息吧。</p>
+<h3 id="2016-9-13"><a href="#2016-9-13" class="headerlink" title="2016/9/13"></a>2016/9/13</h3><p>今天要研究advma cache repl的最新成果，试图与big data方法融合。同时解决两个project。</p>
+<h3 id="2016-9-14"><a href="#2016-9-14" class="headerlink" title="2016/9/14"></a>2016/9/14</h3><p>写了cache repl研究的proposal。</p>
+<h3 id="2016-9-15"><a href="#2016-9-15" class="headerlink" title="2016/9/15"></a>2016/9/15</h3><p>一天基本浪费了，不过确定了两个project的主题，可以轻松很多，很开心。</p>
+<h3 id="2016-9-16"><a href="#2016-9-16" class="headerlink" title="2016/9/16"></a>2016/9/16</h3><p>非常紧张的一天，完成3项作业。</p>
+<h3 id="2016-9-17"><a href="#2016-9-17" class="headerlink" title="2016/9/17"></a>2016/9/17</h3><p>睡眠极少，完成cse的hw1。</p>
+<h3 id="2016-9-18"><a href="#2016-9-18" class="headerlink" title="2016/9/18"></a>2016/9/18</h3><p>周日休息。</p>
+<h3 id="2016-9-19"><a href="#2016-9-19" class="headerlink" title="2016/9/19"></a>2016/9/19</h3><ol>
+<li>完成医疗项目界面美化。</li>
+</ol>
+<h3 id="2016-9-20"><a href="#2016-9-20" class="headerlink" title="2016/9/20"></a>2016/9/20</h3><ol>
+<li>建立cs927的slack群。</li>
+<li>进行cache replacement project的初步尝试。</li>
+<li>数位dp，区间dp。</li>
+<li>个人quiz写完。</li>
+</ol>
+<h3 id="2016-9-21"><a href="#2016-9-21" class="headerlink" title="2016/9/21"></a>2016/9/21</h3><ol>
+<li>更新linkedin</li>
+<li>cache replacement project proposal review</li>
+<li>完成quiz1的最终整合</li>
+</ol>
+<h3 id="2016-9-22"><a href="#2016-9-22" class="headerlink" title="2016/9/22"></a>2016/9/22</h3><ol>
+<li>完成secure-computing-system-hw1</li>
+<li>加入cse project team</li>
+<li>完善简历</li>
+<li>完成VMWare申请</li>
+<li>有趣，vmware什么都不歧视，就不招russian，还问几遍你是否是俄罗斯公民。</li>
+</ol>
+<h3 id="2016-9-23"><a href="#2016-9-23" class="headerlink" title="2016/9/23"></a>2016/9/23</h3><ol>
+<li>记住：10月13日，安全midterm</li>
+<li>今天无脑休息。</li>
+<li>日常对话时候应该加一些废话，不然不像美语。</li>
+<li>对了，一月前完成毕业申请。</li>
+</ol>
+<h3 id="2016-9-24"><a href="#2016-9-24" class="headerlink" title="2016/9/24"></a>2016/9/24</h3><ol>
+<li>今天购物、理发、搞定淋浴和马桶的问题。</li>
+<li>无脑休息，众多烦恼留给明天吧。</li>
+</ol>
+<h3 id="2016-9-25"><a href="#2016-9-25" class="headerlink" title="2016/9/25"></a>2016/9/25</h3><ol>
+<li>完成prefetcher研究。</li>
+</ol>
+<h3 id="2016-9-26"><a href="#2016-9-26" class="headerlink" title="2016/9/26"></a>2016/9/26</h3><ol>
+<li>完成prefetcher研究与演讲。演讲颇为失败，以后得空的话要多练习啊。</li>
+</ol>
+<h3 id="2016-9-27"><a href="#2016-9-27" class="headerlink" title="2016/9/27"></a>2016/9/27</h3><ol>
+<li>今天与cse队员见面讨论。</li>
+<li>sunshine and rain中冒雨冲回家。</li>
+</ol>
+<h3 id="2016-9-28"><a href="#2016-9-28" class="headerlink" title="2016/9/28"></a>2016/9/28</h3><ol>
+<li>研究算法</li>
+<li>研究数据分析，完成prefetcher+fp-growth</li>
+</ol>
+<h3 id="2016-9-29"><a href="#2016-9-29" class="headerlink" title="2016/9/29"></a>2016/9/29</h3><ol>
+<li>和big data老师交流</li>
+</ol>
+<h3 id="2016-9-30-2016-10-2"><a href="#2016-9-30-2016-10-2" class="headerlink" title="2016/9/30~2016/10/2"></a>2016/9/30~2016/10/2</h3><p>三天周末时间基本荒废，都在休息。</p>
+<h3 id="2016-10-3"><a href="#2016-10-3" class="headerlink" title="2016/10/3"></a>2016/10/3</h3><p>花费十几个小时完成cache project的proposal，严谨详尽，可做论文框架。</p>
+<h3 id="2016-10-4-2016-10-5"><a href="#2016-10-4-2016-10-5" class="headerlink" title="2016/10/4~2016/10/5"></a>2016/10/4~2016/10/5</h3><p>上课、休息、恢复睡眠。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;偶尔更新一些无意中看到的冷门知识。&lt;/p&gt;
+      &lt;h3 id=&quot;2016-8-30&quot;&gt;&lt;a href=&quot;#2016-8-30&quot; class=&quot;headerlink&quot; title=&quot;2016/8/30&quot;&gt;&lt;/a&gt;2016/8/30&lt;/h3&gt;&lt;p&gt;今天得主要目标是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;搭建blog，hexo+atom，用md写日志。&lt;em&gt;——写了很多！&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;抽象cqscripts的游戏逻辑。&lt;em&gt;——写了一些，通过了stub测试！&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;研究adv. microarchitecture的project选题。&lt;em&gt;——哪有空，明天再说！&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前看来几门课都很难，因此更要有计划，每天列出目标，狠狠地执行。&lt;/p&gt;
+&lt;p&gt;最近做菜放油，狂吃碳水化合物，怒喝汽水，完全不锻炼身体，反而变瘦了，估计是饮食随意，摄入的热量偏低。&lt;/p&gt;
     
     </summary>
     
@@ -666,13 +646,177 @@
   </entry>
   
   <entry>
+    <title>C++的一种合理用法</title>
+    <link href="wjpjw.github.io/2016/09/21/other/cpp-core-guideline/"/>
+    <id>wjpjw.github.io/2016/09/21/other/cpp-core-guideline/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。</p>
+<p>不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。<br><a id="more"></a></p>
+<h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><ol>
+<li>RAII+值语义是最方便的。所有权明确、生命周期明确、异常安全。依靠现代c++提供的各种值语义工具，自己的类大部分都可以实现值语义。</li>
+<li>应该只允许存在const全局变量。单例也不要用。对全局变量的依赖会干扰判断，影响正确性分析。</li>
+<li>使用异常。catch里面处理错误，看起来不美观，实际上还是比c风格清晰的。</li>
+<li>函数参数应该用裸指针，对象own的成员用unique_ptr。裸指针表示引用，绝对不表示所有权转让。</li>
+<li>接口类无状态，就是像java那样。不要用继承去实现代码复用，那只会增加强耦合代码。</li>
+<li>可能异常的代码throw就好了，没必要catch，即使catch也只是按照不同异常进行log，不做补救，直接让系统crash掉。</li>
+<li>保持简洁，能不写的就不写，比如不需要构造函数、析构函数，那就不写。需要暴露的变量，不写get/set，直接public。</li>
+</ol>
+<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><ol>
+<li>纯c或纯c风格的函数缀上noexcept，表明无异常处理，可优化性能。</li>
+<li>基类应该禁用拷贝构造函数，提供virtual的clone。clone返回owner<t*>, owner只用来表示这指针有所有权。</t*></li>
+<li>虚函数应该明确指明virtual，override还是final。</li>
+<li>使用enum class，不用enum，避免enum转型int这种可能性。</li>
+<li>复杂变量初始化可以用lambda。</li>
+<li>只要是值语义，就用unique_ptr<t>，不要用T本身，那样需要include类型T的头文件。</t></li>
+<li>用vs的话，哪怕实际上编译时不需要，头文件也要include各种类型所在头文件，让静态分析立刻生效，避免语法错误。要知道，c++写错了编译一次又等半天，很痛苦。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;C++是多范式的，即使是最传统的Better C或面向对象范式仍然有各种各样的风格，比如cocos2d的内存机制要求构造函数不throw，初始化代码放到init里，用addChild显式地制定对象所有权，若无对象拥有指针则在更新时自动析构。这么做非常安全。其实用raii+异常+unique_ptr可以做得同样好，而且更简洁。&lt;/p&gt;
+&lt;p&gt;不过每隔一段时间，我自己的观点也会变化，所以说这只是阶段性总结。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="c++" scheme="wjpjw.github.io/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>目前使用过的标签</title>
+    <link href="wjpjw.github.io/2016/09/21/tags/"/>
+    <id>wjpjw.github.io/2016/09/21/tags/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-10-09T19:32:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>python</li>
+<li>c++</li>
+<li>game</li>
+<li>log</li>
+<li>linux</li>
+<li>secure computing system</li>
+<li>cache replacement</li>
+<li>microarchitecture</li>
+<li>trace cache</li>
+<li>big data</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;python&lt;/li&gt;
+&lt;li&gt;c++&lt;/li&gt;
+&lt;li&gt;game&lt;/li&gt;
+&lt;li&gt;log&lt;/li&gt;
+&lt;li&gt;linux&lt;/li&gt;
+&lt;li&gt;secure computing system&lt;/li&gt;
+&lt;li&gt;cache replacement&lt;/li&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+    
+      <category term="log" scheme="wjpjw.github.io/tags/log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>苹果和超市</title>
+    <link href="wjpjw.github.io/2016/09/21/other/food-industry/"/>
+    <id>wjpjw.github.io/2016/09/21/other/food-industry/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>坐而空谈，述而不论。<br><a id="more"></a></p>
+<p>苹果手机的操作系统限制了用户的大部分自由，剥夺了用户的控制权，只允许白名单上的合法软件运行。这种是一种安全系统的设计，但是这里的“安全”二字主要是从软硬件厂商和版权商联盟的角度来讲的。对这一利益联盟来说，封闭排他且限制用户的系统意味着安全地垄断市场，安全地享受版权受益，避免盗版系统和盗版软件带来的损失。用户作为整体既是安全系统服务的对象，也是提防的对象。</p>
+<p>美国食品工业与之相似，剥夺了普通人、小作坊接触原始食材并加工的自由，只允许白名单上的合法食品企业运行。这也是一种安全的设计，这里的“安全”二字同样主要是从食品工业利益联盟的角度来讲的。对这一利益联盟来说，标准化食品工业意味着生产商可以合法滥用添加剂，超市可以为美国人民提供标准化低成本低品质的速冻食物、熟食，避免民间食品作坊、民间特色食品网店带来的竞争。美国人民作为整体既是安全系统服务的对象，也是提防的对象。</p>
+<p>在苹果手机操作系统的安全体系下：</p>
+<ol>
+<li>用户会觉得系统非常安全，因为恶意软件不见了。</li>
+<li>某些用户会觉得单调和憋屈，我改下游戏数据或者弄个外挂都不行，我想写一个脚本批量处理些文件都做不到。</li>
+<li>甚至也有警觉的用户认为自己的安全反而受到软硬件厂商与版权商联盟的侵犯或潜在侵犯，凭什么你能剥夺我的绝对控制权，将系统置于你的服务器操控之下，我的数据资料岂不是受制于你？</li>
+</ol>
+<p>在美国的食品工业化标准化法制化体系下：</p>
+<ol>
+<li>消费者会觉得美国食品非常安全，不可能有乱七八糟的食品，连长得歪一点的土豆茄子都直接作垃圾处理，进不了超市。</li>
+<li>但某些消费者也会觉得单调和憋屈，心想：虽然你们美国人觉得超市熟食好吃，但是依我看只是一味堆砌调味，千篇一律，火候刀工无一足取，能让老夫免为其难尝第二口的还不存在。</li>
+<li>甚至还有些警觉的消费者认为自己的安全反而受到食品工业利益联盟的侵犯或潜在侵犯，凭什么把偶氮二甲酰胺用在面包漂白合法，凭什么超市里把中国喂猪用的巨型牛皮菜和生菜摆在一起当同类蔬菜来卖，难道你们不觉得难吃爆了吗！</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;坐而空谈，述而不论。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="secure computing system" scheme="wjpjw.github.io/tags/secure-computing-system/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Archlinux试玩</title>
+    <link href="wjpjw.github.io/2016/09/21/other/archlinux/"/>
+    <id>wjpjw.github.io/2016/09/21/other/archlinux/</id>
+    <published>2016-09-21T07:06:34.000Z</published>
+    <updated>2016-09-21T07:06:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。</p>
+<a id="more"></a>
+<h3 id="配置工具"><a href="#配置工具" class="headerlink" title="配置工具"></a>配置工具</h3><ol>
+<li>dhcpcd：一个dhcp客户端。dhcp服务器一般就在局域网的路由器上，用于自动分配正确ip给各个机器。dhcpcd.conf里可以设置静态路由，hostname，static profile等。</li>
+<li>启动或关闭服务：systemctl start/stop example.service</li>
+<li>pacman：-Syy，同步数据库；-S elinks，安装elinks；-Ss xxx，搜索xxx；-R是删包。</li>
+<li>fdisk或gdisk /dev/sda就可以进入partition界面，创建partition table。操作相当简单。</li>
+<li>lsblk查看bulk device的挂载情况。</li>
+<li>fstab配置挂载，locale.conf配置语言。</li>
+</ol>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>我觉得kde和gnome都不如xfce4，所以装的是xfce。启动图形界面不用startx，用startxfce4。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Archlinux的安装是手动的，从中能学到一些东西，不过本质上与其他发行版是一样的，不涉及内核修改编译这种真正的定制。装了gnome后，和其他linux发行版感觉差不多。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="wjpjw.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>微处理器结构</title>
     <link href="wjpjw.github.io/2016/09/20/advanced-microarchitecture/advma/"/>
     <id>wjpjw.github.io/2016/09/20/advanced-microarchitecture/advma/</id>
     <published>2016-09-20T22:48:37.000Z</published>
-    <updated>2016-09-24T19:01:30.000Z</updated>
+    <updated>2016-09-28T21:09:24.000Z</updated>
     
     <content type="html"><![CDATA[<p>文献整理。<br><a id="more"></a></p>
+<h3 id="out-of-order-scheduler"><a href="#out-of-order-scheduler" class="headerlink" title="out of order scheduler"></a>out of order scheduler</h3><p>fetch, decode, issue(in order);<br>exec, write(out of order);<br>commit(in order);</p>
+<h3 id="component-of-scheduler"><a href="#component-of-scheduler" class="headerlink" title="component of scheduler"></a>component of scheduler</h3><ul>
+<li>buffer for unexecuted instructions, called “scheduler entries”, “issue queue” or “reservation station”</li>
+<li>method for tracking state of dependencies(resolved or not)</li>
+<li>method for choosing between multiple ready instructions competing for the same resource</li>
+<li>method for notification of dependency resolution</li>
+</ul>
+<h3 id="data-capture-vs-non-data-capture-scheduler"><a href="#data-capture-vs-non-data-capture-scheduler" class="headerlink" title="data-capture vs non-data-capture scheduler"></a>data-capture vs non-data-capture scheduler</h3><ul>
+<li>data-capture: scheduler里存放指令的拷贝，不必再从ROB或PRF里取。虽有ROB，但仍要再拷贝一份。</li>
+<li>non-data-capture连ROB都没，直接从PRF里取指令。</li>
+</ul>
+<h3 id="LSQ"><a href="#LSQ" class="headerlink" title="LSQ"></a>LSQ</h3><p>load之前store过的value，直接从LSQ取。</p>
+<h3 id="store是特殊的"><a href="#store是特殊的" class="headerlink" title="store是特殊的"></a>store是特殊的</h3><p>store cannot retire. 要保证memory consistency可能会引发ROB、pipeline阻塞。</p>
+<p>有一种设计是store不写入cache，直接进入memory或L2。</p>
+<p>两个store之间的load可以ooo。</p>
 ]]></content>
     
     <summary type="html">
