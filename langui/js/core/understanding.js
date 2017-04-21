@@ -81,10 +81,10 @@ Langui.Cornerness = function(trace) {
     }
 
     var theta = 0;
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 2; i++) { //top 2 
         theta += edge_vectors[i].Atan2();
     }
-    theta = theta / 4;
+    theta = theta / 2;
     console.log("Initial direction:" + theta);
     if (theta > 0.4 && theta < 0.7 || (theta > 2.1 && theta < 2.8)) {
         Langui.around_45_degree = true;
@@ -94,7 +94,7 @@ Langui.Cornerness = function(trace) {
 
     for (var i = 0; i < edge_vectors.length; i++) {
         var cur_len = edge_vectors[i].Size();
-        var nr_insert = cur_len / 2 - 1;
+        var nr_insert = cur_len; // cur_len / 2 - 1;
         for (var j = 0; j < nr_insert; j++) {
             rotate_angles.push(0);
         }
@@ -117,12 +117,12 @@ Langui.Cornerness = function(trace) {
             if (prev < 0) prev += rotate_angles.length;
             sum += rotate_angles[prev];
         }
-        if (sum < Langui.config.pike_bar) {
+        if (sum < Langui.config.pike_bar) { //Important parameter! It might 
             sum = 0;
         }
         cornerness.push(sum);
     }
-    //console.log("cornerness: " + cornerness);
+    console.log("cornerness: " + cornerness);
     var zero_segments_count = 0;
     var in_zero_segment = false;
     var zero_count = 0;

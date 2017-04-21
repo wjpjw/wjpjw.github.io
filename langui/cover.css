@@ -1,0 +1,22 @@
+.header,
+.footer {
+    position: absolute;
+    background-color: #eee;
+    text-align: center;
+}
+
+.header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 32px;
+    padding: 6px;
+}
+
+.footer {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 42px;
+    padding: 2px;
+}

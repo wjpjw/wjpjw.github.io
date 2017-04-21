@@ -3,7 +3,7 @@
 var Langui = {};
 
 
-function Config(drawing_time_for_circle = 500, closeness_greediness = 0.4, drawing_time_for_curve = 16000, multiplier_length_of_extended_line = 9, pike_width = 4, pike_bar = 1.2, min_edge_len = 10) {
+function Config(drawing_time_for_circle = 500, closeness_greediness = 0.4, drawing_time_for_curve = 16000, multiplier_length_of_extended_line = 9, pike_width = 4, pike_bar = 1.0, min_edge_len = 20) {
     // A closed polygon or circle has a intersection, but this intersection only qualifies if they are between the first x% and the last x% segments.
     this.closeness_greediness = closeness_greediness;
     // Anything you draw will be considered as a curve if it takes longer than x ms.

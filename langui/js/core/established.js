@@ -124,9 +124,12 @@ function Circle(radius, x, y) {
 };
 
 Langui.memory = []; //stored shapes.
+Langui.ClearMemory = function() {
+    Langui.memory.length = 0;
+};
 Langui.PushShape = function(shape) {
     Langui.memory.push(shape);
-}
+};
 Langui.RedrawMemorized = function() {
     Langui.ctx.beginPath();
     Langui.DefaultBrush();

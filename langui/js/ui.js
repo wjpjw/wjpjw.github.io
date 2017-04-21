@@ -1,11 +1,23 @@
 $(document).ready(function() {
     newCanvas();
-    $("#clear").click(function() { newCanvas(); });
+    $("#clear").click(function() {
+        Langui.ClearMemory();
+        Langui.ClearStrokes();
+        if (Langui.input != null) {
+            Langui.input.destroy();
+            Langui.input = null;
+        }
+    });
     $("#arrow").click(function() {
         Langui.arrow_state++;
         if (Langui.arrow_state == 2) {
             Langui.arrow_state = 0;
         }
+    });
+    $("#undo").click(function() {
+        Langui.memory.pop();
+        Langui.ClearStrokes();
+        Langui.RedrawMemorized();
     });
 
 });
@@ -57,5 +69,5 @@ $.fn.drawMouse = function() {
     };
     $(this).on("mousedown", start);
     $(this).on("mousemove", move);
-    $(window).on("mouseup", stop);
+    $(this).on("mouseup", stop);
 };
