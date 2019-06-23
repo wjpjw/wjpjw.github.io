@@ -27,8 +27,8 @@
 	height: 210px;
 	border-radius: 50%;
 	border: 25px solid transparent;
-	border-top-color: #f44557be;
-	border-right-color: #f44557be;
+	border-top-color: rgba(244,69,87,0.75);
+	border-right-color: rgba(244,69,87,0.75);
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -49,7 +49,7 @@
 	margin: auto;
 	font-size: 30px;
 	font-weight: bold;
-	color: #f44556;
+	color: rgba(244,69,87,1);
 	text-align: center;
 	position: absolute;
 	top: 0;
@@ -61,7 +61,7 @@
 .main-timeline .timeline-content{
 	width: 35%;
 	float: right;
-	background: #f44557be;
+	background: rgba(244,69,87,0.75);
 	padding: 30px 20px;
 	margin: 50px 0;
 	z-index: 1;
@@ -71,7 +71,7 @@
 	content: "";
 	width: 20%;
 	height: 15px;
-	background: #f44557be;
+	background: rgba(244,69,87,0.75);
 	position: absolute;
 	top: 50%;
 	left: -20%;
@@ -100,28 +100,28 @@
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-icon{
-	border-top-color: #49aae2b5;
-	border-right-color: #49aae2b5;
+	border-top-color: rgba(73,170,226,0.71);
+	border-right-color: rgba(73,170,226,0.71);
 }
-.main-timeline .timeline:nth-child(2n) .year{ color: #49aae2; }
+.main-timeline .timeline:nth-child(2n) .year{ color: rgba(73,170,226,1); }
 .main-timeline .timeline:nth-child(2n) .timeline-content,
-.main-timeline .timeline:nth-child(2n) .timeline-content:before{ background: #49aae2b5; }
+.main-timeline .timeline:nth-child(2n) .timeline-content:before{ background:rgba(73,170,226,0.71); }
 
 .main-timeline .timeline:nth-child(4n) .timeline-icon{
-	border-top-color: #7d3c8fc7;
-	border-right-color: #7d3c8fc7;
+	border-top-color: rgba(125,60,143,0.78);
+	border-right-color: rgba(125,60,143,0.78);
 }
-.main-timeline .timeline:nth-child(4n) .year{ color: #7d3c8f; }
+.main-timeline .timeline:nth-child(4n) .year{ color: rgba(125,60,143,1); }
 .main-timeline .timeline:nth-child(4n) .timeline-content,
-.main-timeline .timeline:nth-child(4n) .timeline-content:before{ background: #7d3c8fc7; }
+.main-timeline .timeline:nth-child(4n) .timeline-content:before{ background: rgba(125,60,143,0.78); }
 
 
 .main-timeline .timeline:nth-child(3n) .timeline-icon{
-	border-top-color: #df5211c9;
-	border-right-color: #df5211c9;
+	border-top-color: rgba(223,82,17,0.79);
+	border-right-color: rgba(223,82,17,0.79);
 }
-.main-timeline .timeline:nth-child(3n) .year{ color: #df5211; }
+.main-timeline .timeline:nth-child(3n) .year{ color: rgba(223,82,17,1); }
 .main-timeline .timeline:nth-child(3n) .timeline-content,
-.main-timeline .timeline:nth-child(3n) .timeline-content:before{ background: #df5211c9; }
+.main-timeline .timeline:nth-child(3n) .timeline-content:before{ background: rgba(223,82,17,0.79); }
 
 
