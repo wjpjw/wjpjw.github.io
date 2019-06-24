@@ -20,10 +20,12 @@
                             <div id="Name">
                                     <h1> 吴 继 鹏 </h1>
                                     <p style="margin-top: 15px;">
-                                        <img height="40" src="img/nju.png"> &nbsp; 南京大学（SE）
+                                        <img height="40" src="img/nju.png"> &nbsp; 南京大学 <br>
+                                        &nbsp; &nbsp; &nbsp; B.S. SE 2015
                                     </p>
                                     <p style="margin-top: 15px;">
-                                        <img height="60" style="margin-left:-13px" src="img/gatech.png"> 佐治亚理工（CS）
+                                        <img height="60" style="margin-left:-13px" src="img/gatech.png"> 佐治亚理工 <br>
+                                        &nbsp; &nbsp; &nbsp; M.S. CS 2017
                                     </p>
                                     <p style="margin-top: 15px;">
                                         <img height="40" src="img/cetc.png">  &nbsp;28所共性产品中心
@@ -40,7 +42,7 @@
                                 <div class="timeline" style="margin-top: -33px;">
                                     <div class="timeline-icon"><span class="year">2019</span></div>
                                     <div class="timeline-content">
-                                        <h3 class="title"> 我的开源项目简介 </h3>
+                                        <h3 class="title"> 近期完成的Hobby Projects </h3>
                                         <p id="p2019" class="description">
                                             2月和5月分别有两个写了很久的个人项目告一段落（仍需持续更新），无任何tuning的benchmark结果都非常理想。
                                             一个是<a href="https://github.com/wjp-release/cfscheduler">cfscheduler</a>，一个纤程池。
@@ -52,9 +54,11 @@
                                 <div class="timeline" style="margin-top: -158px;">
                                     <div class="timeline-icon"><span class="year">2018</span></div>
                                     <div class="timeline-content">
-                                        <h3 class="title">  Redolog捕获与数据同步 </h3>
+                                        <h3 class="title"> 去年做了Oracle数据同步与访问代理 </h3>
                                         <p id="p2018" class="description">
-                                            定期向Oracle查询是否有scn变化，有则扫描Oracle的redolog，捕获其中新增change vector，翻译成sql，以文件形式持久化到磁盘，并发送到目的端（主要用来实时同步入库，也可以用于前端监控）。我负责捕获、持久化、可靠传输、日志等模块。这个项目目前仍在进行中。
+                                            去年主要在做Oracle的实时增量同步，我负责redolog捕获并译成sql、中间产物持久化与可靠批量传输。<br>
+                                            此前还做了一个底层用Pro*C访问Oracle，上层用zeromq通信的轻量级访问服务，支持Oracle和各种国产数据库。
+                                            
                                         </p>
                                     </div>
                                 </div>
@@ -62,9 +66,10 @@
                                 <div class="timeline" style="margin-top: -161px;">
                                     <div class="timeline-icon"><span class="year">2017</span></div>
                                     <div class="timeline-content">
-                                        <h3 class="title"> 容器集群上的AI平台 </h3>
+                                        <h3 class="title"> 首个正式项目：容器集群上的AI平台 </h3>
                                         <p id="p2017" class="description">
-                                            底层通过nvidia-smi获取GPU信息，中层改yarn的Java源码实现GPU资源调度，上层将各种开源AI算法封成微服务部署在k8s上，前端vue做网页。这个项目让我意识到应用层开发很难激发技术热情，于是决定专注于C/C++系统级开发。
+                                            底层通过nvidia-smi获取GPU信息，中层改yarn的Java源码实现GPU资源调度，上层将各种开源AI算法封成微服务部署在k8s上，前端vue做网页。<br>
+                                            我当时在深度学习组，算法团队只负责算法的python脚本和制作docker，因此的前端后端部署都是我做的。
                                         </p>
                                     </div>
                                 </div>
@@ -72,11 +77,11 @@
                                 <div class="timeline" style="margin-top: -181px;"> 
                                     <div class="timeline-icon"><span class="year">...</span></div>
                                     <div class="timeline-content">
-                                        <h3 class="title"> 学习生涯简介 </h3>
+                                        <h3 class="title"> 此前为学习生涯 </h3>
                                         <p id="pprev" class="description">
-                                            学生时代我发过两篇EI检索的论文，自学了Qt，Linux C/C++编程（南大软院是Java教派的）。
-                                            现在回想起来，学生阶段最精彩的经历是我花了一年时间写了一个单cpu操作系统微内核。
-                                            没有paging，没有fs，但完整地实现了segmentation，isr，ipc，还做了一个微内核服务间的生产者消费者Demo。
+                                            学生时代我发过两篇第一作者EI检索的论文，不喜Java，自学了Qt，Linux C/C++编程，前端等。
+                                            现在回想起来，学生阶段最精彩的经历是我花了一年时间写了一个单cpu操作系统微内核，用来当做操作系统课大作业拿了A+++，没有给我增加绩点，但是很炫酷。
+                                            这个微内核没有paging，没有fs，但完整地实现了segmentation，isr，ipc，还做了一个微内核服务间的生产者消费者Demo。
                                         </p>
                                     </div>
                                 </div>
@@ -86,20 +91,13 @@
                 <div id="CardContainer">
                     <div class="skillcard">
                         <img class="cover"  src="img/k8s.png">  
-                        <div class="skill-title">  &nbsp; &nbsp;基础技能栈</div>
+                        <div class="skill-title">  &nbsp; &nbsp;技能栈</div>
                         <div class="description">
-                                擅长的编程语言（从熟悉到生疏排列）：<br>
-                                <i class="fa fa-star"></i> C/C++, Modern C++ <br>
-                                <i class="fa fa-star"></i> Python <br>
-                                <i class="fa fa-star"></i> Java <br>
-                                <i class="fa fa-star"></i> ES6（Vue） <br>
-                                <i class="fa fa-star"></i> NASM <br>
-                                其他开发相关技能：<br>
-                                <i class="fa fa-star"></i> Kubernetes <br>
-                                <i class="fa fa-star"></i> GDB <br>
-                                <i class="fa fa-star"></i> Emacs定制 <br>
-                                <i class="fa fa-star"></i> Latex排版 <br>
-                                <i class="fa fa-star"></i> 英语与学术写作 <br>
+                                <i class="fa fa-star"></i> 主要开发语言：C/C++，偏好Modern C++ <br>
+                                <i class="fa fa-star"></i> 网络: 读过nng, zeromq，muduo，实现过高吞吐为目标的<a href="https://github.com/wjp-release/cppmsg">cppmsg</a> <br>
+                                <i class="fa fa-star"></i> 存储：读过redis，leveldb，innodb，实现过Oracle的重做日志捕获与翻译 <br>
+                                <i class="fa fa-star"></i> 底层：实现过一个微内核os（的微内核），实现过<a href="https://github.com/wjpjw/pipeline_out_of_order">superscalar processor的模拟器</a>，实现过一种hardware prefetcher <br>
+                                <i class="fa fa-star"></i> 简单/次要技能：Python, Java, ES6(Vue), NASM, Kubernetes，GDB，CMake，Latex，英语，学术写作 <br>
                         </div>        
                     </div>
                     <div class="skillcard">
@@ -113,10 +111,10 @@
                     </div>
                     <div class="skillcard">
                         <img class="cover" style="height:120px; margin-left:20px ;margin-top:23px"  src="img/pool.png">  
-                        <div class="skill-title" style="margin-top: -92px;"> &nbsp;  我的纤程池 </div>
+                        <div class="skill-title" style="margin-top: -92px;"> &nbsp;  用户级线程池 </div>
                         <div class="description">
                             我对于如何在应用层实现百万线程调度，将编程无限异步化一直很好奇，陆陆续续把TBB和JUC源码读完，又读了相关论文，比如Chase Lev Deque。 <br> 
-                            因此我从18年开始尝试写了<a href="https://github.com/wjp-release/libasync">libasync</a>项目，大量使用C++17新特性，没有特别慎重地追求极致性能，而是做了类似Promise/A+的各种语法糖。<br>
+                            因此我从18年开始尝试写了实验性的<a href="https://github.com/wjp-release/libasync">libasync</a>项目，大量使用C++17新特性，没有特别慎重地追求极致性能，而是做了一些语法糖。<br>
                             尝试性地用cppreference上std::async的官方示例parallel_sum做了benchmark，发现libasync比std::async快上百倍。受到鼓舞后，我用更加注重cache-friendliness的态度新写了<a href="https://github.com/wjp-release/cfscheduler">cfscheduler</a>项目，这个版本能以微弱优势战胜intel tbb。
                         </div>        
                     </div>
@@ -124,19 +122,21 @@
                         <img class="cover" style="height:120px; margin-left:20px ;margin-top:23px"  src="img/msg.png">  
                         <div class="skill-title" style="margin-top: -92px;"> &nbsp;  我的消息通信库 </div>
                         <div class="description">
+                            此前一直想写自己的C++网络库但积累不足，直到近期才有第一个有意义的项目。
                             <a href="https://github.com/wjp-release/cppmsg">cppmsg</a>的设计是自底向上的，从优化利用系统调用的角度设计整个消息库，我还没怎么优化，吞吐量的benchmark已经超过<a href="https://github.com/nanomsg/nng">nng</a>。主要创新之处有三：<br>
                             <i class="fa fa-star"></i> 每次接收一条消息时，不管消息多大总是吸干当前socket buffer，并将其解析为若干个分段消息，极大减少readv系统调用次数。<br>
                             <i class="fa fa-star"></i> 使用readv/writev直接读写消息体，无应用层buffer，降低内存复制开销。<br>
-                            <i class="fa fa-star"></i> 在eventloop主循环里加了一个无锁队列，专门存放关闭fd的例程，在主循环最后执行，避免epoll刚拿到的fd实际上已被关闭。
+                            <i class="fa fa-star"></i> ONESHOT模式+eventloop线程延迟销毁event，解决epoll+线程池的线程安全问题。
                             </div>        
                     </div>
                     <div class="skillcard">
                         <img class="cover" style="height:120px; margin-left:20px ;margin-top:23px"  src="img/store.png">  
                         <div class="skill-title" style="margin-top: -90px;"> 主攻方向：存储系统 </div>
-                        <div class="description">
-                            我的本职工作是Oracle Redolog挖掘与数据同步，相当于阿里DTS的Oracle版。目前的版本性能已经超过Logminer很多。<br>
-                            我从两年前开始陆续读过leveldb和redis源码（这两个完整读完），花很多经历研究过部分InnoDB源码（侧重log和mtr模块，复杂度大约是redis和leveldb加起来的十倍），深知存储领域，尤其是支持严格ACID的B树流派的难度与壁垒远超网络通信或者用户级线程这种领域。<br>
-                            相比其他方向的后端开发，我会优先考虑有意向自研存储系统的团队。
+                        <div class="description"> 
+                            我的本职工作是Oracle Redolog挖掘与数据同步，相当于<a href="https://help.aliyun.com/product/26590.html">阿里DTS</a>的Oracle版。目前的版本性能已经超过Logminer很多。<br>
+                            其原理是定期向Oracle查询是否有scn变化，有则扫描Oracle的redolog，捕获其中新增change vector，翻译成sql，以文件形式持久化到磁盘，并发送到目的端，可用来实时同步入库，也可以输出到运维管理系统。我负责捕获、翻译、持久化、可靠传输、日志这几个模块。<br>
+                            此外，还了解过Linux下的文件系统开发。<br>
+                            相比其他方向的后端开发，我会优先考虑有意向自研本地存储方案与分布式存储系统的团队。
                         </div>        
                     </div>
                     <div class="skillcard">
@@ -146,8 +146,8 @@
                             <i class="fa fa-star"></i> 一个操作系统内核：单CPU无Paging无FS无驱动的微内核<br>
                             <i class="fa fa-star"></i> C++版的Promise/A+：<a href="https://github.com/wjp-release/eventual">eventual</a>，本质是语法糖 <br> 
                             <i class="fa fa-star"></i> 纯C写的简单通用库：<a href="https://github.com/wjp-release/posix-commons">posix-commons</a>，包含基于kqueue的一个reactor实现（那时我在用mac开发）。 <br>
-                            <i class="fa fa-star"></i> 基于FHIR的co-op项目：为最近出名了的亚特兰大的Emory医院开发的BloodMiser系统，目的是节省不必要的输血开销，电子病历等信息基于FHIR这个白宫通过的医疗信息互操作性标准。 <br>
-                        </div>        
+                            <i class="fa fa-star"></i> 基于<a href="https://www.hl7.org/fhir/">FHIR</a>的co-op项目：假期为亚特兰大的Emory医院开发的BloodMiser系统，目的是节省不必要的输血开销，电子病历等信息基于FHIR这个白宫通过的医疗信息互操作性标准。 <br>
+                        </div>         
                     </div>
                 </div>
          </div>
